@@ -1,0 +1,602 @@
+
+--------------- Error -------------
+Trace ID: 1694376115378
+Date: 10/09/2023 22:01:55
+Error text: controller_doesnt_exist
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllData"}
+Error:
+Class: Application
+Function: __construct
+Variable: Cars_Controller
+File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694376128762
+Date: 10/09/2023 22:02:08
+Error text: controller_doesnt_exist
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllData"}
+Error:
+Class: Application
+Function: __construct
+Variable: Cars_Controller
+File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694376217893
+Date: 10/09/2023 22:03:37
+Error text: controller_doesnt_exist
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllData"}
+Error:
+Class: Application
+Function: __construct
+Variable: Cars_Controller
+File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694376244315
+Date: 10/09/2023 22:04:04
+Error text: controller_doesnt_exist
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllData"}
+Error:
+Class: Application
+Function: __construct
+Variable: Cars_Controller
+File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694376257391
+Date: 10/09/2023 22:04:17
+Error text: controller_doesnt_exist
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllData"}
+Error:
+Class: Application
+Function: __construct
+Variable: Cars_Controller
+File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694376268068
+Date: 10/09/2023 22:04:28
+Error text: controller_doesnt_exist
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllData"}
+Error:
+Class: Application
+Function: __construct
+Variable: Cars_Controller
+File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694376274745
+Date: 10/09/2023 22:04:34
+Error text: controller_doesnt_exist
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllData"}
+Error:
+Class: Application
+Function: __construct
+Variable: Cars_Controller
+File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694376320389
+Date: 10/09/2023 22:05:20
+Error text: controller_doesnt_exist
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllData"}
+Error:
+Class: Application
+Function: __construct
+Variable: Cars_Controller
+File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694376358822
+Date: 10/09/2023 22:05:58
+Error text: controller_doesnt_exist
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllData"}
+Error:
+Class: Application
+Function: __construct
+Variable: Cars_Controller
+File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694376369500
+Date: 10/09/2023 22:06:09
+Error text: controller_doesnt_exist
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllData"}
+Error:
+Class: Application
+Function: __construct
+Variable: Cars_Controller
+File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694376373315
+Date: 10/09/2023 22:06:13
+Error text: controller_doesnt_exist
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllData"}
+Error:
+Class: Application
+Function: __construct
+Variable: Cars_Controller
+File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694376396494
+Date: 10/09/2023 22:06:36
+Error text: controller_doesnt_exist
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllData"}
+Error:
+Class: Application
+Function: __construct
+Variable: Cars_Controller
+File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694376417932
+Date: 10/09/2023 22:06:57
+Error text: controller_doesnt_exist
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllData"}
+Error:
+Class: Application
+Function: __construct
+Variable: Cars_Controller
+File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694376424462
+Date: 10/09/2023 22:07:04
+Error text: controller_doesnt_exist
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllData"}
+Error:
+Class: Application
+Function: __construct
+Variable: Cars_Controller
+File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694376430551
+Date: 10/09/2023 22:07:10
+Error text: controller_doesnt_exist
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllData"}
+Error:
+Class: Application
+Function: __construct
+Variable: Cars_Controller
+File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694376461253
+Date: 10/09/2023 22:07:41
+Error text: controller_doesnt_exist
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllData"}
+Error:
+Class: Application
+Function: __construct
+Variable: Cars_Controller
+File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694376472129
+Date: 10/09/2023 22:07:52
+Error text: controller_doesnt_exist
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllData"}
+Error:
+Class: Application
+Function: __construct
+Variable: Cars_Controller
+File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694376473884
+Date: 10/09/2023 22:07:53
+Error text: controller_doesnt_exist
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllData"}
+Error:
+Class: Application
+Function: __construct
+Variable: Cars_Controller
+File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694376478377
+Date: 10/09/2023 22:07:58
+Error text: controller_doesnt_exist
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllData"}
+Error:
+Class: Application
+Function: __construct
+Variable: Cars_Controller
+File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694376510408
+Date: 10/09/2023 22:08:30
+Error text: controller_doesnt_exist
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllData"}
+Error:
+Class: Application
+Function: __construct
+Variable: Cars_Controller
+File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694376514649
+Date: 10/09/2023 22:08:34
+Error text: controller_doesnt_exist
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllData"}
+Error:
+Class: Application
+Function: __construct
+Variable: Cars_Controller
+File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694376519466
+Date: 10/09/2023 22:08:39
+Error text: controller_doesnt_exist
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllData"}
+Error:
+Class: Application
+Function: __construct
+Variable: Cars_Controller
+File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694376531465
+Date: 10/09/2023 22:08:51
+Error text: controller_doesnt_exist
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllData"}
+Error:
+Class: Application
+Function: __construct
+Variable: Cars_Controller
+File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694376556189
+Date: 10/09/2023 22:09:16
+Error text: controller_doesnt_exist
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllData"}
+Error:
+Class: Application
+Function: __construct
+Variable: Cars_Controller
+File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694376585262
+Date: 10/09/2023 22:09:45
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllData"}
+Error:
+Class: Application
+Function: __construct
+Variable: Cars_Controller
+File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694376595875
+Date: 10/09/2023 22:09:55
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllData"}
+Error:
+Class: Application
+Function: __construct
+Variable: Cars_Controller
+File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694376607979
+Date: 10/09/2023 22:10:07
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllData"}
+Error:
+Class: Application
+Function: __construct
+Variable: Cars_Controller
+File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694376614063
+Date: 10/09/2023 22:10:14
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllData"}
+Error:
+Class: Application
+Function: __construct
+Variable: Cars_Controller
+File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694376672426
+Date: 10/09/2023 22:11:12
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllData"}
+Error:
+Class: Application
+Function: __construct
+Variable: Cars_Controller
+File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694376728817
+Date: 10/09/2023 22:12:08
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllData"}
+Error:
+Class: Application
+Function: __construct
+Variable: Cars_Controller
+File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694376745241
+Date: 10/09/2023 22:12:25
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllData"}
+Error:
+Class: Application
+Function: __construct
+Variable: Cars_Controller
+File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694376763189
+Date: 10/09/2023 22:12:43
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllData"}
+Error:
+Class: Application
+Function: __construct
+Variable: Cars_Controller
+File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694376792783
+Date: 10/09/2023 22:13:12
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllData"}
+Error:
+Class: Application
+Function: __construct
+Variable: Cars_Controller
+File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694376804607
+Date: 10/09/2023 22:13:24
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllData"}
+Error:
+Class: Application
+Function: __construct
+Variable: Cars_Controller
+File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694376810704
+Date: 10/09/2023 22:13:30
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllData"}
+Error:
+Class: Application
+Function: __construct
+Variable: Cars_Controller
+File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694376840038
+Date: 10/09/2023 22:14:00
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllData"}
+Error:
+Class: Application
+Function: __construct
+Variable: Cars_Controller
+File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694376863629
+Date: 10/09/2023 22:14:23
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllData"}
+Error:
+Class: Application
+Function: __construct
+Variable: Cars_Controller
+File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694376906887
+Date: 10/09/2023 22:15:06
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllData"}
+Error:
+Class: Application
+Function: __construct
+Variable: Cars_Controller
+File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694376913304
+Date: 10/09/2023 22:15:13
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllData"}
+Error:
+Class: Application
+Function: __construct
+Variable: Cars_Controller
+File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694376922302
+Date: 10/09/2023 22:15:22
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllData"}
+Error:
+Class: Application
+Function: __construct
+Variable: Cars_Controller
+File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694376999218
+Date: 10/09/2023 22:16:39
+Error text: method does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllData"}
+Error:
+Class: Application
+Function: __construct
+Variable: getAllData
+File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694377090936
+Date: 10/09/2023 22:18:10
+Error text: method does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllData"}
+Error:
+Class: Application
+Function: __construct
+Variable: getAllData
+File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694377122145
+Date: 10/09/2023 22:18:42
+Error text: method does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllData"}
+Error:
+Class: Application
+Function: __construct
+Variable: getAllData
+File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+-----------------------------------

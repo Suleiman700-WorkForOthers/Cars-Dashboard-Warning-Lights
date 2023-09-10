@@ -1,0 +1,39 @@
+
+-------------- Fatal Error -------------
+Trace ID: FE_1694378459042
+Date: 2023-09-10 22:40:59
+Request type: GET
+Request: {"controller":"Cars_Controller","method":"getAllRecords"}
+Error Message: Uncaught Error: Class "MongoDB\Driver\Manager" not found in E:\GitHub\Cars-Dashboard-Warning-Lights\server\vendor\mongodb\mongodb\src\Client.php:124
+Stack trace:
+#0 E:\GitHub\Cars-Dashboard-Warning-Lights\server\index.php(58): MongoDB\Client->__construct('mongodb+srv://m...')
+#1 {main}
+  thrown in E:\GitHub\Cars-Dashboard-Warning-Lights\server\vendor\mongodb\mongodb\src\Client.php on line 124
+Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\vendor\mongodb\mongodb\src\Client.php(124)
+----------------------------------------
+
+-------------- Fatal Error -------------
+Trace ID: FE_1694378495655
+Date: 2023-09-10 22:41:35
+Request type: GET
+Request: {"controller":"Cars_Controller","method":"getAllRecords"}
+Error Message: Uncaught Error: Class "MongoDB\Driver\Manager" not found in E:\GitHub\Cars-Dashboard-Warning-Lights\server\vendor\mongodb\mongodb\src\Client.php:124
+Stack trace:
+#0 E:\GitHub\Cars-Dashboard-Warning-Lights\server\index.php(58): MongoDB\Client->__construct('mongodb+srv://m...')
+#1 {main}
+  thrown in E:\GitHub\Cars-Dashboard-Warning-Lights\server\vendor\mongodb\mongodb\src\Client.php on line 124
+Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\vendor\mongodb\mongodb\src\Client.php(124)
+----------------------------------------
+
+-------------- Fatal Error -------------
+Trace ID: FE_1694378569203
+Date: 2023-09-10 22:42:49
+Request type: GET
+Request: {"controller":"Cars_Controller","method":"getAllRecords"}
+Error Message: Uncaught Error: Class "MongoDB\Driver\Manager" not found in E:\GitHub\Cars-Dashboard-Warning-Lights\server\vendor\mongodb\mongodb\src\Client.php:124
+Stack trace:
+#0 E:\GitHub\Cars-Dashboard-Warning-Lights\server\index.php(58): MongoDB\Client->__construct('mongodb+srv://m...')
+#1 {main}
+  thrown in E:\GitHub\Cars-Dashboard-Warning-Lights\server\vendor\mongodb\mongodb\src\Client.php on line 124
+Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\vendor\mongodb\mongodb\src\Client.php(124)
+----------------------------------------
