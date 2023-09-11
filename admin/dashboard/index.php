@@ -17,12 +17,10 @@ require_once '../includes/prevent-non-logged.php';
 
 <!--  Start Main Wrapper -->
 <div class="main-wrapper cart-drawer-push">
-    <!-- Start Promotional Bar Section -->
     <div class="promotional-bar border-0 rounded-0 d-flex align-items-center alert alert-warning fade show" role="alert">
         <div class="container-fluid full-promotional-bar">
         </div>
     </div>
-    <!-- End Promotional Bar Section -->
 
     <!-- Start Header Section -->
     <header class="header bg-white">
@@ -35,6 +33,8 @@ require_once '../includes/prevent-non-logged.php';
         </div>
     </header>
     <!-- End Header Section -->
+
+    <hr />
 
     <!-- Start Main Content -->
     <main class="main-content">
