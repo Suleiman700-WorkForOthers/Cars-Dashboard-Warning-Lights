@@ -3,13 +3,9 @@
 class Errors
 {
     public string $traceID;
-
     public string $errorText;
     public string $errorCode;
     public string $errorVariable; // the variable that found error in
-    public string $errorClass;
-    public string $errorFunction;
-    public string $errorFile;
     public $errorDetails;
 
     private string $logFilePath = '/server/logs/errors.txt';
@@ -57,24 +53,6 @@ class Errors
     public function setErrorVariable($_errorVariable): Errors
     {
         $this->errorVariable = $_errorVariable;
-        return $this;
-    }
-
-    public function setErrorClass(string $_errorClass): Errors
-    {
-        $this->errorClass = $_errorClass;
-        return $this;
-    }
-
-    public function setErrorFunction(string $_errorFunction): Errors
-    {
-        $this->errorFunction = $_errorFunction;
-        return $this;
-    }
-
-    public function setErrorFile(string $_errorFile): Errors
-    {
-        $this->errorFile = $_errorFile;
         return $this;
     }
 
@@ -130,11 +108,8 @@ class Errors
         $logMessage .= 'Request type: ' . $_SERVER['REQUEST_METHOD'] . "\n";
         $logMessage .= json_encode($_REQUEST, JSON_THROW_ON_ERROR) . "\n";
         $logMessage .= "Error:\n";
-        if (!empty($this->errorClass)) $logMessage .= "Class: $this->errorClass\n";
-        if (!empty($this->errorFunction)) $logMessage .= "Function: $this->errorFunction\n";
         if (!empty($this->errorVariable)) $logMessage .= "Variable: $this->errorVariable\n";
         if (!empty($this->errorDetails)) $logMessage .= 'details: ' . json_encode($this->errorDetails) . "\n";
-        if (!empty($this->errorFile)) $logMessage .= "File: $this->errorFile\n";
         $logMessage .= "-----------------------------------\n";
 
         $error_file = fopen($errorLoggingFile, "a");

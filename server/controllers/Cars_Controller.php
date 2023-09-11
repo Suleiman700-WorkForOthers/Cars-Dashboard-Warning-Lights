@@ -12,13 +12,29 @@ class Cars_Controller extends Controller
      */
     function getAllRecords()
     {
-//        $this->setModel('Cars_Model');
-//        $persons = $this->model->getAllRecords();
+//        $_params = [
+//            'logo' => 'Renault',
+//        ];
+//        $array_search = [
+//            'name' => ['s'],
+//        ];
+//        $data = $this->model->filter($_params, $array_search);
+//
+//        // Extract the result into an array
+//        $result = iterator_to_array($data);
+//
+//        // Output the result
+//        echo '<pre>';
+//        print_r($result[0]['name']);
+//        echo '</pre>';
+
+        $this->setModel('Cars_Model');
+        $records = $this->model->getAllRecords();
 
         // check for errors
-        if (empty($persons->errors)) {
+        if (empty($records->errors)) {
             $this->state = true;
-            $this->data = [];
+            $this->data = $records;
         }
         else {
             $this->state = false;
@@ -26,6 +42,46 @@ class Cars_Controller extends Controller
 
         return $this;
     }
+
+    /**
+     * get all cars sub models
+     */
+    function getAllSubModels()
+    {
+        $this->setModel('SubCars_Model');
+        $records = $this->model->getAllRecords();
+
+        // check for errors
+        if (empty($records->errors)) {
+            $this->state = true;
+            $this->data = $records;
+        }
+        else {
+            $this->state = false;
+        }
+
+        return $this;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     /**
      * get all records from DB

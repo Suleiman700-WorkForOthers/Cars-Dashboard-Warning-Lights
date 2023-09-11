@@ -10,13 +10,13 @@
     <!-- Title -->
     <title><?php echo $pageTitle ?></title>
     <!-- Favicon  -->
-    <link rel="shortcut icon" href="../assets/images/fevicon.png" />
+    <link rel="shortcut icon" href="../../assets/images/fevicon.png" />
 
     <!-- *********** CSS Files *********** -->
     <!-- Plugin CSS -->
-    <link rel="stylesheet" href="../assets/css/plugins.css" />
+    <link rel="stylesheet" href="../../assets/css/plugins.css" />
     <!-- Styles CSS -->
-    <link rel="stylesheet" href="../assets/css/styles.css" />
-    <link rel="stylesheet" href="../assets/css/responsive.css" />
-    <link rel="stylesheet" href="../assets/css/custom.css" />
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+    <link rel="stylesheet" href="../../assets/css/responsive.css" />
+    <link rel="stylesheet" href="../../assets/css/custom.css" />
 </head>

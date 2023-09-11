@@ -4,7 +4,7 @@
             <div class="row no-gutters">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-3 logo-wellcome">
                     <div class="ftr-logo">
-                        <a href="index.html"><img class="img-fluid" src="../assets/images/logo/gray-logo.png" alt="Posh Auto Parts" title="Posh Auto Parts" /></a>
+                        <a href="index.html"><img class="img-fluid" src="../../assets/images/logo/gray-logo.png" alt="Posh Auto Parts" title="Posh Auto Parts" /></a>
                     </div>
                     <div class="welcome-text">
                         <p class="m-0">Lorem ipsum dolor sit amet,<br> consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.</p>
@@ -73,11 +73,3 @@
     </div>
 </footer>
 
-<!-- ******** JS Files ******** -->
-<!-- Plugin JS -->
-<script src="../assets/js/theme-files/plugins.js"></script>
-
-<!-- Main JS -->
-<script src="../assets/js/theme-files/main.js"></script>
-
-<script src="../assets/libs/sweetalert/sweetalert2_11.7.1.js"></script>

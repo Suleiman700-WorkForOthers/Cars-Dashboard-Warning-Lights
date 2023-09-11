@@ -2,42 +2,76 @@
 
 class Cars_Model extends Model
 {
+    protected $mongoDBHandler;
+    public $collectionName = "cars_models";
+
     function __construct()
     {
-        $this->db = new DB();
-        $this->table = "cars";
+        $this->mongoDBHandler = new MongoDBHandler();
     }
 
     /**
-     * search for data
+     * Search for data
      * @param array $_params
      * @param array $array_search
-     * @return array|string
+     * @return array
      */
     public function filter($_params = [], $array_search = [])
     {
-        $array_search = array(
-            'id' => ['s']
-        );
-        return parent::filter($_params, $array_search);
+        $filter = [];
+
+        foreach ($array_search as $key => $type) {
+            if (isset($_params[$key])) {
+                $value = $_params[$key];
+
+                // Convert the value according to the specified type
+                switch ($type[0]) {
+                    case 's':
+                        $filter[$key] = (string) $value;
+                        break;
+                    case 'i':
+                        $filter[$key] = (int) $value;
+                        break;
+                    // Add more cases for other data types if needed
+                }
+            }
+        }
+
+        // Construct the MongoDB query filter
+        $queryFilter = ['_id' => ['$exists' => true]]; // Match all documents by default
+        if (!empty($filter)) {
+            $queryFilter = $filter;
+        }
+
+        // Use MongoDBHandler to fetch results
+        return $this->mongoDBHandler->find($this->collectionName, $queryFilter);
     }
 
     /**
-     * get language translations
+     * get all records
      */
     public function getAllRecords() {
         global $ERROR_CODES, $Errors;
 
-        $translationsData = $this->db->mysqli->query("SELECT * FROM $this->table")->fetch_all(MYSQLI_ASSOC);
+        $collection = $this->mongoDBHandler->db->selectCollection($this->collectionName);
 
-        if (!$translationsData) {
-            $errorText = $ERROR_CODES['PERSONS']['GET']['RESULTS']['NO_RESULTS']['NAME'];
-            $errorCode = $ERROR_CODES['PERSONS']['GET']['RESULTS']['NO_RESULTS']['CODE'];
-            $this->errors[] = $Errors->setErrorText($errorText)->setErrorCode($errorCode)->setErrorClass(__CLASS__)->setErrorFunction(__FUNCTION__)->setErrorFile(__FILE__)->setErrorVariable('')->setErrorDetails('')->gen();
-            return $this;
-        } else {
-            return $translationsData;
+        // Find all documents in the collection
+        $cursor = $collection->find([]);
+
+        // Convert the cursor to an array of documents
+        $documents = [];
+        foreach ($cursor as $document) {
+            $documents[] = $document;
         }
+
+        if (!$documents) {
+            $errorText = $ERROR_CODES['CARS']['GET']['RESULTS']['NO_RESULTS']['NAME'];
+            $errorCode = $ERROR_CODES['CARS']['GET']['RESULTS']['NO_RESULTS']['CODE'];
+            $this->errors[] = $Errors->setErrorText($errorText)->setErrorCode($errorCode)->setErrorVariable('')->setErrorDetails('')->gen();
+            return $this;
+        }
+
+        return $documents;
     }
 
     /**
@@ -54,7 +88,7 @@ class Cars_Model extends Model
     {
         global $ERROR_CODES, $Errors, $DBErrors;
 
-        return $this->db->update($_columnsToUpdate, $this->table, " WHERE id='$_personID'");
+        return $this->mongoDBHandler->update($_columnsToUpdate, $this->table, " WHERE id='$_personID'");
     }
 
     /**
@@ -68,7 +102,7 @@ class Cars_Model extends Model
 
         // prepare default customer data array
         $personColumn = $this->createDefaultColumns($_personData);
-        $createdResult = $this->db->insert($personColumn, $this->table);
+        $createdResult = $this->mongoDBHandler->insert($personColumn, $this->table);
 
         if (isset($createdResult) && is_numeric($createdResult)) {
             return [
@@ -90,7 +124,7 @@ class Cars_Model extends Model
      */
     public function isLangCodeExist(string $_langCode)
     {
-        $translationsData = $this->db->mysqli->query("SELECT $_langCode AS value FROM Translations");
+        $translationsData = $this->mongoDBHandler->mysqli->query("SELECT $_langCode AS value FROM Translations");
         if (!empty($translationsData)) {
             return true;
         }
@@ -108,7 +142,7 @@ class Cars_Model extends Model
     public function deleteRecord($_ID) {
         global $ERROR_CODES, $Errors;
 
-        $deleteResponse = $this->db->mysqli->query("DELETE FROM $this->table WHERE id = '$_ID'");
+        $deleteResponse = $this->mongoDBHandler->mysqli->query("DELETE FROM $this->table WHERE id = '$_ID'");
 
         if (isset($deleteResponse) && ($deleteResponse == 1 || $deleteResponse == true)) {
             return true;

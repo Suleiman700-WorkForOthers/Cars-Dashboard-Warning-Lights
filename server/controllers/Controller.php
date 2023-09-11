@@ -23,11 +23,11 @@ class Controller
         if (file_exists($modelFile)) {
             require_once $modelFile;
 
-            $this->model = new $CONSTANTS['SYS_MODELS'][$_modelClassName]['className']();
+            $this->model = new $_modelClassName();
         }
-        else 
+        else
         {
-            $this->errors[] = $Errors->setErrorText('Model doesnt exists')->setErrorCode('123ABC')->setErrorClass(__CLASS__)->setErrorFunction(__FUNCTION__)->setErrorFile(__FILE__)->setErrorVariable('')->setErrorDetails('')->gen();
+            $this->errors[] = $Errors->setErrorText('Model doesnt exists')->setErrorCode('123ABC')->setErrorVariable('')->setErrorDetails('')->gen();
         }
     }
 }

@@ -1,602 +1,446 @@
 
 --------------- Error -------------
-Trace ID: 1694376115378
-Date: 10/09/2023 22:01:55
-Error text: controller_doesnt_exist
-Error code: 123ABC
+Trace ID: 1694429185125
+Date: 11/09/2023 12:46:25
+Error text: No results found
+Error code: PGRNF.1001
 Request type: GET
-{"controller":"Cars_Controller","method":"getAllData"}
+{"controller":"Cars_Controller","method":"getAllRecords"}
 Error:
-Class: Application
-Function: __construct
-Variable: Cars_Controller
-File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
 -----------------------------------
 
 --------------- Error -------------
-Trace ID: 1694376128762
-Date: 10/09/2023 22:02:08
-Error text: controller_doesnt_exist
-Error code: 123ABC
+Trace ID: 1694429217000
+Date: 11/09/2023 12:46:57
+Error text: No results found
+Error code: PGRNF.1001
 Request type: GET
-{"controller":"Cars_Controller","method":"getAllData"}
+{"controller":"Cars_Controller","method":"getAllRecords"}
 Error:
-Class: Application
-Function: __construct
-Variable: Cars_Controller
-File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
 -----------------------------------
 
 --------------- Error -------------
-Trace ID: 1694376217893
-Date: 10/09/2023 22:03:37
-Error text: controller_doesnt_exist
-Error code: 123ABC
+Trace ID: 1694429234413
+Date: 11/09/2023 12:47:14
+Error text: No results found
+Error code: PGRNF.1001
 Request type: GET
-{"controller":"Cars_Controller","method":"getAllData"}
+{"controller":"Cars_Controller","method":"getAllRecords"}
 Error:
-Class: Application
-Function: __construct
-Variable: Cars_Controller
-File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
 -----------------------------------
 
 --------------- Error -------------
-Trace ID: 1694376244315
-Date: 10/09/2023 22:04:04
-Error text: controller_doesnt_exist
-Error code: 123ABC
+Trace ID: 1694429242065
+Date: 11/09/2023 12:47:22
+Error text: No results found
+Error code: PGRNF.1001
 Request type: GET
-{"controller":"Cars_Controller","method":"getAllData"}
+{"controller":"Cars_Controller","method":"getAllRecords"}
 Error:
-Class: Application
-Function: __construct
-Variable: Cars_Controller
-File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
 -----------------------------------
 
 --------------- Error -------------
-Trace ID: 1694376257391
-Date: 10/09/2023 22:04:17
-Error text: controller_doesnt_exist
-Error code: 123ABC
+Trace ID: 1694429246308
+Date: 11/09/2023 12:47:26
+Error text: No results found
+Error code: PGRNF.1001
 Request type: GET
-{"controller":"Cars_Controller","method":"getAllData"}
+{"controller":"Cars_Controller","method":"getAllRecords"}
 Error:
-Class: Application
-Function: __construct
-Variable: Cars_Controller
-File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
 -----------------------------------
 
 --------------- Error -------------
-Trace ID: 1694376268068
-Date: 10/09/2023 22:04:28
-Error text: controller_doesnt_exist
-Error code: 123ABC
+Trace ID: 1694429359536
+Date: 11/09/2023 12:49:19
+Error text: No results found
+Error code: PGRNF.1001
 Request type: GET
-{"controller":"Cars_Controller","method":"getAllData"}
+{"controller":"Cars_Controller","method":"getAllRecords"}
 Error:
-Class: Application
-Function: __construct
-Variable: Cars_Controller
-File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
 -----------------------------------
 
 --------------- Error -------------
-Trace ID: 1694376274745
-Date: 10/09/2023 22:04:34
-Error text: controller_doesnt_exist
-Error code: 123ABC
+Trace ID: 1694430514182
+Date: 11/09/2023 13:08:34
+Error text: No results found
+Error code: PGRNF.1001
 Request type: GET
-{"controller":"Cars_Controller","method":"getAllData"}
+{"controller":"Cars_Controller","method":"getAllRecords"}
 Error:
-Class: Application
-Function: __construct
-Variable: Cars_Controller
-File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
 -----------------------------------
 
 --------------- Error -------------
-Trace ID: 1694376320389
-Date: 10/09/2023 22:05:20
-Error text: controller_doesnt_exist
-Error code: 123ABC
+Trace ID: 1694430536526
+Date: 11/09/2023 13:08:56
+Error text: No results found
+Error code: PGRNF.1001
 Request type: GET
-{"controller":"Cars_Controller","method":"getAllData"}
+{"controller":"Cars_Controller","method":"getAllRecords"}
 Error:
-Class: Application
-Function: __construct
-Variable: Cars_Controller
-File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
 -----------------------------------
 
 --------------- Error -------------
-Trace ID: 1694376358822
-Date: 10/09/2023 22:05:58
-Error text: controller_doesnt_exist
-Error code: 123ABC
+Trace ID: 1694430561291
+Date: 11/09/2023 13:09:21
+Error text: No results found
+Error code: PGRNF.1001
 Request type: GET
-{"controller":"Cars_Controller","method":"getAllData"}
+{"controller":"Cars_Controller","method":"getAllRecords"}
 Error:
-Class: Application
-Function: __construct
-Variable: Cars_Controller
-File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
 -----------------------------------
 
 --------------- Error -------------
-Trace ID: 1694376369500
-Date: 10/09/2023 22:06:09
-Error text: controller_doesnt_exist
-Error code: 123ABC
+Trace ID: 1694430565660
+Date: 11/09/2023 13:09:25
+Error text: No results found
+Error code: PGRNF.1001
 Request type: GET
-{"controller":"Cars_Controller","method":"getAllData"}
+{"controller":"Cars_Controller","method":"getAllRecords"}
 Error:
-Class: Application
-Function: __construct
-Variable: Cars_Controller
-File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
 -----------------------------------
 
 --------------- Error -------------
-Trace ID: 1694376373315
-Date: 10/09/2023 22:06:13
-Error text: controller_doesnt_exist
-Error code: 123ABC
+Trace ID: 1694430575201
+Date: 11/09/2023 13:09:35
+Error text: No results found
+Error code: PGRNF.1001
 Request type: GET
-{"controller":"Cars_Controller","method":"getAllData"}
+{"controller":"Cars_Controller","method":"getAllRecords"}
 Error:
-Class: Application
-Function: __construct
-Variable: Cars_Controller
-File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
 -----------------------------------
 
 --------------- Error -------------
-Trace ID: 1694376396494
-Date: 10/09/2023 22:06:36
-Error text: controller_doesnt_exist
-Error code: 123ABC
+Trace ID: 1694430577258
+Date: 11/09/2023 13:09:37
+Error text: No results found
+Error code: PGRNF.1001
 Request type: GET
-{"controller":"Cars_Controller","method":"getAllData"}
+{"controller":"Cars_Controller","method":"getAllRecords"}
 Error:
-Class: Application
-Function: __construct
-Variable: Cars_Controller
-File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
 -----------------------------------
 
 --------------- Error -------------
-Trace ID: 1694376417932
-Date: 10/09/2023 22:06:57
-Error text: controller_doesnt_exist
-Error code: 123ABC
+Trace ID: 1694430587666
+Date: 11/09/2023 13:09:47
+Error text: No results found
+Error code: PGRNF.1001
 Request type: GET
-{"controller":"Cars_Controller","method":"getAllData"}
+{"controller":"Cars_Controller","method":"getAllRecords"}
 Error:
-Class: Application
-Function: __construct
-Variable: Cars_Controller
-File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
 -----------------------------------
 
 --------------- Error -------------
-Trace ID: 1694376424462
-Date: 10/09/2023 22:07:04
-Error text: controller_doesnt_exist
-Error code: 123ABC
+Trace ID: 1694433100211
+Date: 11/09/2023 13:51:40
+Error text: No results found
+Error code: PGRNF.1001
 Request type: GET
-{"controller":"Cars_Controller","method":"getAllData"}
+{"controller":"Cars_Controller","method":"getAllRecords"}
 Error:
-Class: Application
-Function: __construct
-Variable: Cars_Controller
-File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
 -----------------------------------
 
 --------------- Error -------------
-Trace ID: 1694376430551
-Date: 10/09/2023 22:07:10
-Error text: controller_doesnt_exist
-Error code: 123ABC
-Request type: GET
-{"controller":"Cars_Controller","method":"getAllData"}
-Error:
-Class: Application
-Function: __construct
-Variable: Cars_Controller
-File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
------------------------------------
-
---------------- Error -------------
-Trace ID: 1694376461253
-Date: 10/09/2023 22:07:41
-Error text: controller_doesnt_exist
-Error code: 123ABC
-Request type: GET
-{"controller":"Cars_Controller","method":"getAllData"}
-Error:
-Class: Application
-Function: __construct
-Variable: Cars_Controller
-File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
------------------------------------
-
---------------- Error -------------
-Trace ID: 1694376472129
-Date: 10/09/2023 22:07:52
-Error text: controller_doesnt_exist
-Error code: 123ABC
-Request type: GET
-{"controller":"Cars_Controller","method":"getAllData"}
-Error:
-Class: Application
-Function: __construct
-Variable: Cars_Controller
-File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
------------------------------------
-
---------------- Error -------------
-Trace ID: 1694376473884
-Date: 10/09/2023 22:07:53
-Error text: controller_doesnt_exist
-Error code: 123ABC
-Request type: GET
-{"controller":"Cars_Controller","method":"getAllData"}
-Error:
-Class: Application
-Function: __construct
-Variable: Cars_Controller
-File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
------------------------------------
-
---------------- Error -------------
-Trace ID: 1694376478377
-Date: 10/09/2023 22:07:58
-Error text: controller_doesnt_exist
-Error code: 123ABC
-Request type: GET
-{"controller":"Cars_Controller","method":"getAllData"}
-Error:
-Class: Application
-Function: __construct
-Variable: Cars_Controller
-File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
------------------------------------
-
---------------- Error -------------
-Trace ID: 1694376510408
-Date: 10/09/2023 22:08:30
-Error text: controller_doesnt_exist
-Error code: 123ABC
-Request type: GET
-{"controller":"Cars_Controller","method":"getAllData"}
-Error:
-Class: Application
-Function: __construct
-Variable: Cars_Controller
-File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
------------------------------------
-
---------------- Error -------------
-Trace ID: 1694376514649
-Date: 10/09/2023 22:08:34
-Error text: controller_doesnt_exist
-Error code: 123ABC
-Request type: GET
-{"controller":"Cars_Controller","method":"getAllData"}
-Error:
-Class: Application
-Function: __construct
-Variable: Cars_Controller
-File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
------------------------------------
-
---------------- Error -------------
-Trace ID: 1694376519466
-Date: 10/09/2023 22:08:39
-Error text: controller_doesnt_exist
-Error code: 123ABC
-Request type: GET
-{"controller":"Cars_Controller","method":"getAllData"}
-Error:
-Class: Application
-Function: __construct
-Variable: Cars_Controller
-File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
------------------------------------
-
---------------- Error -------------
-Trace ID: 1694376531465
-Date: 10/09/2023 22:08:51
-Error text: controller_doesnt_exist
-Error code: 123ABC
-Request type: GET
-{"controller":"Cars_Controller","method":"getAllData"}
-Error:
-Class: Application
-Function: __construct
-Variable: Cars_Controller
-File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
------------------------------------
-
---------------- Error -------------
-Trace ID: 1694376556189
-Date: 10/09/2023 22:09:16
-Error text: controller_doesnt_exist
-Error code: 123ABC
-Request type: GET
-{"controller":"Cars_Controller","method":"getAllData"}
-Error:
-Class: Application
-Function: __construct
-Variable: Cars_Controller
-File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
------------------------------------
-
---------------- Error -------------
-Trace ID: 1694376585262
-Date: 10/09/2023 22:09:45
+Trace ID: 1694443033988
+Date: 11/09/2023 16:37:13
 Error text: controller does not exists
 Error code: 123ABC
 Request type: GET
-{"controller":"Cars_Controller","method":"getAllData"}
+{"controller":"Login_Controller","method":"performLogin","params":{"email":"soleman630@gmail.com","password":"admin"}}
 Error:
-Class: Application
-Function: __construct
-Variable: Cars_Controller
-File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+Variable: Login_Controller
 -----------------------------------
 
 --------------- Error -------------
-Trace ID: 1694376595875
-Date: 10/09/2023 22:09:55
+Trace ID: 1694443075626
+Date: 11/09/2023 16:37:55
 Error text: controller does not exists
 Error code: 123ABC
 Request type: GET
-{"controller":"Cars_Controller","method":"getAllData"}
+{"controller":"Login_Controller","method":"performLogin","params":{"email":"soleman630@gmail.com","password":"admin"}}
 Error:
-Class: Application
-Function: __construct
-Variable: Cars_Controller
-File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+Variable: Login_Controller
 -----------------------------------
 
 --------------- Error -------------
-Trace ID: 1694376607979
-Date: 10/09/2023 22:10:07
+Trace ID: 1694443078866
+Date: 11/09/2023 16:37:58
 Error text: controller does not exists
 Error code: 123ABC
 Request type: GET
-{"controller":"Cars_Controller","method":"getAllData"}
+{"controller":"Login_Controller","method":"performLogin","params":{"email":"soleman630@gmail.com","password":"admin"}}
 Error:
-Class: Application
-Function: __construct
-Variable: Cars_Controller
-File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+Variable: Login_Controller
 -----------------------------------
 
 --------------- Error -------------
-Trace ID: 1694376614063
-Date: 10/09/2023 22:10:14
+Trace ID: 1694443084669
+Date: 11/09/2023 16:38:04
 Error text: controller does not exists
 Error code: 123ABC
 Request type: GET
-{"controller":"Cars_Controller","method":"getAllData"}
+{"controller":"Login_Controller","method":"performLogin","params":{"email":"soleman630@gmail.com","password":"admin"}}
 Error:
-Class: Application
-Function: __construct
-Variable: Cars_Controller
-File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+Variable: Login_Controller
 -----------------------------------
 
 --------------- Error -------------
-Trace ID: 1694376672426
-Date: 10/09/2023 22:11:12
+Trace ID: 1694443098815
+Date: 11/09/2023 16:38:18
 Error text: controller does not exists
 Error code: 123ABC
 Request type: GET
-{"controller":"Cars_Controller","method":"getAllData"}
+{"controller":"Login_Controller","method":"performLogin","params":{"email":"soleman630@gmail.com","password":"admin"}}
 Error:
-Class: Application
-Function: __construct
-Variable: Cars_Controller
-File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+Variable: Login_Controller
 -----------------------------------
 
 --------------- Error -------------
-Trace ID: 1694376728817
-Date: 10/09/2023 22:12:08
+Trace ID: 1694443113548
+Date: 11/09/2023 16:38:33
 Error text: controller does not exists
 Error code: 123ABC
 Request type: GET
-{"controller":"Cars_Controller","method":"getAllData"}
+{"controller":"Login_Controller","method":"performLogin","params":{"email":"soleman630@gmail.com","password":"admin"}}
 Error:
-Class: Application
-Function: __construct
-Variable: Cars_Controller
-File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+Variable: Login_Controller
 -----------------------------------
 
 --------------- Error -------------
-Trace ID: 1694376745241
-Date: 10/09/2023 22:12:25
+Trace ID: 1694443117918
+Date: 11/09/2023 16:38:37
 Error text: controller does not exists
 Error code: 123ABC
 Request type: GET
-{"controller":"Cars_Controller","method":"getAllData"}
+{"controller":"Login_Controller","method":"performLogin","params":{"email":"soleman630@gmail.com","password":"admin"}}
 Error:
-Class: Application
-Function: __construct
-Variable: Cars_Controller
-File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+Variable: Login_Controller
 -----------------------------------
 
 --------------- Error -------------
-Trace ID: 1694376763189
-Date: 10/09/2023 22:12:43
+Trace ID: 1694443122333
+Date: 11/09/2023 16:38:42
 Error text: controller does not exists
 Error code: 123ABC
 Request type: GET
-{"controller":"Cars_Controller","method":"getAllData"}
+{"controller":"Login_Controller","method":"performLogin","params":{"email":"soleman630@gmail.com","password":"admin"}}
 Error:
-Class: Application
-Function: __construct
-Variable: Cars_Controller
-File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+Variable: Login_Controller
 -----------------------------------
 
 --------------- Error -------------
-Trace ID: 1694376792783
-Date: 10/09/2023 22:13:12
+Trace ID: 1694443127781
+Date: 11/09/2023 16:38:47
 Error text: controller does not exists
 Error code: 123ABC
 Request type: GET
-{"controller":"Cars_Controller","method":"getAllData"}
+{"controller":"Login_Controller","method":"performLogin","params":{"email":"soleman630@gmail.com","password":"admin"}}
 Error:
-Class: Application
-Function: __construct
-Variable: Cars_Controller
-File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+Variable: Login_Controller
 -----------------------------------
 
 --------------- Error -------------
-Trace ID: 1694376804607
-Date: 10/09/2023 22:13:24
+Trace ID: 1694443140604
+Date: 11/09/2023 16:39:00
 Error text: controller does not exists
 Error code: 123ABC
 Request type: GET
-{"controller":"Cars_Controller","method":"getAllData"}
+{"controller":"Login_Controller","method":"performLogin","params":{"email":"soleman630@gmail.com","password":"admin"}}
 Error:
-Class: Application
-Function: __construct
-Variable: Cars_Controller
-File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+Variable: Login_Controller
 -----------------------------------
 
 --------------- Error -------------
-Trace ID: 1694376810704
-Date: 10/09/2023 22:13:30
+Trace ID: 1694443146024
+Date: 11/09/2023 16:39:06
 Error text: controller does not exists
 Error code: 123ABC
 Request type: GET
-{"controller":"Cars_Controller","method":"getAllData"}
+{"controller":"Login_Controller","method":"performLogin","params":{"email":"soleman630@gmail.com","password":"admin"}}
 Error:
-Class: Application
-Function: __construct
-Variable: Cars_Controller
-File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+Variable: Login_Controller
 -----------------------------------
 
 --------------- Error -------------
-Trace ID: 1694376840038
-Date: 10/09/2023 22:14:00
+Trace ID: 1694443154173
+Date: 11/09/2023 16:39:14
 Error text: controller does not exists
 Error code: 123ABC
 Request type: GET
-{"controller":"Cars_Controller","method":"getAllData"}
+{"controller":"Login_Controller","method":"performLogin","params":{"email":"soleman630@gmail.com","password":"admin"}}
 Error:
-Class: Application
-Function: __construct
-Variable: Cars_Controller
-File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+Variable: Login_Controller
 -----------------------------------
 
 --------------- Error -------------
-Trace ID: 1694376863629
-Date: 10/09/2023 22:14:23
+Trace ID: 1694443173643
+Date: 11/09/2023 16:39:33
 Error text: controller does not exists
 Error code: 123ABC
 Request type: GET
-{"controller":"Cars_Controller","method":"getAllData"}
+{"controller":"Login_Controller","method":"performLogin","params":{"email":"soleman630@gmail.com","password":"admin"}}
 Error:
-Class: Application
-Function: __construct
-Variable: Cars_Controller
-File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+Variable: Login_Controller
 -----------------------------------
 
 --------------- Error -------------
-Trace ID: 1694376906887
-Date: 10/09/2023 22:15:06
+Trace ID: 1694443220522
+Date: 11/09/2023 16:40:20
 Error text: controller does not exists
 Error code: 123ABC
 Request type: GET
-{"controller":"Cars_Controller","method":"getAllData"}
+{"controller":"Login_Controller","method":"performLogin","params":{"email":"soleman630@gmail.com","password":"admin"}}
 Error:
-Class: Application
-Function: __construct
-Variable: Cars_Controller
-File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+Variable: Login_Controller
 -----------------------------------
 
 --------------- Error -------------
-Trace ID: 1694376913304
-Date: 10/09/2023 22:15:13
+Trace ID: 1694443230560
+Date: 11/09/2023 16:40:30
 Error text: controller does not exists
 Error code: 123ABC
 Request type: GET
-{"controller":"Cars_Controller","method":"getAllData"}
+{"controller":"Login_Controller","method":"performLogin","params":{"email":"soleman630@gmail.com","password":"admin"}}
 Error:
-Class: Application
-Function: __construct
-Variable: Cars_Controller
-File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+Variable: Login_Controller
 -----------------------------------
 
 --------------- Error -------------
-Trace ID: 1694376922302
-Date: 10/09/2023 22:15:22
+Trace ID: 1694443250095
+Date: 11/09/2023 16:40:50
 Error text: controller does not exists
 Error code: 123ABC
 Request type: GET
-{"controller":"Cars_Controller","method":"getAllData"}
+{"controller":"Login_Controller","method":"performLogin","params":{"email":"soleman630@gmail.com","password":"admin"}}
 Error:
-Class: Application
-Function: __construct
-Variable: Cars_Controller
-File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+Variable: Login_Controller
 -----------------------------------
 
 --------------- Error -------------
-Trace ID: 1694376999218
-Date: 10/09/2023 22:16:39
-Error text: method does not exists
+Trace ID: 1694443338176
+Date: 11/09/2023 16:42:18
+Error text: Model doesnt exists
 Error code: 123ABC
 Request type: GET
-{"controller":"Cars_Controller","method":"getAllData"}
+{"controller":"Login_Controller","method":"performLogin","params":{"email":"soleman630@gmail.com","password":"admin"}}
 Error:
-Class: Application
-Function: __construct
-Variable: getAllData
-File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
 -----------------------------------
 
 --------------- Error -------------
-Trace ID: 1694377090936
-Date: 10/09/2023 22:18:10
-Error text: method does not exists
-Error code: 123ABC
+Trace ID: 1694443663627
+Date: 11/09/2023 16:47:43
+Error text: Missing email Parameter
+Error code: AME.1001
 Request type: GET
-{"controller":"Cars_Controller","method":"getAllData"}
+{"controller":"Login_Controller","method":"performAdminLogin","params":{"email":"soleman630@gmail.com"}}
 Error:
-Class: Application
-Function: __construct
-Variable: getAllData
-File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+Variable: email
+details: "Trying to login without passing required parameter"
 -----------------------------------
 
 --------------- Error -------------
-Trace ID: 1694377122145
-Date: 10/09/2023 22:18:42
-Error text: method does not exists
-Error code: 123ABC
+Trace ID: 1694443680545
+Date: 11/09/2023 16:48:00
+Error text: Missing email Parameter
+Error code: AME.1001
 Request type: GET
-{"controller":"Cars_Controller","method":"getAllData"}
+{"controller":"Login_Controller","method":"performAdminLogin","params":{"email":"soleman630@gmail.com"}}
 Error:
-Class: Application
-Function: __construct
-Variable: getAllData
-File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php
+Variable: email
+details: "Trying to login without passing required parameter"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694443699308
+Date: 11/09/2023 16:48:19
+Error text: Missing email Parameter
+Error code: AME.1001
+Request type: GET
+{"controller":"Login_Controller","method":"performAdminLogin","params":{"password":"admin"}}
+Error:
+Variable: email
+details: "Trying to login without passing required parameter"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694443709524
+Date: 11/09/2023 16:48:29
+Error text: Missing email Parameter
+Error code: AME.1001
+Request type: GET
+{"controller":"Login_Controller","method":"performAdminLogin"}
+Error:
+Variable: email
+details: "Trying to login without passing required parameter"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694443709525
+Date: 11/09/2023 16:48:29
+Error text: Missing email Parameter
+Error code: AME.1001
+Request type: GET
+{"controller":"Login_Controller","method":"performAdminLogin"}
+Error:
+Variable: email
+details: "Trying to login without passing required parameter"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694443744258
+Date: 11/09/2023 16:49:04
+Error text: Missing email Parameter
+Error code: AME.1001
+Request type: GET
+{"controller":"Login_Controller","method":"performAdminLogin"}
+Error:
+Variable: email
+details: "Trying to login without passing required parameter"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694443923590
+Date: 11/09/2023 16:52:03
+Error text: User not found
+Error code: ARU.1001
+Request type: GET
+{"controller":"Login_Controller","method":"performAdminLogin","params":{"email":"soleman6300@gmail.com","password":"admin"}}
+Error:
+Variable: email
+details: "Trying to login without passing required parameter"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694443993874
+Date: 11/09/2023 16:53:13
+Error text: User not found
+Error code: ARU.1001
+Request type: GET
+{"controller":"Login_Controller","method":"performAdminLogin","params":{"email":"soleman6030@gmail.com","password":"admin"}}
+Error:
+Variable: email
+details: "Trying to login without passing required parameter"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694444243373
+Date: 11/09/2023 16:57:23
+Error text: Invalid password
+Error code: ARI.1002
+Request type: GET
+{"controller":"Login_Controller","method":"performAdminLogin","params":{"email":"soleman630@gmail.com","password":"admin1"}}
+Error:
+Variable: password
+details: "Check if provided password matches the hashed password."
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694444285622
+Date: 11/09/2023 16:58:05
+Error text: Invalid password
+Error code: ARI.1002
+Request type: GET
+{"controller":"Login_Controller","method":"performAdminLogin","params":{"email":"soleman630@gmail.com","password":"admin1"}}
+Error:
+Variable: password
+details: "Check if provided password matches the hashed password."
 -----------------------------------

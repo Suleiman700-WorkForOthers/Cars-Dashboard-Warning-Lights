@@ -1,5 +1,5 @@
 
-import { API } from '../constants/API.js';
+import { API } from '../../constants/API.js';
 
 class Request {
 
@@ -25,13 +25,19 @@ class Request {
                             icon: 'error',
                             title: 'Error',
                             html: `
-                                    <span>${response.errors[0]['errorText']}</span><br>
-                                    <span>Trace ID: </span><span class="text-danger" style="white-space: pre;">${response.errors[0]['errorTraceID']}</span>
-                                `,
+                                <span>${response.errors[0]['errorText']}</span><br>
+                                ${response.errors[0]['errorVariable']?
+                                    `<span>Error variable: </span><span style="white-space: pre;">${response.errors[0]['errorVariable']}</span><br>`
+                                    :''
+                                }
+                                <br><span>Trace ID: </span><span class="text-danger" style="white-space: pre;">${response.errors[0]['errorTraceID']}</span><br>
+                            `,
                             showConfirmButton: true,
                             confirmButtonText: 'Close',
                         });
+                        return
                     }
+                    resolve(response)
                 },
                 error: (e) => {
                     const requestStatue = e.status; // 500

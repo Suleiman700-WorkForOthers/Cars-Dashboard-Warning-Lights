@@ -1,7 +1,26 @@
 <?php
 
 $ERROR_CODES = [
-    "PERSONS" => array(
+    "CARS" => array(
+        "GET" => array(
+            'MISSING_REQUEST_PARAMS' => [
+                'ID' => [
+                    "NAME" => "Missing ID Parameter",
+                    "CODE" => "PGMRPID.1001",
+                    "CAUSE" => "Found out that param is missing from the request.",
+                    "FIX" => "Make sure that the param exists in the request data."
+                ],
+            ],
+            'RESULTS' => [
+                "NO_RESULTS" => array(
+                    "NAME" => "No results found",
+                    "CODE" => "PGRNF.1001",
+                    "CAUSE" => "No data found in database.",
+                    "FIX" => "Check if data exists in the database."
+                ),
+            ],
+        ),
+
         "CREATE" => [
             'MISSING_REQUEST_PARAMS' => [
                 'NAME' => [
@@ -84,25 +103,55 @@ $ERROR_CODES = [
                 ],
             ],
         ],
-        "GET" => array(
-            'MISSING_REQUEST_PARAMS' => [
-                'ID' => [
-                    "NAME" => "Missing ID Parameter",
-                    "CODE" => "PGMRPID.1001",
-                    "CAUSE" => "Found out that param is missing from the request.",
-                    "FIX" => "Make sure that the param exists in the request data."
-                ],
-            ],
+    ),
+    "SUB_CARS" => [
+        "GET" => [
             'RESULTS' => [
-                "NO_RESULTS" => array(
+                "NO_RESULTS" => [
                     "NAME" => "No results found",
-                    "CODE" => "PGRNF.1001",
+                    "CODE" => "SGRN.1001",
                     "CAUSE" => "No data found in database.",
                     "FIX" => "Check if data exists in the database."
-                ),
+                ],
             ],
-        ),
-    ),
+        ],
+    ],
+    "ADMIN_LOGIN" => [
+        'MISSING_REQUEST_PARAMS' => [
+            'EMAIL' => [
+                "NAME" => "Missing email Parameter",
+                "CODE" => "AME.1001",
+                "CAUSE" => "Found out that param is missing from the request.",
+                "FIX" => "Make sure that the param exists in the request data."
+            ],
+            'PASSWORD' => [
+                "NAME" => "Missing email Parameter",
+                "CODE" => "AME.1002",
+                "CAUSE" => "Found out that param is missing from the request.",
+                "FIX" => "Make sure that the param exists in the request data."
+            ],
+        ],
+        'RESULTS' => [
+            "USER_NOT_FOUND" => [
+                "NAME" => "User not found",
+                "CODE" => "ARU.1001",
+                "CAUSE" => "User not found in database.",
+                "FIX" => "Check if user exists in the database."
+            ],
+            "INVALID_PASSWORD" => [
+                "NAME" => "Invalid password",
+                "CODE" => "ARI.1002",
+                "CAUSE" => "Failed to verify password hash.",
+                "FIX" => "Check if provided password matches the hashed password."
+            ],
+        ],
+    ],
+
+
+
+
+
+
     "REPAIRS" => [
         "CREATE" => [
             'MISSING_REQUEST_PARAMS' => [

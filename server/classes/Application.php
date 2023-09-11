@@ -33,12 +33,12 @@ class Application
             }
             else {
                 // generate error
-                $this->errors[] = $Errors->setErrorText('method does not exists')->setErrorCode('123ABC')->setErrorClass(__CLASS__)->setErrorFunction(__FUNCTION__)->setErrorFile(__FILE__)->setErrorVariable($_method)->setErrorDetails('')->gen();
+                $this->errors[] = $Errors->setErrorText('method does not exists')->setErrorCode('123ABC')->setErrorVariable($_method)->setErrorDetails('')->gen();
             }
         }
         else {
             // generate error
-            $this->errors[] = $Errors->setErrorText('controller does not exists')->setErrorCode('123ABC')->setErrorClass(__CLASS__)->setErrorFunction(__FUNCTION__)->setErrorFile(__FILE__)->setErrorVariable($_controllerName)->setErrorDetails('')->gen();
+            $this->errors[] = $Errors->setErrorText('controller does not exists')->setErrorCode('123ABC')->setErrorVariable($_controllerName)->setErrorDetails('')->gen();
         }
     }
 

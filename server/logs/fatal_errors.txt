@@ -1,39 +1,73 @@
 
 -------------- Fatal Error -------------
-Trace ID: FE_1694378459042
-Date: 2023-09-10 22:40:59
+Trace ID: FE_1694442899719
+Date: 2023-09-11 16:34:59
 Request type: GET
-Request: {"controller":"Cars_Controller","method":"getAllRecords"}
-Error Message: Uncaught Error: Class "MongoDB\Driver\Manager" not found in E:\GitHub\Cars-Dashboard-Warning-Lights\server\vendor\mongodb\mongodb\src\Client.php:124
+Request: {"controller":"Login_Controller","method":"performLogin"}
+Error Message: Uncaught Error: Call to undefined method Errors::setErrorClass() in E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php:41
 Stack trace:
-#0 E:\GitHub\Cars-Dashboard-Warning-Lights\server\index.php(58): MongoDB\Client->__construct('mongodb+srv://m...')
+#0 E:\GitHub\Cars-Dashboard-Warning-Lights\server\index.php(42): Application->__construct('Login_Controlle...', 'performLogin', Array)
 #1 {main}
-  thrown in E:\GitHub\Cars-Dashboard-Warning-Lights\server\vendor\mongodb\mongodb\src\Client.php on line 124
-Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\vendor\mongodb\mongodb\src\Client.php(124)
+  thrown in E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php on line 41
+Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php(41)
 ----------------------------------------
 
 -------------- Fatal Error -------------
-Trace ID: FE_1694378495655
-Date: 2023-09-10 22:41:35
+Trace ID: FE_1694443005160
+Date: 2023-09-11 16:36:45
 Request type: GET
-Request: {"controller":"Cars_Controller","method":"getAllRecords"}
-Error Message: Uncaught Error: Class "MongoDB\Driver\Manager" not found in E:\GitHub\Cars-Dashboard-Warning-Lights\server\vendor\mongodb\mongodb\src\Client.php:124
+Request: {"controller":"Login_Controller","method":"performLogin","params":{"email":"soleman630@gmail.com","password":"admin"}}
+Error Message: Uncaught Error: Call to undefined method Errors::setErrorClass() in E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php:41
 Stack trace:
-#0 E:\GitHub\Cars-Dashboard-Warning-Lights\server\index.php(58): MongoDB\Client->__construct('mongodb+srv://m...')
+#0 E:\GitHub\Cars-Dashboard-Warning-Lights\server\index.php(42): Application->__construct('Login_Controlle...', 'performLogin', Array)
 #1 {main}
-  thrown in E:\GitHub\Cars-Dashboard-Warning-Lights\server\vendor\mongodb\mongodb\src\Client.php on line 124
-Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\vendor\mongodb\mongodb\src\Client.php(124)
+  thrown in E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php on line 41
+Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php(41)
 ----------------------------------------
 
 -------------- Fatal Error -------------
-Trace ID: FE_1694378569203
-Date: 2023-09-10 22:42:49
+Trace ID: FE_1694443323666
+Date: 2023-09-11 16:42:03
 Request type: GET
-Request: {"controller":"Cars_Controller","method":"getAllRecords"}
-Error Message: Uncaught Error: Class "MongoDB\Driver\Manager" not found in E:\GitHub\Cars-Dashboard-Warning-Lights\server\vendor\mongodb\mongodb\src\Client.php:124
+Request: {"controller":"Login_Controller","method":"performLogin","params":{"email":"soleman630@gmail.com","password":"admin"}}
+Error Message: Uncaught Error: Call to undefined method Errors::setErrorClass() in E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\Controller.php:30
 Stack trace:
-#0 E:\GitHub\Cars-Dashboard-Warning-Lights\server\index.php(58): MongoDB\Client->__construct('mongodb+srv://m...')
-#1 {main}
-  thrown in E:\GitHub\Cars-Dashboard-Warning-Lights\server\vendor\mongodb\mongodb\src\Client.php on line 124
-Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\vendor\mongodb\mongodb\src\Client.php(124)
+#0 E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\Login_Controller.php(21): Controller->setModel('Login_Model')
+#1 E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php(49): Login_Controller->performLogin()
+#2 E:\GitHub\Cars-Dashboard-Warning-Lights\server\index.php(43): Application->execute()
+#3 {main}
+  thrown in E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\Controller.php on line 30
+Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\Controller.php(30)
+----------------------------------------
+
+-------------- Fatal Error -------------
+Trace ID: FE_1694443338177
+Date: 2023-09-11 16:42:18
+Request type: GET
+Request: {"controller":"Login_Controller","method":"performLogin","params":{"email":"soleman630@gmail.com","password":"admin"}}
+Error Message: Uncaught Error: Call to a member function filter() on null in E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\Login_Controller.php:22
+Stack trace:
+#0 E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php(49): Login_Controller->performLogin()
+#1 E:\GitHub\Cars-Dashboard-Warning-Lights\server\index.php(43): Application->execute()
+#2 {main}
+  thrown in E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\Login_Controller.php on line 22
+Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\Login_Controller.php(22)
+----------------------------------------
+
+-------------- Fatal Error -------------
+Trace ID: FE_1694444031699
+Date: 2023-09-11 16:53:51
+Request type: GET
+Request: {"controller":"Login_Controller","method":"performAdminLogin","params":{"email":"soleman630@gmail.com","password":"admin"}}
+Error Message: Undefined array key "password"
+Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\Login_Controller.php(54)
+----------------------------------------
+
+-------------- Fatal Error -------------
+Trace ID: FE_1694444044857
+Date: 2023-09-11 16:54:04
+Request type: GET
+Request: {"controller":"Login_Controller","method":"performAdminLogin","params":{"email":"soleman630@gmail.com","password":"admin"}}
+Error Message: Undefined array key "password"
+Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\Login_Controller.php(58)
 ----------------------------------------
