@@ -8,7 +8,7 @@ require_once 'ValidatorIDCard.php';
 require_once 'ValidatorIMEI.php';
 
 $ValidatorHandler = new ValidatorHandler([
-        new ValidatorEmail('user@domain.com'),
+        new ValidateMongoObjectId('user@domain.com'),
         new ValidatorMobile('0521236699'),
         new ValidatorIDCard('123456789'),
         new ValidatorIMEI('1234568598'),

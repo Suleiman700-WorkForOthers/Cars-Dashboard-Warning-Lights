@@ -1,6 +1,6 @@
 <?php
 
-class Cars_Controller extends Controller
+class CarsModels_Controller extends Controller
 {
     public function __construct($_params)
     {
@@ -12,23 +12,7 @@ class Cars_Controller extends Controller
      */
     function getAllRecords()
     {
-//        $_params = [
-//            'logo' => 'Renault',
-//        ];
-//        $array_search = [
-//            'name' => ['s'],
-//        ];
-//        $data = $this->model->filter($_params, $array_search);
-//
-//        // Extract the result into an array
-//        $result = iterator_to_array($data);
-//
-//        // Output the result
-//        echo '<pre>';
-//        print_r($result[0]['name']);
-//        echo '</pre>';
-
-        $this->setModel('Cars_Model');
+        $this->setModel('CarsModels_Model');
         $records = $this->model->getAllRecords();
 
         // check for errors
@@ -42,27 +26,6 @@ class Cars_Controller extends Controller
 
         return $this;
     }
-
-    /**
-     * get all cars sub models
-     */
-    function getAllSubModels()
-    {
-        $this->setModel('Cars_Models_Model');
-        $records = $this->model->getAllRecords();
-
-        // check for errors
-        if (empty($records->errors)) {
-            $this->state = true;
-            $this->data = $records;
-        }
-        else {
-            $this->state = false;
-        }
-
-        return $this;
-    }
-
 
     /**
      * Get record by id
@@ -77,7 +40,7 @@ class Cars_Controller extends Controller
             // store error
             $errorText = $ERROR_CODES['CARS']['GET']['MISSING_REQUEST_PARAMS']['ID']['NAME'];
             $errorCode = $ERROR_CODES['CARS']['GET']['MISSING_REQUEST_PARAMS']['ID']['CODE'];
-            $this->errors[] = $Errors->setErrorText($errorText)->setErrorCode($errorCode)->setErrorVariable('id')->setErrorDetails('id parameter is required')->gen();
+            $this->errors[] = $Errors->setErrorText($errorText)->setErrorCode($errorCode)->setErrorVariable('id')->setErrorDetails('')->gen();
             $this->state = false;
             return $this;
         }
@@ -89,12 +52,12 @@ class Cars_Controller extends Controller
             // store error
             $errorText = $ERROR_CODES['CARS']['GET']['INVALID_DATA_TYPES']['OBJECT_ID']['NAME'];
             $errorCode = $ERROR_CODES['CARS']['GET']['INVALID_DATA_TYPES']['OBJECT_ID']['CODE'];
-            $this->errors[] = $Errors->setErrorText($errorText)->setErrorCode($errorCode)->setErrorVariable('id')->setErrorDetails('id parameter is required')->gen();
+            $this->errors[] = $Errors->setErrorText($errorText)->setErrorCode($errorCode)->setErrorVariable('id')->setErrorDetails('')->gen();
             $this->state = false;
             return $this;
         }
 
-        $this->setModel('Cars_Model');
+        $this->setModel('CarsModels_Model');
         $record = $this->model->getRecordById($this->params['id']);
 
         if (empty($record)) {
@@ -120,9 +83,9 @@ class Cars_Controller extends Controller
         // Check passed id
         if (!isset($this->params['id']) || empty($this->params['id'])) {
             // store error
-            $errorText = $ERROR_CODES['CARS']['UPDATE']['MISSING_REQUEST_PARAMS']['ID']['NAME'];
-            $errorCode = $ERROR_CODES['CARS']['UPDATE']['MISSING_REQUEST_PARAMS']['ID']['CODE'];
-            $this->errors[] = $Errors->setErrorText($errorText)->setErrorCode($errorCode)->setErrorVariable('id')->setErrorDetails('id parameter is required')->gen();
+            $errorText = $ERROR_CODES['CARS_MODELS']['UPDATE']['MISSING_REQUEST_PARAMS']['ID']['NAME'];
+            $errorCode = $ERROR_CODES['CARS_MODELS']['UPDATE']['MISSING_REQUEST_PARAMS']['ID']['CODE'];
+            $this->errors[] = $Errors->setErrorText($errorText)->setErrorCode($errorCode)->setErrorVariable('id')->setErrorDetails('')->gen();
             $this->state = false;
             return $this;
         }
@@ -132,20 +95,26 @@ class Cars_Controller extends Controller
         $validator->validate();
         if (!$validator->state) {
             // store error
-            $errorText = $ERROR_CODES['CARS']['UPDATE']['INVALID_DATA_TYPES']['OBJECT_ID']['NAME'];
-            $errorCode = $ERROR_CODES['CARS']['UPDATE']['INVALID_DATA_TYPES']['OBJECT_ID']['CODE'];
-            $this->errors[] = $Errors->setErrorText($errorText)->setErrorCode($errorCode)->setErrorVariable('id')->setErrorDetails('id parameter is required')->gen();
+            $errorText = $ERROR_CODES['CARS_MODELS']['UPDATE']['INVALID_DATA_TYPES']['OBJECT_ID']['NAME'];
+            $errorCode = $ERROR_CODES['CARS_MODELS']['UPDATE']['INVALID_DATA_TYPES']['OBJECT_ID']['CODE'];
+            $this->errors[] = $Errors->setErrorText($errorText)->setErrorCode($errorCode)->setErrorVariable('id')->setErrorDetails('')->gen();
             $this->state = false;
             return $this;
         }
 
         // Validate data to update
         $fields = [
-            'manufacturer' => [
-                'error' => $ERROR_CODES['CARS']['UPDATE']['MISSING_REQUEST_PARAMS']['MANUFACTURER']
+            'car_id' => [
+                'error' => $ERROR_CODES['CARS_MODELS']['UPDATE']['MISSING_REQUEST_PARAMS']['CAR_ID']
             ],
-            'logo' => [
-                'error' => $ERROR_CODES['CARS']['UPDATE']['MISSING_REQUEST_PARAMS']['LOGO']
+            'name' => [
+                'error' => $ERROR_CODES['CARS_MODELS']['UPDATE']['MISSING_REQUEST_PARAMS']['NAME']
+            ],
+            'years' => [
+                'error' => $ERROR_CODES['CARS_MODELS']['UPDATE']['MISSING_REQUEST_PARAMS']['YERAS']
+            ],
+            'image' => [
+                'error' => $ERROR_CODES['CARS_MODELS']['UPDATE']['MISSING_REQUEST_PARAMS']['IMAGE']
             ],
         ];
         foreach ($fields as $param => $data) {
@@ -153,24 +122,26 @@ class Cars_Controller extends Controller
             // Check if param found in request
             if (!isset($this->params[$param]) || empty($this->params[$param])) {
                 // store error
-                $this->errors[] = $Errors->setErrorText($error['NAME'])->setErrorCode($error['CODE'])->setErrorVariable($param)->setErrorDetails('id parameter is required')->gen();
+                $this->errors[] = $Errors->setErrorText($error['NAME'])->setErrorCode($error['CODE'])->setErrorVariable($param)->setErrorDetails('')->gen();
                 $this->state = false;
                 return $this;
             }
         }
 
         $dataToUpdate = [
-            'manufacturer' => $this->params['manufacturer'],
-            'logo' => $this->params['logo'],
+            'car_id' => $this->params['car_id'],
+            'name' => $this->params['name'],
+            'years' => $this->params['years'],
+            'image' => $this->params['image'],
         ];
 
-        $this->setModel('Cars_Model');
+        $this->setModel('CarsModels_Model');
         $updated = $this->model->updateRecordData($this->params['id'], $dataToUpdate);
 
         if (!$updated) {
             // store error
-            $errorText = $ERROR_CODES['CARS']['UPDATE']['FAILED_TO_UPDATE']['NAME'];
-            $errorCode = $ERROR_CODES['CARS']['UPDATE']['FAILED_TO_UPDATE']['CODE'];
+            $errorText = $ERROR_CODES['CARS_MODELS']['UPDATE']['FAILED_TO_UPDATE']['NAME'];
+            $errorCode = $ERROR_CODES['CARS_MODELS']['UPDATE']['FAILED_TO_UPDATE']['CODE'];
             $this->errors[] = $Errors->setErrorText($errorText)->setErrorCode($errorCode)->setErrorVariable('')->setErrorDetails('')->gen();
             $this->state = false;
             return $this;
@@ -181,6 +152,14 @@ class Cars_Controller extends Controller
         }
     }
 
+
+
+
+
+
+
+
+
     /**
      * Create new record
      */
@@ -189,11 +168,17 @@ class Cars_Controller extends Controller
 
         // Validate data to update
         $fields = [
-            'manufacturer' => [
-                'error' => $ERROR_CODES['CARS']['CREATE']['MISSING_REQUEST_PARAMS']['MANUFACTURER']
+            'car_id' => [
+                'error' => $ERROR_CODES['CARS_MODELS']['CREATE']['MISSING_REQUEST_PARAMS']['CAR_ID']
             ],
-            'logo' => [
-                'error' => $ERROR_CODES['CARS']['CREATE']['MISSING_REQUEST_PARAMS']['LOGO']
+            'name' => [
+                'error' => $ERROR_CODES['CARS_MODELS']['CREATE']['MISSING_REQUEST_PARAMS']['NAME']
+            ],
+            'years' => [
+                'error' => $ERROR_CODES['CARS_MODELS']['CREATE']['MISSING_REQUEST_PARAMS']['YERAS']
+            ],
+            'image' => [
+                'error' => $ERROR_CODES['CARS_MODELS']['CREATE']['MISSING_REQUEST_PARAMS']['IMAGE']
             ],
         ];
         foreach ($fields as $param => $data) {
@@ -201,13 +186,13 @@ class Cars_Controller extends Controller
             // Check if param found in request
             if (!isset($this->params[$param]) || empty($this->params[$param])) {
                 // store error
-                $this->errors[] = $Errors->setErrorText($error['NAME'])->setErrorCode($error['CODE'])->setErrorVariable($param)->setErrorDetails('id parameter is required')->gen();
+                $this->errors[] = $Errors->setErrorText($error['NAME'])->setErrorCode($error['CODE'])->setErrorVariable($param)->setErrorDetails('')->gen();
                 $this->state = false;
                 return $this;
             }
         }
 
-        $this->setModel('Cars_Model');
+        $this->setModel('CarsModels_Model');
         $insertResult = $this->model->createNewRecord($this->params);
 
         if ($insertResult !== null) {
@@ -226,14 +211,14 @@ class Cars_Controller extends Controller
 
         if (!isset($this->params['id']) || empty(trim($this->params['id']))) {
             // store error
-            $errorText = $ERROR_CODES['CARS']['DELETE']['MISSING_REQUEST_PARAMS']['ID']['NAME'];
-            $errorCode = $ERROR_CODES['CARS']['DELETE']['MISSING_REQUEST_PARAMS']['ID']['CODE'];
+            $errorText = $ERROR_CODES['CARS_MODELS']['DELETE']['MISSING_REQUEST_PARAMS']['ID']['NAME'];
+            $errorCode = $ERROR_CODES['CARS_MODELS']['DELETE']['MISSING_REQUEST_PARAMS']['ID']['CODE'];
             $this->errors[] = $Errors->setErrorText($errorText)->setErrorCode($errorCode)->setErrorVariable('id')->setErrorDetails('')->gen();
             $this->state = false;
             return $this;
         }
 
-        $this->setModel('Cars_Model');
+        $this->setModel('CarsModels_Model');
         $result = $this->model->deleteRecord($this->params['id']);
 
         if ($result) {

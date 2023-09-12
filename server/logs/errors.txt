@@ -444,3 +444,1192 @@ Error:
 Variable: password
 details: "Check if provided password matches the hashed password."
 -----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694520096955
+Date: 12/09/2023 14:01:36
+Error text: method does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getRecordById"}
+Error:
+Variable: getRecordById
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694520221827
+Date: 12/09/2023 14:03:41
+Error text: Missing ID Parameter
+Error code: PGMRPID.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"getRecordById"}
+Error:
+Variable: id
+details: "id parameter is required"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694520938948
+Date: 12/09/2023 14:15:38
+Error text: No results found
+Error code: PGRNF.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"getRecordById","params":{"id":"64fee803195efc210d79b0b2"}}
+Error:
+Variable: id
+details: "no results found for this id"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694521647237
+Date: 12/09/2023 14:27:27
+Error text: Invalid data type
+Error code: CGI.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"getRecordById","params":{"id":"64fee803195efc210d79b0b42"}}
+Error:
+Variable: id
+details: "id parameter is required"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694521651965
+Date: 12/09/2023 14:27:31
+Error text: Invalid data type
+Error code: CGI.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"getRecordById","params":{"id":"64fee803195efc210d79b0b4"}}
+Error:
+Variable: id
+details: "id parameter is required"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694521668129
+Date: 12/09/2023 14:27:48
+Error text: Invalid data type
+Error code: CGI.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"getRecordById","params":{"id":"64fee803195efc210d79b0b4"}}
+Error:
+Variable: id
+details: "id parameter is required"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694521709881
+Date: 12/09/2023 14:28:29
+Error text: Invalid data type
+Error code: CGI.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"getRecordById","params":{"id":"64fee803195efc210d79b0b"}}
+Error:
+Variable: id
+details: "id parameter is required"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694521730634
+Date: 12/09/2023 14:28:50
+Error text: Invalid data type
+Error code: CGI.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"getRecordById","params":{"id":"64fee803195efc210d79b0b"}}
+Error:
+Variable: id
+details: "id parameter is required"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694521758428
+Date: 12/09/2023 14:29:18
+Error text: Invalid data type
+Error code: CGI.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"getRecordById","params":{"id":"64fee803195efc210d79b0b"}}
+Error:
+Variable: id
+details: "id parameter is required"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694521786392
+Date: 12/09/2023 14:29:46
+Error text: Invalid data type
+Error code: CGI.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"getRecordById","params":{"id":"64fee803195efc210d79b0b"}}
+Error:
+Variable: id
+details: "id parameter is required"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694521792320
+Date: 12/09/2023 14:29:52
+Error text: Invalid data type
+Error code: CGI.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"getRecordById","params":{"id":"64fee803195efc210d79b02"}}
+Error:
+Variable: id
+details: "id parameter is required"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694521798135
+Date: 12/09/2023 14:29:58
+Error text: No results found
+Error code: CGRN.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"getRecordById","params":{"id":"64fee803195efc210d79b0b2"}}
+Error:
+Variable: id
+details: "no results found for this id"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694521805138
+Date: 12/09/2023 14:30:05
+Error text: No results found
+Error code: CGRN.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"getRecordById","params":{"id":"64fee803195efc210d79b0b2"}}
+Error:
+Variable: id
+details: "no results found for this id"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694521825044
+Date: 12/09/2023 14:30:25
+Error text: No results found
+Error code: CGRN.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"getRecordById","params":{"id":"64fee803195efc210d79b0b2"}}
+Error:
+Variable: id
+details: "no results found for this id"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694523338928
+Date: 12/09/2023 14:55:38
+Error text: No results found
+Error code: CGRN.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"getRecordById","params":{"id":"64fef07e195efc210d79b0b3"}}
+Error:
+Variable: id
+details: "no results found for this id"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694525396570
+Date: 12/09/2023 15:29:56
+Error text: Missing logo Parameter
+Error code: CUML.1002
+Request type: GET
+{"controller":"Cars_Controller","method":"updateRecordData","params":{"id":"64fee803195efc210d79b0b4","manufacturer":"Renault"}}
+Error:
+Variable: id
+details: "id parameter is required"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694525406639
+Date: 12/09/2023 15:30:06
+Error text: Missing manufacturer Parameter
+Error code: CUMM.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"updateRecordData","params":{"id":"64fee803195efc210d79b0b4","logo":"https:\/\/seeklogo.com\/images\/R\/Renault-logo-25AC313F30-seeklogo.com.png"}}
+Error:
+Variable: manufacturer
+details: "id parameter is required"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694525585412
+Date: 12/09/2023 15:33:05
+Error text: Missing ID Parameter
+Error code: CUMI.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"updateRecordData"}
+Error:
+Variable: id
+details: "id parameter is required"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694525754670
+Date: 12/09/2023 15:35:54
+Error text: Missing manufacturer Parameter
+Error code: CUMM.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"createNewRecord"}
+Error:
+Variable: manufacturer
+details: "id parameter is required"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694525758782
+Date: 12/09/2023 15:35:58
+Error text: Missing logo Parameter
+Error code: CUML.1002
+Request type: GET
+{"controller":"Cars_Controller","method":"createNewRecord","params":{"manufacturer":"123"}}
+Error:
+Variable: logo
+details: "id parameter is required"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694525995262
+Date: 12/09/2023 15:39:55
+Error text: Missing logo Parameter
+Error code: CUML.1002
+Request type: GET
+{"controller":"Cars_Controller","method":"createNewRecord","params":{"manufacturer":"test"}}
+Error:
+Variable: logo
+details: "id parameter is required"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694526845557
+Date: 12/09/2023 15:54:05
+Error text: No results found
+Error code: CGRN.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"getRecordById","params":{"id":"65006b1f9d266ba0cb03d295"}}
+Error:
+Variable: id
+details: "no results found for this id"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694526892397
+Date: 12/09/2023 15:54:52
+Error text: No results found
+Error code: CGRN.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"getRecordById","params":{"id":"65006aee9d266ba0cb03d294"}}
+Error:
+Variable: id
+details: "no results found for this id"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694526917236
+Date: 12/09/2023 15:55:17
+Error text: No results found
+Error code: CGRN.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"getRecordById","params":{"id":"65006ab59d266ba0cb03d293"}}
+Error:
+Variable: id
+details: "no results found for this id"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694526951634
+Date: 12/09/2023 15:55:51
+Error text: Invalid data type
+Error code: CGI.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"getRecordById","params":{"id":"64fef0aa195efc210d79b0bx"}}
+Error:
+Variable: id
+details: "id parameter is required"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694526978864
+Date: 12/09/2023 15:56:18
+Error text: Invalid data type
+Error code: CGI.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"getRecordById","params":{"id":"64fef0aa195efc210d79b0bx"}}
+Error:
+Variable: id
+details: "id parameter is required"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694526988189
+Date: 12/09/2023 15:56:28
+Error text: Invalid data type
+Error code: CGI.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"getRecordById","params":{"id":"64fef0aa195efc210d79b0bx"}}
+Error:
+Variable: id
+details: "id parameter is required"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694527005859
+Date: 12/09/2023 15:56:45
+Error text: Invalid data type
+Error code: CGI.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"getRecordById","params":{"id":"64fef0aa195efc210d79b0bx"}}
+Error:
+Variable: id
+details: "id parameter is required"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694527021454
+Date: 12/09/2023 15:57:01
+Error text: No results found
+Error code: CGRN.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"getRecordById","params":{"id":"64fef0aa195efc210d79b0b6"}}
+Error:
+Variable: id
+details: "no results found for this id"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694527049465
+Date: 12/09/2023 15:57:29
+Error text: No results found
+Error code: CGRN.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"getRecordById","params":{"id":"64fef0aa195efc210d79b0b6"}}
+Error:
+Variable: id
+details: "no results found for this id"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694527055294
+Date: 12/09/2023 15:57:35
+Error text: Invalid data type
+Error code: CGI.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"getRecordById","params":{"id":"64fef0aa195efc210d79b0bb3"}}
+Error:
+Variable: id
+details: "id parameter is required"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694527081921
+Date: 12/09/2023 15:58:01
+Error text: Missing manufacturer Parameter
+Error code: CUMM.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"createNewRecord"}
+Error:
+Variable: manufacturer
+details: "id parameter is required"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694527194999
+Date: 12/09/2023 15:59:54
+Error text: Missing manufacturer parameter
+Error code: CCMM.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"createNewRecord"}
+Error:
+Variable: manufacturer
+details: "id parameter is required"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694527199985
+Date: 12/09/2023 15:59:59
+Error text: Missing manufacturer parameter1
+Error code: CCMM.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"createNewRecord"}
+Error:
+Variable: manufacturer
+details: "id parameter is required"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694527202572
+Date: 12/09/2023 16:00:02
+Error text: Missing logo parameter1
+Error code: CCML.1002
+Request type: GET
+{"controller":"Cars_Controller","method":"createNewRecord","params":{"manufacturer":"1"}}
+Error:
+Variable: logo
+details: "id parameter is required"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694537345463
+Date: 12/09/2023 18:49:05
+Error text: No results found
+Error code: CGRN.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cc"}}
+Error:
+Variable: id
+details: "no results found for this id"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694537361322
+Date: 12/09/2023 18:49:21
+Error text: No results found
+Error code: CGRN.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cc"}}
+Error:
+Variable: id
+details: "no results found for this id"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694537366037
+Date: 12/09/2023 18:49:26
+Error text: No results found
+Error code: CGRN.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cc"}}
+Error:
+Variable: id
+details: "no results found for this id"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694537459490
+Date: 12/09/2023 18:50:59
+Error text: No results found
+Error code: CGRN.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cc"}}
+Error:
+Variable: id
+details: "no results found for this id"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694537479996
+Date: 12/09/2023 18:51:19
+Error text: No results found
+Error code: CGRN.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cc"}}
+Error:
+Variable: id
+details: "no results found for this id"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694537497847
+Date: 12/09/2023 18:51:37
+Error text: No results found
+Error code: CGRN.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cc"}}
+Error:
+Variable: id
+details: "no results found for this id"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694537506260
+Date: 12/09/2023 18:51:46
+Error text: No results found
+Error code: CGRN.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cc"}}
+Error:
+Variable: id
+details: "no results found for this id"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694537551425
+Date: 12/09/2023 18:52:31
+Error text: No results found
+Error code: CGRN.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cc"}}
+Error:
+Variable: id
+details: "no results found for this id"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694537555990
+Date: 12/09/2023 18:52:35
+Error text: No results found
+Error code: CGRN.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cc"}}
+Error:
+Variable: id
+details: "no results found for this id"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694537671250
+Date: 12/09/2023 18:54:31
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"CarsModels_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cc"}}
+Error:
+Variable: CarsModels_Controller
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694537691388
+Date: 12/09/2023 18:54:51
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"CarsModels_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cc"}}
+Error:
+Variable: CarsModels_Controller
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694537700907
+Date: 12/09/2023 18:55:00
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"CarsModels_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cc"}}
+Error:
+Variable: CarsModels_Controller
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694537721204
+Date: 12/09/2023 18:55:21
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"CarsModels_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cc"}}
+Error:
+Variable: CarsModels_Controller
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694537725724
+Date: 12/09/2023 18:55:25
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"CarsModels_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cc"}}
+Error:
+Variable: CarsModels_Controller
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694537729992
+Date: 12/09/2023 18:55:29
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"CarsModels_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cc"}}
+Error:
+Variable: CarsModels_Controller
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694537746010
+Date: 12/09/2023 18:55:46
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"CarsModels_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cc"}}
+Error:
+Variable: CarsModels_Controller
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694537753067
+Date: 12/09/2023 18:55:53
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"CarsModels_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cc"}}
+Error:
+Variable: CarsModels_Controller
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694537814736
+Date: 12/09/2023 18:56:54
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"CarsModels_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cc"}}
+Error:
+Variable: CarsModels_Controller
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694537883800
+Date: 12/09/2023 18:58:03
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"CarsModels_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cc"}}
+Error:
+Variable: CarsModels_Controller
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694537923528
+Date: 12/09/2023 18:58:43
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"CarsModels_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cc"}}
+Error:
+Variable: CarsModels_Controller
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694537947086
+Date: 12/09/2023 18:59:07
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"CarsModels_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cc"}}
+Error:
+Variable: CarsModels_Controller
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694537962868
+Date: 12/09/2023 18:59:22
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"CarsModels_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cc"}}
+Error:
+Variable: CarsModels_Controller
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694537979234
+Date: 12/09/2023 18:59:39
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"CarsModels_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cc"}}
+Error:
+Variable: CarsModels_Controller
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694538039931
+Date: 12/09/2023 19:00:39
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"CarsModels_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cc"}}
+Error:
+Variable: CarsModels_Controller
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694538049870
+Date: 12/09/2023 19:00:49
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"CarsModels_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cc"}}
+Error:
+Variable: CarsModels_Controller
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694538072135
+Date: 12/09/2023 19:01:12
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"CarsModels_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cc"}}
+Error:
+Variable: CarsModels_Controller
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694538265832
+Date: 12/09/2023 19:04:25
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"CarsModels_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cc"}}
+Error:
+Variable: CarsModels_Controller
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694538283001
+Date: 12/09/2023 19:04:43
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"CarsModels_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cc"}}
+Error:
+Variable: CarsModels_Controller
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694538437724
+Date: 12/09/2023 19:07:17
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"CarsModels_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cc"}}
+Error:
+Variable: CarsModels_Controller
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694538465587
+Date: 12/09/2023 19:07:45
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"CarsModels_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cc"}}
+Error:
+Variable: CarsModels_Controller
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694538470296
+Date: 12/09/2023 19:07:50
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"CarsModels_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cc"}}
+Error:
+Variable: CarsModels_Controller
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694538481083
+Date: 12/09/2023 19:08:01
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"CarsModels_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cc"}}
+Error:
+Variable: CarsModels_Controller
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694538497228
+Date: 12/09/2023 19:08:17
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"CarsModels_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cc"}}
+Error:
+Variable: CarsModels_Controller
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694538503754
+Date: 12/09/2023 19:08:23
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"CarsModels_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cc"}}
+Error:
+Variable: CarsModels_Controller
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694538547231
+Date: 12/09/2023 19:09:07
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"CarsModels_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cc"}}
+Error:
+Variable: CarsModels_Controller
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694538570760
+Date: 12/09/2023 19:09:30
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"CarsModels_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cc"}}
+Error:
+Variable: CarsModels_Controller
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694538578423
+Date: 12/09/2023 19:09:38
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"CarsModels_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cc"}}
+Error:
+Variable: CarsModels_Controller
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694538590808
+Date: 12/09/2023 19:09:50
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"CarsModels_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cc"}}
+Error:
+Variable: CarsModels_Controller
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694538607813
+Date: 12/09/2023 19:10:07
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"CarsModels_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cc"}}
+Error:
+Variable: CarsModels_Controller
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694538616530
+Date: 12/09/2023 19:10:16
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"CarsModels_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cc"}}
+Error:
+Variable: CarsModels_Controller
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694538645168
+Date: 12/09/2023 19:10:45
+Error text: controller does not exists
+Error code: 123ABC
+Request type: GET
+{"controller":"CarsModels_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cc"}}
+Error:
+Variable: CarsModels_Controller
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694538667892
+Date: 12/09/2023 19:11:07
+Error text: No results found
+Error code: CGRN.1001
+Request type: GET
+{"controller":"CarsModels_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cc"}}
+Error:
+Variable: id
+details: "no results found for this id"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694538685915
+Date: 12/09/2023 19:11:25
+Error text: Model doesnt exists
+Error code: 123ABC
+Request type: GET
+{"controller":"CarsModels_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cc"}}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694540836173
+Date: 12/09/2023 19:47:16
+Error text: Missing manufacturer Parameter
+Error code: CUMM.1001
+Request type: GET
+{"controller":"CarsModels_Controller","method":"updateRecordData","params":{"id":"64ff19ce195efc210d79b0cc","car_id":"64fee803195efc210d79b0b4","name":"Fluence","years":"2009-2017","image":"https:\/\/www.carbodydesign.com\/archive\/2009\/09\/03-renault-fluence\/_Renault-Fluence-1-lg-720x540.jpg"}}
+Error:
+Variable: manufacturer
+details: "id parameter is required"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694540876772
+Date: 12/09/2023 19:47:56
+Error text: Missing manufacturer Parameter
+Error code: CUMM.1001
+Request type: GET
+{"controller":"CarsModels_Controller","method":"updateRecordData","params":{"id":"64ff19ce195efc210d79b0cc","car_id":"64fee803195efc210d79b0b4","name":"Fluence","years":"2009-2017","image":"https:\/\/www.carbodydesign.com\/archive\/2009\/09\/03-renault-fluence\/_Renault-Fluence-1-lg-720x540.jpg"}}
+Error:
+Variable: manufacturer
+details: "id parameter is required"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694540888281
+Date: 12/09/2023 19:48:08
+Error text: Missing manufacturer Parameter
+Error code: CUMM.1001
+Request type: GET
+{"controller":"CarsModels_Controller","method":"updateRecordData","params":{"id":"64ff19ce195efc210d79b0cc","car_id":"64fee803195efc210d79b0b4","name":"Fluence","years":"2009-2017","image":"https:\/\/www.carbodydesign.com\/archive\/2009\/09\/03-renault-fluence\/_Renault-Fluence-1-lg-720x540.jpg"}}
+Error:
+Variable: manufacturer
+details: "id parameter is required"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694540891696
+Date: 12/09/2023 19:48:11
+Error text: Missing manufacturer Parameter
+Error code: CUMM.1001
+Request type: GET
+{"controller":"CarsModels_Controller","method":"updateRecordData","params":{"id":"64ff19ce195efc210d79b0cc","car_id":"64fee803195efc210d79b0b4","name":"Fluence","years":"2009-2017","image":"https:\/\/www.carbodydesign.com\/archive\/2009\/09\/03-renault-fluence\/_Renault-Fluence-1-lg-720x540.jpg"}}
+Error:
+Variable: manufacturer
+details: "id parameter is required"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694541161596
+Date: 12/09/2023 19:52:41
+Error text: Model doesnt exists
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllSubModels"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694541165754
+Date: 12/09/2023 19:52:45
+Error text: Model doesnt exists
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllSubModels"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694541284195
+Date: 12/09/2023 19:54:44
+Error text: Missing years Parameter
+Error code: CMUMY.1003
+Request type: GET
+{"controller":"CarsModels_Controller","method":"updateRecordData","params":{"id":"64ff19ce195efc210d79b0cc","car_id":"64fee803195efc210d79b0b4","name":"Fluence","image":"https:\/\/www.carbodydesign.com\/archive\/2009\/09\/03-renault-fluence\/_Renault-Fluence-1-lg-720x540.jpg"}}
+Error:
+Variable: years
+details: "id parameter is required"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694541305423
+Date: 12/09/2023 19:55:05
+Error text: Model doesnt exists
+Error code: 123ABC
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllSubModels"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694541417123
+Date: 12/09/2023 19:56:57
+Error text: Missing manufacturer parameter
+Error code: CCMM.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"createNewRecord","params":{"car_id":""}}
+Error:
+Variable: manufacturer
+details: "id parameter is required"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694541464435
+Date: 12/09/2023 19:57:44
+Error text: Missing manufacturer parameter
+Error code: CCMM.1001
+Request type: GET
+{"controller":"CarsModels_Controller","method":"createNewRecord","params":{"car_id":""}}
+Error:
+Variable: manufacturer
+details: "id parameter is required"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694541491484
+Date: 12/09/2023 19:58:11
+Error text: Missing manufacturer parameter
+Error code: CCMM.1001
+Request type: GET
+{"controller":"CarsModels_Controller","method":"createNewRecord","params":{"car_id":""}}
+Error:
+Variable: manufacturer
+details: "id parameter is required"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694541503954
+Date: 12/09/2023 19:58:23
+Error text: Missing manufacturer parameter
+Error code: CCMM.1001
+Request type: GET
+{"controller":"CarsModels_Controller","method":"createNewRecord","params":{"car_id":""}}
+Error:
+Variable: manufacturer
+details: "id parameter is required"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694541609080
+Date: 12/09/2023 20:00:09
+Error text: Missing car id Parameter
+Error code: CMCMN.1005
+Request type: GET
+{"controller":"CarsModels_Controller","method":"createNewRecord","params":{"car_id":""}}
+Error:
+Variable: car_id
+details: "id parameter is required"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694541671100
+Date: 12/09/2023 20:01:11
+Error text: Missing car id Parameter
+Error code: CMCMN.1005
+Request type: GET
+{"controller":"CarsModels_Controller","method":"createNewRecord","params":{"car_id":""}}
+Error:
+Variable: car_id
+details: "id parameter is required"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694541748427
+Date: 12/09/2023 20:02:28
+Error text: Missing name Parameter
+Error code: CMCMN.1002
+Request type: GET
+{"controller":"CarsModels_Controller","method":"createNewRecord","params":{"car_id":"64fee803195efc210d79b0b4"}}
+Error:
+Variable: name
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694541758452
+Date: 12/09/2023 20:02:38
+Error text: Missing years Parameter
+Error code: CMCMN.1003
+Request type: GET
+{"controller":"CarsModels_Controller","method":"createNewRecord","params":{"car_id":"64fee803195efc210d79b0b4","name":"Kadjar"}}
+Error:
+Variable: years
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694541767764
+Date: 12/09/2023 20:02:47
+Error text: Missing image Parameter
+Error code: CMCMN.1004
+Request type: GET
+{"controller":"CarsModels_Controller","method":"createNewRecord","params":{"car_id":"64fee803195efc210d79b0b4","name":"Kadjar","years":"2013-2023"}}
+Error:
+Variable: image
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694542028002
+Date: 12/09/2023 20:07:08
+Error text: No results found
+Error code: CGRN.1001
+Request type: GET
+{"controller":"CarsModels_Controller","method":"getRecordById","params":{"id":"6500a7f49d266ba0cb03d29b"}}
+Error:
+Variable: id
+details: "no results found for this id"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694542038210
+Date: 12/09/2023 20:07:18
+Error text: Invalid data type
+Error code: CGI.1001
+Request type: GET
+{"controller":"CarsModels_Controller","method":"getRecordById","params":{"id":"6500a7f49d266ba0cb03d29a2"}}
+Error:
+Variable: id
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694542046747
+Date: 12/09/2023 20:07:26
+Error text: Failed to delete record
+Error code: CDF.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"deleteRecord","params":{"id":"6500a7f49d266ba0cb03d29a"}}
+Error:
+Variable: id
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694542098645
+Date: 12/09/2023 20:08:18
+Error text: Failed to delete record
+Error code: CDF.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"deleteRecord","params":{"id":"6500a7f49d266ba0cb03d29a"}}
+Error:
+Variable: id
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694542175057
+Date: 12/09/2023 20:09:35
+Error text: Invalid password
+Error code: ARI.1002
+Request type: GET
+{"controller":"Login_Controller","method":"performAdminLogin","params":{"email":"soleman630@gmail.com","password":"admin1"}}
+Error:
+Variable: password
+details: "Check if provided password matches the hashed password."
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694542221119
+Date: 12/09/2023 20:10:21
+Error text: Invalid password
+Error code: ARI.1002
+Request type: GET
+{"controller":"Login_Controller","method":"performAdminLogin","params":{"email":"soleman630@gmail.com","password":"admin1"}}
+Error:
+Variable: password
+details: "Check if provided password matches the hashed password."
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694542235345
+Date: 12/09/2023 20:10:35
+Error text: Invalid password
+Error code: ARI.1002
+Request type: GET
+{"controller":"Login_Controller","method":"performAdminLogin","params":{"email":"soleman630@gmail.com","password":"admin3"}}
+Error:
+Variable: password
+details: "Check if provided password matches the hashed password."
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694542516593
+Date: 12/09/2023 20:15:16
+Error text: Invalid password
+Error code: ARI.1002
+Request type: GET
+{"controller":"Login_Controller","method":"performAdminLogin","params":{"email":"soleman630@gmail.com","password":"123"}}
+Error:
+Variable: password
+details: "Check if provided password matches the hashed password."
+-----------------------------------

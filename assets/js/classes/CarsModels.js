@@ -1,25 +1,15 @@
 
-import { API_CARS } from '../constants/API.js';
+import { API_CARS_MODELS } from '../constants/API.js';
 import Request from '../utils/Request.js';
 
-class Cars {
-    data = []
+class CarsModels {
 
     constructor() {}
 
     async getAllDataFromServer() {
         const requestData = {
-            controller: API_CARS.CONTROLLER,
-            method: API_CARS.METHODS.GET_ALL_RECORDS
-        }
-        const response = await Request.send('GET', requestData)
-        return response
-    }
-
-    async getAllSubModels() {
-        const requestData = {
-            controller: API_CARS.CONTROLLER,
-            method: API_CARS.METHODS.GET_ALL_SUB_MODELS
+            controller: API_CARS_MODELS.CONTROLLER,
+            method: API_CARS_MODELS.METHODS.GET_ALL_RECORDS
         }
         const response = await Request.send('GET', requestData)
         return response
@@ -32,8 +22,8 @@ class Cars {
      */
     async getRecordById(_id) {
         const requestData = {
-            controller: API_CARS.CONTROLLER,
-            method: API_CARS.METHODS.GET_RECORD_BY_ID,
+            controller: API_CARS_MODELS.CONTROLLER,
+            method: API_CARS_MODELS.METHODS.GET_RECORD_BY_ID,
             params: {
                 id: _id
             }
@@ -50,8 +40,8 @@ class Cars {
      */
     async updateRecordData(_id, _data) {
         const requestData = {
-            controller: API_CARS.CONTROLLER,
-            method: API_CARS.METHODS.UPDATE_RECORD_DATA,
+            controller: API_CARS_MODELS.CONTROLLER,
+            method: API_CARS_MODELS.METHODS.UPDATE_RECORD_DATA,
             params: {
                 id: _id,
                 ..._data
@@ -68,8 +58,8 @@ class Cars {
      */
     async createNewRecord(_data) {
         const requestData = {
-            controller: API_CARS.CONTROLLER,
-            method: API_CARS.METHODS.CREATE_NEW_RECORD,
+            controller: API_CARS_MODELS.CONTROLLER,
+            method: API_CARS_MODELS.METHODS.CREATE_NEW_RECORD,
             params: {
                 ..._data
             }
@@ -79,14 +69,14 @@ class Cars {
     }
 
     /**
-     * Create new record
+     * delete record
      * @param _recordId {string} E.g. 64fee803195efc210d79b0b4
      * @return {Promise<object>}
      */
     async deleteRecord(_recordId) {
         const requestData = {
-            controller: API_CARS.CONTROLLER,
-            method: API_CARS.METHODS.DELETE_RECORD,
+            controller: API_CARS_MODELS.CONTROLLER,
+            method: API_CARS_MODELS.METHODS.DELETE_RECORD,
             params: {
                 id : _recordId
             }
@@ -94,11 +84,6 @@ class Cars {
         const response = await Request.send('GET', requestData)
         return response
     }
-
-    findCarDataByCarId(_carId, _cars) {
-        const carData = _cars.find(car => car._id['$oid'] == _carId)
-        return carData
-    }
 }
 
-export default new Cars()
+export default new CarsModels()

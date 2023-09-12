@@ -59,16 +59,22 @@ export default class SelectManager {
     /**
      * Put options into select
      * @param _options {Object}
-     * @param _value {string} > The key to save for selected['id']
-     * @param _text {string} > The key to save for selected['text']
+     * @param _valueKey {string} > The key to save for selected['id']
+     * @param _textKey {string} > The key to save for selected['text']
      */
-    put_options(_options, _value, _text) {
+    put_options(_options, _valueKey, _textKey) {
         // Clear all select options
         this.clearOptions()
 
         for (const option of _options) {
-            const newOption = new Option(option[_text], option[_value], false, false);
-            $(`#${this.parentId} select#${this.id}`).append(newOption)
+
+            let value = _valueKey;
+            if (_valueKey === 'id') {
+                value = option._id.$oid // Access _id.$oid field if value is "id"
+            }
+            const text = option[_textKey];
+            const newOption = new Option(text, value, false, false);
+            $(`#${this.parentId} select#${this.id}`).append(newOption);
         }
 
         // Deselect selected option

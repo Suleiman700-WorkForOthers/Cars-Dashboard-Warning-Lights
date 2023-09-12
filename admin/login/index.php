@@ -27,11 +27,19 @@ if ($Session->isLogged()) {
     <header class="header bg-white">
         <div class="container-fluid full-header">
             <div class="d-flex justify-content-between align-items-center">
-                <!-- Start Navigation -->
-                <?php
-                require_once '../includes/top-navbar.php';
-                ?>
-                <!-- Start Navigation -->
+                <nav class="navigation navbar position-static navbar-expand-lg">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse"><span class="icon ti-menu"></span></button>
+                    <div id="navbar-collapse" class="navbar-collapse collapse dual-nav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="../../public/home/index.php"><i class="fa fa-home"></i> Website</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="navbar-brand logo mx-auto p-0 text-center">
+                    <img class="img-fluid" src="../../assets/images/logo/logo.png" alt="logo" title="Posh Auto Parts" />
+                </div>
             </div>
         </div>
     </header>

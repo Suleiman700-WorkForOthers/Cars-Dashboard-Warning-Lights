@@ -15,7 +15,7 @@ export const genCarCards = (_carData, _clickEvent=undefined) => {
             <div class="product-image-action">
                 <div class="product-image">
                     <a href="javascript:void(0)">
-                        <img class="img-fluid blur-up lazyload" src="../../${_carData.logo}" data-src="../../${_carData.logo}" alt="image" title="image" style="width: 300px; height: 300px; object-fit: contain;" />
+                        <img class="img-fluid blur-up lazyload" src="${_carData.logo}" data-src="${_carData.logo}" alt="image" title="image" style="width: 300px; height: 300px; object-fit: contain;" />
                     </a>
                 </div>
             </div>
@@ -36,7 +36,7 @@ export const genCarModelCard = (_carModelData, _clickEvent=undefined) => {
     div.classList.add('card', 'col-6', 'col-sm-4', 'mx-auto')
 
     div.innerHTML = `
-        <img class="card-img-top" src="../../${_carModelData.image}" alt="${_carModelData.manufacturer}" style="width: 100%; height: 100%; object-fit: contain;">
+        <img class="card-img-top" src="${_carModelData.image}" alt="${_carModelData.manufacturer}" style="width: 100%; height: 100%; object-fit: contain;">
         <div class="card-body">
             <h5 class="card-title">${_carModelData.name}</h5>
             <p class="card-text">${_carModelData.years}</p>

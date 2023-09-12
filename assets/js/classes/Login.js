@@ -1,6 +1,6 @@
 
 import { API_LOGIN } from '../constants/API.js';
-import Request from './utils/Request.js';
+import Request from '../utils/Request.js';
 
 class Login {
     data = []

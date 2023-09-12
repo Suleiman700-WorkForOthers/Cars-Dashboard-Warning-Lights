@@ -1,7 +1,8 @@
 
-import Loader from '../../../assets/js/classes/utils/Loader.js';
+import Loader from '../../../assets/js/utils/Loader.js';
 import CarsTable from './tables/CarsTable.js';
 import Cars from '../../../assets/js/classes/Cars.js';
+import { extractMongoObjectId } from '../../../assets/js/utils/mongo.js';
 import buttons from './fields/buttons.js';
 
 /**
@@ -18,7 +19,10 @@ import buttons from './fields/buttons.js';
  * }
  */
 const carEditClickEvent = (_carData) => {
-    console.log(_carData)
+    const carId = extractMongoObjectId(_carData._id)
+
+    // Navigate to car edit page
+    window.location.href = `../cars-action/index.php?mode=edit&id=${carId}`
 }
 
 Loader.showLoading()

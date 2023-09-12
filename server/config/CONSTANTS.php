@@ -8,11 +8,12 @@ $CONSTANTS = [
     'BASE_PATH' => $_SERVER['DOCUMENT_ROOT'],
     'SYS_CONTROLLERS' => [
         'Cars_Controller',
+        'CarsModels_Controller',
         'Login_Controller',
     ],
     'SYS_MODELS' => [
         'Cars_Model',
-        'SubCars_Model',
+        'CarsModels_Model',
         'AdminLogin_Model',
     ],
 ];

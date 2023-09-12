@@ -1,23 +1,27 @@
 
 import Cars from '../../../assets/js/classes/Cars.js';
-import Loader from '../../../assets/js/classes/utils/Loader.js';
+import CarsModels from '../../../assets/js/classes/CarsModels.js';
+import Loader from '../../../assets/js/utils/Loader.js';
 import { genCarCards, genCarModelCard } from '../../../assets/js/components/cards/car-cards.js';
+import { extractMongoObjectId } from '../../../assets/js/utils/mongo.js';
 
 Loader.showLoading()
 
 // Get cars
 const carsResponse = await Cars.getAllDataFromServer()
-const carsSubModelsResponse = await Cars.getAllSubModels();
+const carsSubModelsResponse = await CarsModels.getAllDataFromServer();
 
 const carModelCardOnClick = _carModelData => {
     console.log(_carModelData)
 }
 
 const carCardOnClick = _carData => {
+    const carId = extractMongoObjectId(_carData._id)
+
     // Get car sub models
     let carModels = []
     if (carsSubModelsResponse.state && carsSubModelsResponse.data.length) {
-        carModels = carsSubModelsResponse.data.filter(subModel => subModel.manufacturer === _carData.manufacturer)
+        carModels = carsSubModelsResponse.data.filter(subModel => subModel.car_id === carId)
     }
 
     // Generate car models cards

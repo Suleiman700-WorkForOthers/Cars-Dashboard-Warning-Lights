@@ -1,5 +1,5 @@
 
-import { API } from '../../constants/API.js';
+import { API } from '../constants/API.js';
 
 class Request {
 
@@ -18,25 +18,6 @@ class Request {
                 data: _data,
                 success: function (res) {
                     const response = JSON.parse(res);
-
-                    if (!response.state && response.errors.length) {
-                        // show error popup
-                        Swal.fire({
-                            icon: 'error',
-                            title: 'Error',
-                            html: `
-                                <span>${response.errors[0]['errorText']}</span><br>
-                                ${response.errors[0]['errorVariable']?
-                                    `<span>Error variable: </span><span style="white-space: pre;">${response.errors[0]['errorVariable']}</span><br>`
-                                    :''
-                                }
-                                <br><span>Trace ID: </span><span class="text-danger" style="white-space: pre;">${response.errors[0]['errorTraceID']}</span><br>
-                            `,
-                            showConfirmButton: true,
-                            confirmButtonText: 'Close',
-                        });
-                        return
-                    }
                     resolve(response)
                 },
                 error: (e) => {

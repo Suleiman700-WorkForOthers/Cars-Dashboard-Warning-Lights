@@ -1,5 +1,6 @@
+import {extractMongoObjectId} from '../../../../assets/js/utils/mongo.js';
 
-export default class CarsTable {
+export default class CarsModelsTable {
 
     editBtnCallback = undefined
 
@@ -62,10 +63,12 @@ export default class CarsTable {
     }
 
     /**
-     * receive category info and build a row for it to be inserted into table
-     * @param _personInfo
+     * receive row info and build a row for it to be inserted into table
+     * @param _rowInfo
      */
     #buildRow(_rowInfo) {
+        const carModelId = extractMongoObjectId(_rowInfo._id)
+
         const tr = document.createElement('tr')
 
         // index cell
@@ -74,16 +77,24 @@ export default class CarsTable {
         cell_id.setAttribute('scope', 'row')
         tr.appendChild(cell_id)
 
-        const cell_manufacturer = document.createElement('td')
-        cell_manufacturer.innerText = _rowInfo.manufacturer
-        tr.appendChild(cell_manufacturer)
+        const cell_car_manufacturer = document.createElement('td')
+        cell_car_manufacturer.innerText = _rowInfo.manufacturer
+        tr.appendChild(cell_car_manufacturer)
+
+        const cell_model_name = document.createElement('td')
+        cell_model_name.innerText = _rowInfo.name
+        tr.appendChild(cell_model_name)
 
         const cell_logo = document.createElement('td')
         const logo = document.createElement('img')
-        logo.src = _rowInfo.logo
+        logo.src = _rowInfo.image
         logo.style = 'width: 50px; height: 50px'
         cell_logo.append(logo)
         tr.appendChild(cell_logo)
+
+        const cell_years = document.createElement('td')
+        cell_years.innerText = _rowInfo.years
+        tr.appendChild(cell_years)
 
         // options cell
         const cell_options = document.createElement('td')
@@ -91,13 +102,9 @@ export default class CarsTable {
         button_edit.classList.add('btn', 'btn-primary', 'text-white', 'rounded', 'fa', 'fa-edit')
         button_edit.style.cursor = 'pointer'
         button_edit.innerHTML = ' Edit'
-
-        // Set click event if enabled
-        if (this.editBtnCallback !== undefined) {
-            button_edit.addEventListener('click', () => {
-                this.editBtnCallback(_rowInfo)
-            })
-        }
+        button_edit.addEventListener('click', () => {
+            window.location.href = `../cars-models-action/index.php?mode=edit&id=${carModelId}`
+        })
 
         cell_options.append(button_edit)
         tr.appendChild(cell_options)

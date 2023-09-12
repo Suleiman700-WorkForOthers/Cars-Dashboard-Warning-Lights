@@ -1,5 +1,5 @@
 
-import InputManager from '../../../../assets/js/classes/utils/input-manager/InputManager.js';
+import InputManager from '../../../../assets/js/utils/input-manager/InputManager.js';
 
 
 const email = new InputManager('login-form', 'input-email')

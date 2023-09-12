@@ -24,9 +24,9 @@ require_once CLASSES_ROUTE."/Response.php";
 require_once CLASSES_ROUTE."/errors/Errors.php";
 require_once CLASSES_ROUTE.'/errors/FatalErrors.php';
 require_once CLASSES_ROUTE.'/errors/DBErrors.php';
-//require_once CLASSES_ROUTE.'/DB.php';
 require_once CLASSES_ROUTE.'/MongoDBHandler.php';
 require_once CLASSES_ROUTE.'/Session.php';
+require_once CLASSES_ROUTE.'/validators/ValidateMongoObjectId.php';
 require_once CONTROLLERS_ROUTE."/Controller.php";
 require_once MODELS_ROUTE."/Model.php";
 

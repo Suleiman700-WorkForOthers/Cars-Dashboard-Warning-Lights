@@ -12,13 +12,13 @@
                 <a class="nav-link" href="../cars/index.php"><i class="fa fa-car"></i> Cars</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link" href="../cars-models/index.php"><i class="fa fa-car"></i> Cars Models</a>
+                <a class="nav-link" href="../cars-models/index.php"><i class="fa fa-car"></i> Models</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link" href="../warning-lights/index.php"><i class="fa fa-warning"></i> Warning Lights</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link" href="../garages/index.php"><i class="fa fa-subscript"></i> Garages</a>
+                <a class="nav-link" href="../garages/index.php"><i class="fa fa-wrench"></i> Garages</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link" href="../mechanics/index.php"><i class="fa fa-wrench"></i> Mechanics</a>

@@ -1,12 +1,12 @@
 <?php
 
 $ERROR_CODES = [
-    "CARS" => array(
-        "GET" => array(
+    "CARS" => [
+        "GET" => [
             'MISSING_REQUEST_PARAMS' => [
                 'ID' => [
                     "NAME" => "Missing ID Parameter",
-                    "CODE" => "PGMRPID.1001",
+                    "CODE" => "CGMI.1001",
                     "CAUSE" => "Found out that param is missing from the request.",
                     "FIX" => "Make sure that the param exists in the request data."
                 ],
@@ -14,82 +14,83 @@ $ERROR_CODES = [
             'RESULTS' => [
                 "NO_RESULTS" => array(
                     "NAME" => "No results found",
-                    "CODE" => "PGRNF.1001",
+                    "CODE" => "CGRN.1001",
                     "CAUSE" => "No data found in database.",
                     "FIX" => "Check if data exists in the database."
                 ),
             ],
-        ),
-
-        "CREATE" => [
-            'MISSING_REQUEST_PARAMS' => [
-                'NAME' => [
-                    "NAME" => "Missing name parameter",
-                    "CODE" => "PUMRPN.1001",
-                    "CAUSE" => "Found out that param is missing from the request.",
-                    "FIX" => "Make sure that the param exists in the request data."
-                ],
-                'JOB' => [
-                    "NAME" => "Missing job parameter",
-                    "CODE" => "PUMRPJ.1002",
-                    "CAUSE" => "Found out that param is missing from the request.",
-                    "FIX" => "Make sure that the param exists in the request data."
-                ],
-                'ADDRESS' => [
-                    "NAME" => "Missing address parameter",
-                    "CODE" => "PUMRPA.1003",
-                    "CAUSE" => "Found out that param is missing from the request.",
-                    "FIX" => "Make sure that the param exists in the request data."
-                ],
-                'PHONE' => [
-                    "NAME" => "Missing phone parameter",
-                    "CODE" => "PUMRPP.1004",
-                    "CAUSE" => "Found out that param is missing from the request.",
-                    "FIX" => "Make sure that the param exists in the request data."
-                ],
-            ],
-            "QUERY_RESULTS" => [
-                "FAILED" => [
-                    "NAME" => "Failed to delete record",
-                    "CODE" => "PDQRF.1001",
-                    "CAUSE" => "Found out that the query failed to delete record.",
-                    "FIX" => "Check your MySql query syntax."
+            'INVALID_DATA_TYPES' => [
+                'OBJECT_ID' => [
+                    "NAME" => "Invalid data type",
+                    "CODE" => "CGI.1001",
+                    "CAUSE" => "Found out that the data type if invalid.",
+                    "FIX" => "Check the value data type and try again."
                 ],
             ],
         ],
         "UPDATE" => [
             'MISSING_REQUEST_PARAMS' => [
-                'NAME' => [
-                    "NAME" => "Missing name parameter",
-                    "CODE" => "PUMRPN.1001",
+                'ID' => [
+                    "NAME" => "Missing ID Parameter",
+                    "CODE" => "CUMI.1001",
                     "CAUSE" => "Found out that param is missing from the request.",
                     "FIX" => "Make sure that the param exists in the request data."
                 ],
-                'JOB' => [
-                    "NAME" => "Missing job parameter",
-                    "CODE" => "PUMRPJ.1002",
+                'MANUFACTURER' => [
+                    "NAME" => "Missing manufacturer Parameter",
+                    "CODE" => "CUMM.1001",
                     "CAUSE" => "Found out that param is missing from the request.",
                     "FIX" => "Make sure that the param exists in the request data."
                 ],
-                'ADDRESS' => [
-                    "NAME" => "Missing address parameter",
-                    "CODE" => "PUMRPA.1003",
+                'LOGO' => [
+                    "NAME" => "Missing logo Parameter",
+                    "CODE" => "CUML.1002",
                     "CAUSE" => "Found out that param is missing from the request.",
                     "FIX" => "Make sure that the param exists in the request data."
                 ],
-                'PHONE' => [
-                    "NAME" => "Missing phone parameter",
-                    "CODE" => "PUMRPP.1004",
-                    "CAUSE" => "Found out that param is missing from the request.",
-                    "FIX" => "Make sure that the param exists in the request data."
+            ],
+            'INVALID_DATA_TYPES' => [
+                'OBJECT_ID' => [
+                    "NAME" => "Invalid data type",
+                    "CODE" => "CUIO.1001",
+                    "CAUSE" => "Found out that the data type if invalid.",
+                    "FIX" => "Check the value data type and try again."
                 ],
+            ],
+            "FAILED_TO_UPDATE" => [
+                "NAME" => "Failed to update record",
+                "CODE" => "CUF.1001",
+                "CAUSE" => "Failed to update record data.",
+                "FIX" => "Check your parameters and values."
             ],
         ],
         "DELETE" => [
             'MISSING_REQUEST_PARAMS' => [
                 'ID' => [
                     "NAME" => "Missing ID Parameter",
-                    "CODE" => "PGMRPID.1001",
+                    "CODE" => "CDMI.1001",
+                    "CAUSE" => "Found out that param is missing from the request.",
+                    "FIX" => "Make sure that the param exists in the request data."
+                ],
+            ],
+            "FAILED_TO_DELETE" => [
+                "NAME" => "Failed to delete record",
+                "CODE" => "CDF.1001",
+                "CAUSE" => "Found out that the server failed to delete record.",
+                "FIX" => "Check parameters and values."
+            ],
+        ],
+        "CREATE" => [
+            'MISSING_REQUEST_PARAMS' => [
+                'MANUFACTURER' => [
+                    "NAME" => "Missing manufacturer parameter",
+                    "CODE" => "CCMM.1001",
+                    "CAUSE" => "Found out that param is missing from the request.",
+                    "FIX" => "Make sure that the param exists in the request data."
+                ],
+                'LOGO' => [
+                    "NAME" => "Missing logo parameter",
+                    "CODE" => "CCML.1002",
                     "CAUSE" => "Found out that param is missing from the request.",
                     "FIX" => "Make sure that the param exists in the request data."
                 ],
@@ -103,8 +104,8 @@ $ERROR_CODES = [
                 ],
             ],
         ],
-    ),
-    "SUB_CARS" => [
+    ],
+    "CARS_MODELS" => [
         "GET" => [
             'RESULTS' => [
                 "NO_RESULTS" => [
@@ -113,6 +114,112 @@ $ERROR_CODES = [
                     "CAUSE" => "No data found in database.",
                     "FIX" => "Check if data exists in the database."
                 ],
+            ],
+        ],
+        "UPDATE" => [
+            'MISSING_REQUEST_PARAMS' => [
+                'ID' => [
+                    "NAME" => "Missing ID Parameter",
+                    "CODE" => "CMUMI.1001",
+                    "CAUSE" => "Found out that param is missing from the request.",
+                    "FIX" => "Make sure that the param exists in the request data."
+                ],
+                'NAME' => [
+                    "NAME" => "Missing name Parameter",
+                    "CODE" => "CMUMN.1002",
+                    "CAUSE" => "Found out that param is missing from the request.",
+                    "FIX" => "Make sure that the param exists in the request data."
+                ],
+                'YERAS' => [
+                    "NAME" => "Missing years Parameter",
+                    "CODE" => "CMUMY.1003",
+                    "CAUSE" => "Found out that param is missing from the request.",
+                    "FIX" => "Make sure that the param exists in the request data."
+                ],
+                'IMAGE' => [
+                    "NAME" => "Missing image Parameter",
+                    "CODE" => "CMUMI.1004",
+                    "CAUSE" => "Found out that param is missing from the request.",
+                    "FIX" => "Make sure that the param exists in the request data."
+                ],
+                'CAR_ID' => [
+                    "NAME" => "Missing car id Parameter",
+                    "CODE" => "CMUMC.1005",
+                    "CAUSE" => "Found out that param is missing from the request.",
+                    "FIX" => "Make sure that the param exists in the request data."
+                ],
+            ],
+            'INVALID_DATA_TYPES' => [
+                'OBJECT_ID' => [
+                    "NAME" => "Invalid data type",
+                    "CODE" => "CMUIO.1001",
+                    "CAUSE" => "Found out that the data type if invalid.",
+                    "FIX" => "Check the value data type and try again."
+                ],
+            ],
+            "FAILED_TO_UPDATE" => [
+                "NAME" => "Failed to update record",
+                "CODE" => "CMUF.1001",
+                "CAUSE" => "Failed to update record data.",
+                "FIX" => "Check your parameters and values."
+            ],
+        ],
+        "CREATE" => [
+            'MISSING_REQUEST_PARAMS' => [
+                'NAME' => [
+                    "NAME" => "Missing name Parameter",
+                    "CODE" => "CMCMN.1002",
+                    "CAUSE" => "Found out that param is missing from the request.",
+                    "FIX" => "Make sure that the param exists in the request data."
+                ],
+                'YERAS' => [
+                    "NAME" => "Missing years Parameter",
+                    "CODE" => "CMCMN.1003",
+                    "CAUSE" => "Found out that param is missing from the request.",
+                    "FIX" => "Make sure that the param exists in the request data."
+                ],
+                'IMAGE' => [
+                    "NAME" => "Missing image Parameter",
+                    "CODE" => "CMCMN.1004",
+                    "CAUSE" => "Found out that param is missing from the request.",
+                    "FIX" => "Make sure that the param exists in the request data."
+                ],
+                'CAR_ID' => [
+                    "NAME" => "Missing car id Parameter",
+                    "CODE" => "CMCMN.1005",
+                    "CAUSE" => "Found out that param is missing from the request.",
+                    "FIX" => "Make sure that the param exists in the request data."
+                ],
+            ],
+            'INVALID_DATA_TYPES' => [
+                'OBJECT_ID' => [
+                    "NAME" => "Invalid data type",
+                    "CODE" => "CMUIO.1001",
+                    "CAUSE" => "Found out that the data type if invalid.",
+                    "FIX" => "Check the value data type and try again."
+                ],
+            ],
+            "FAILED_TO_UPDATE" => [
+                "NAME" => "Failed to update record",
+                "CODE" => "CMUF.1001",
+                "CAUSE" => "Failed to update record data.",
+                "FIX" => "Check your parameters and values."
+            ],
+        ],
+        "DELETE" => [
+            'MISSING_REQUEST_PARAMS' => [
+                'ID' => [
+                    "NAME" => "Missing ID Parameter",
+                    "CODE" => "CMDMI.1001",
+                    "CAUSE" => "Found out that param is missing from the request.",
+                    "FIX" => "Make sure that the param exists in the request data."
+                ],
+            ],
+            "FAILED_TO_DELETE" => [
+                "NAME" => "Failed to delete record",
+                "CODE" => "CMDF.1001",
+                "CAUSE" => "Found out that the server failed to delete record.",
+                "FIX" => "Check parameters and values."
             ],
         ],
     ],
