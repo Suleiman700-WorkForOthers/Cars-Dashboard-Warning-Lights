@@ -1,14 +1,14 @@
 <?php
 require_once '../../server/config/CONSTANTS.php';
 require_once '../../server/classes/Session.php';
-$pageTitle = "Car Model Action | " . $CONSTANTS['APP_NAME'];
+$pageTitle = "Warning Light Action | " . $CONSTANTS['APP_NAME'];
 require_once '../includes/prevent-non-logged.php';
 
 // Check mode
 $allowedActions = ['add', 'edit'];
 if (!isset($_GET['mode']) || !in_array($_GET['mode'], $allowedActions)) {
     // Redirect back to cars list
-    header('Location: ../cars-models/index.php');
+    header('Location: ../warning-lights/index.php');
     die;
 }
 ?>
@@ -59,7 +59,7 @@ require_once '../../includes/page-head.php';
                         </div>
                         <div class="row">
                             <div class="col-md-12 text-right">
-                                <button type="button" class="btn btn-primary" id="btn-cars-models-list"><i class="fa fa-list"></i> Cars Models List</button>
+                                <button type="button" class="btn btn-primary" id="btn-warning-lights-list"><i class="fa fa-list"></i> Warning Lights List</button>
                             </div>
                         </div>
                         <div class="row mt-5">
@@ -71,14 +71,14 @@ require_once '../../includes/page-head.php';
                             </div>
                             <div class="col-sm-12 mt-3">
                                 <div class="text-left">
-                                    <label for="input-model-name">Model name <code>*</code></label>
-                                    <input type="text" class="form-control" id="input-model-name" placeholder="Corolla">
+                                    <label for="input-model-name">Model <code>*</code></label>
+                                    <select class="form-control" id="select-model"></select>
                                 </div>
                             </div>
                             <div class="col-sm-12 mt-3">
                                 <div class="text-left">
-                                    <label for="input-years">Years <code>*</code></label>
-                                    <input type="text" class="form-control" id="input-years" placeholder="2009-2017">
+                                    <label for="input-name">Name <code>*</code></label>
+                                    <input type="text" class="form-control" id="input-name" placeholder="Warning light name">
                                 </div>
                             </div>
                             <div class="col-sm-12 mt-3">

@@ -39,7 +39,7 @@ export const genCarModelCard = (_carModelData, _clickEvent=undefined) => {
         <img class="card-img-top" src="${_carModelData.image}" alt="${_carModelData.manufacturer}" style="width: 100%; height: 100%; object-fit: contain;">
         <div class="card-body">
             <h5 class="card-title">${_carModelData.name}</h5>
-            <p class="card-text">${_carModelData.years}</p>
+            <p class="card-text" style="white-space: nowrap;">${_carModelData.years}</p>
             <button class="btn btn-primary">Go</button>
         </div>
     `

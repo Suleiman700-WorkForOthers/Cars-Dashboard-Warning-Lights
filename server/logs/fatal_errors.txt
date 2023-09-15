@@ -602,3 +602,356 @@ Stack trace:
   thrown in E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\CarsModels_Controller.php on line 197
 Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\CarsModels_Controller.php(197)
 ----------------------------------------
+
+-------------- Fatal Error -------------
+Trace ID: FE_1694776122831
+Date: 2023-09-15 13:08:42
+Request type: GET
+Request: {"controller":"CarsModels_Controller","method":"getAllRecords"}
+Error Message: Undefined array key "SUB_CARS"
+Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\models\CarsModels_Model.php(68)
+----------------------------------------
+
+-------------- Fatal Error -------------
+Trace ID: FE_1694776611209
+Date: 2023-09-15 13:16:51
+Request type: GET
+Request: {"controller":"CarsModels_Controller","method":"updateRecordData","params":{"id":"64ff19ce195efc210d79b0cc","car_id":"64fee803195efc210d79b0b4","name":"Fluence1","years":"2009-2017","image":"https:\/\/www.carbodydesign.com\/archive\/2009\/09\/03-renault-fluence\/_Renault-Fluence-1-lg-720x540.jpg"}}
+Error Message: Undefined array key "CREATE"
+Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\Controller.php(26)
+----------------------------------------
+
+-------------- Fatal Error -------------
+Trace ID: FE_1694776630844
+Date: 2023-09-15 13:17:10
+Request type: GET
+Request: {"controller":"CarsModels_Controller","method":"updateRecordData","params":{"id":"64ff19ce195efc210d79b0cc","car_id":"64fee803195efc210d79b0b4","name":"Fluence1","years":"2009-2017","image":"https:\/\/www.carbodydesign.com\/archive\/2009\/09\/03-renault-fluence\/_Renault-Fluence-1-lg-720x540.jpg"}}
+Error Message: Undefined array key "CREATE"
+Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\Controller.php(26)
+----------------------------------------
+
+-------------- Fatal Error -------------
+Trace ID: FE_1694776690078
+Date: 2023-09-15 13:18:10
+Request type: GET
+Request: {"controller":"CarsModels_Controller","method":"updateRecordData","params":{"id":"64ff19ce195efc210d79b0cc","car_id":"64fee803195efc210d79b0b4","name":"Fluence1","years":"2009-2017","image":"https:\/\/www.carbodydesign.com\/archive\/2009\/09\/03-renault-fluence\/_Renault-Fluence-1-lg-720x540.jpg"}}
+Error Message: Undefined array key "CREATE"
+Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\Controller.php(26)
+----------------------------------------
+
+-------------- Fatal Error -------------
+Trace ID: FE_1694776713295
+Date: 2023-09-15 13:18:33
+Request type: GET
+Request: {"controller":"CarsModels_Controller","method":"updateRecordData","params":{"id":"64ff19ce195efc210d79b0cc","car_id":"64fee803195efc210d79b0b4","name":"Fluence1","years":"2009-2017","image":"https:\/\/www.carbodydesign.com\/archive\/2009\/09\/03-renault-fluence\/_Renault-Fluence-1-lg-720x540.jpg"}}
+Error Message: Undefined array key "CREATE"
+Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\Controller.php(26)
+----------------------------------------
+
+-------------- Fatal Error -------------
+Trace ID: FE_1694777293489
+Date: 2023-09-15 13:28:13
+Request type: GET
+Request: {"controller":"CarsModels_Controller","method":"updateRecordData","params":{"id":"64ff19ce195efc210d79b0cc","car_id":"64fee803195efc210d79b0b4","name":"Fluence","years":"2009-2017","image":"https:\/\/www.carbodydesign.com\/archive\/2009\/09\/03-renault-fluence\/_Renault-Fluence-1-lg-720x540.jpg"}}
+Error Message: Uncaught TypeError: Errors::setErrorData(): Argument #1 ($_errorData) must be of type array, string given, called in E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\CarsModels_Controller.php on line 113 and defined in E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\errors\Errors.php:35
+Stack trace:
+#0 E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\CarsModels_Controller.php(113): Errors->setErrorData('['CARS_MODELS']...')
+#1 E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php(49): CarsModels_Controller->updateRecordData()
+#2 E:\GitHub\Cars-Dashboard-Warning-Lights\server\index.php(45): Application->execute()
+#3 {main}
+  thrown in E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\errors\Errors.php on line 35
+Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\errors\Errors.php(35)
+----------------------------------------
+
+-------------- Fatal Error -------------
+Trace ID: FE_1694777314282
+Date: 2023-09-15 13:28:34
+Request type: GET
+Request: {"controller":"CarsModels_Controller","method":"updateRecordData","params":{"id":"64ff19ce195efc210d79b0cc","car_id":"64fee803195efc210d79b0b4","name":"Fluence","years":"2009-2017","image":"https:\/\/www.carbodydesign.com\/archive\/2009\/09\/03-renault-fluence\/_Renault-Fluence-1-lg-720x540.jpg"}}
+Error Message: Undefined array key "['CARS_MODELS']['CREATE']['MISSING_REQUEST_PARAMS']['CAR_ID']"
+Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\CarsModels_Controller.php(107)
+----------------------------------------
+
+-------------- Fatal Error -------------
+Trace ID: FE_1694777326313
+Date: 2023-09-15 13:28:46
+Request type: GET
+Request: {"controller":"CarsModels_Controller","method":"updateRecordData","params":{"id":"64ff19ce195efc210d79b0cc","car_id":"64fee803195efc210d79b0b4","name":"Fluence","years":"2009-2017","image":"https:\/\/www.carbodydesign.com\/archive\/2009\/09\/03-renault-fluence\/_Renault-Fluence-1-lg-720x540.jpg"}}
+Error Message: Undefined array key "['CARS_MODELS']['CREATE']['MISSING_REQUEST_PARAMS']['CAR_ID']"
+Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\CarsModels_Controller.php(107)
+----------------------------------------
+
+-------------- Fatal Error -------------
+Trace ID: FE_1694777332576
+Date: 2023-09-15 13:28:52
+Request type: GET
+Request: {"controller":"CarsModels_Controller","method":"updateRecordData","params":{"id":"64ff19ce195efc210d79b0cc","car_id":"64fee803195efc210d79b0b4","name":"Fluence","years":"2009-2017","image":"https:\/\/www.carbodydesign.com\/archive\/2009\/09\/03-renault-fluence\/_Renault-Fluence-1-lg-720x540.jpg"}}
+Error Message: Undefined array key "['CARS_MODELS']['CREATE']['MISSING_REQUEST_PARAMS']['CAR_ID']"
+Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\CarsModels_Controller.php(107)
+----------------------------------------
+
+-------------- Fatal Error -------------
+Trace ID: FE_1694777377912
+Date: 2023-09-15 13:29:37
+Request type: GET
+Request: {"controller":"CarsModels_Controller","method":"updateRecordData","params":{"id":"64ff19ce195efc210d79b0cc","car_id":"64fee803195efc210d79b0b4","name":"Fluence","years":"2009-2017","image":"https:\/\/www.carbodydesign.com\/archive\/2009\/09\/03-renault-fluence\/_Renault-Fluence-1-lg-720x540.jpg"}}
+Error Message: Undefined array key "['CARS_MODELS']['CREATE']['MISSING_REQUEST_PARAMS']['CAR_ID']"
+Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\CarsModels_Controller.php(108)
+----------------------------------------
+
+-------------- Fatal Error -------------
+Trace ID: FE_1694777500410
+Date: 2023-09-15 13:31:40
+Request type: GET
+Request: {"controller":"CarsModels_Controller","method":"updateRecordData","params":{"id":"64ff19ce195efc210d79b0cc","car_id":"64fee803195efc210d79b0b4","name":"Fluence","years":"2009-2017","image":"https:\/\/www.carbodydesign.com\/archive\/2009\/09\/03-renault-fluence\/_Renault-Fluence-1-lg-720x540.jpg"}}
+Error Message: Undefined array key "CARS_MODELS_CREATE_MISSING_REQUEST_PARAMS_CAR_ID"
+Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\CarsModels_Controller.php(108)
+----------------------------------------
+
+-------------- Fatal Error -------------
+Trace ID: FE_1694777558673
+Date: 2023-09-15 13:32:38
+Request type: GET
+Request: {"controller":"CarsModels_Controller","method":"updateRecordData","params":{"id":"64ff19ce195efc210d79b0cc","car_id":"64fee803195efc210d79b0b4","name":"Fluence","years":"2009-2017","image":"https:\/\/www.carbodydesign.com\/archive\/2009\/09\/03-renault-fluence\/_Renault-Fluence-1-lg-720x540.jpg"}}
+Error Message: Undefined array key "CARS_MODELS.CREATE.MISSING_REQUEST_PARAMS.CAR_ID"
+Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\CarsModels_Controller.php(108)
+----------------------------------------
+
+-------------- Fatal Error -------------
+Trace ID: FE_1694777697713
+Date: 2023-09-15 13:34:57
+Request type: GET
+Request: {"controller":"CarsModels_Controller","method":"updateRecordData","params":{"id":"64ff19ce195efc210d79b0cc","car_id":"64fee803195efc210d79b0b4","name":"Fluence","years":"2009-2017","image":"https:\/\/www.carbodydesign.com\/archive\/2009\/09\/03-renault-fluence\/_Renault-Fluence-1-lg-720x540.jpg"}}
+Error Message: Undefined array key "[CARS_MODELS][CREATE][MISSING_REQUEST_PARAMS][CAR_ID]"
+Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\CarsModels_Controller.php(108)
+----------------------------------------
+
+-------------- Fatal Error -------------
+Trace ID: FE_1694777705488
+Date: 2023-09-15 13:35:05
+Request type: GET
+Request: {"controller":"CarsModels_Controller","method":"updateRecordData","params":{"id":"64ff19ce195efc210d79b0cc","car_id":"64fee803195efc210d79b0b4","name":"Fluence","years":"2009-2017","image":"https:\/\/www.carbodydesign.com\/archive\/2009\/09\/03-renault-fluence\/_Renault-Fluence-1-lg-720x540.jpg"}}
+Error Message: Undefined array key "[CARS_MODELS][CREATE][MISSING_REQUEST_PARAMS][CAR_ID]"
+Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\CarsModels_Controller.php(108)
+----------------------------------------
+
+-------------- Fatal Error -------------
+Trace ID: FE_1694777719493
+Date: 2023-09-15 13:35:19
+Request type: GET
+Request: {"controller":"CarsModels_Controller","method":"updateRecordData","params":{"id":"64ff19ce195efc210d79b0cc","car_id":"64fee803195efc210d79b0b4","name":"Fluence","years":"2009-2017","image":"https:\/\/www.carbodydesign.com\/archive\/2009\/09\/03-renault-fluence\/_Renault-Fluence-1-lg-720x540.jpg"}}
+Error Message: Array to string conversion
+Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\CarsModels_Controller.php(108)
+----------------------------------------
+
+-------------- Fatal Error -------------
+Trace ID: FE_1694778104479
+Date: 2023-09-15 13:41:44
+Request type: GET
+Request: {"controller":"CarsModels_Controller","method":"updateRecordData","params":{"id":"64ff19ce195efc210d79b0cc","car_id":"64fee803195efc210d79b0b4","name":"Fluence","years":"2009-2017","image":"https:\/\/www.carbodydesign.com\/archive\/2009\/09\/03-renault-fluence\/_Renault-Fluence-1-lg-720x540.jpg"}}
+Error Message: Undefined array key "DESCRIPTION"
+Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\CarsModels_Controller.php(108)
+----------------------------------------
+
+-------------- Fatal Error -------------
+Trace ID: FE_1694778352863
+Date: 2023-09-15 13:45:52
+Request type: GET
+Request: {"controller":"CarsModels_Controller","method":"createNewRecord","params":{"car_id":""}}
+Error Message: Uncaught Error: Call to undefined method Errors::setErrorText() in E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\CarsModels_Controller.php:160
+Stack trace:
+#0 E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php(49): CarsModels_Controller->createNewRecord()
+#1 E:\GitHub\Cars-Dashboard-Warning-Lights\server\index.php(45): Application->execute()
+#2 {main}
+  thrown in E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\CarsModels_Controller.php on line 160
+Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\CarsModels_Controller.php(160)
+----------------------------------------
+
+-------------- Fatal Error -------------
+Trace ID: FE_1694779791227
+Date: 2023-09-15 14:09:51
+Request type: GET
+Request: {"controller":"Cars_Controller","method":"updateRecordData","params":{"id":"64fee803195efc210d79b0b4","manufacturer":"Renault"}}
+Error Message: Uncaught Error: Call to a member function updateOne() on string in E:\GitHub\Cars-Dashboard-Warning-Lights\server\models\Cars_Model.php:143
+Stack trace:
+#0 E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\Cars_Controller.php(157): Cars_Model->updateRecordData('64fee803195efc2...', Array)
+#1 E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php(49): Cars_Controller->updateRecordData()
+#2 E:\GitHub\Cars-Dashboard-Warning-Lights\server\index.php(45): Application->execute()
+#3 {main}
+  thrown in E:\GitHub\Cars-Dashboard-Warning-Lights\server\models\Cars_Model.php on line 143
+Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\models\Cars_Model.php(143)
+----------------------------------------
+
+-------------- Fatal Error -------------
+Trace ID: FE_1694779839105
+Date: 2023-09-15 14:10:39
+Request type: GET
+Request: {"controller":"Cars_Controller","method":"updateRecordData","params":{"id":"64fee803195efc210d79b0b4","manufacturer":"Renault"}}
+Error Message: Uncaught Error: Call to a member function updateOne() on string in E:\GitHub\Cars-Dashboard-Warning-Lights\server\models\Cars_Model.php:143
+Stack trace:
+#0 E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\Cars_Controller.php(157): Cars_Model->updateRecordData('64fee803195efc2...', Array)
+#1 E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php(49): Cars_Controller->updateRecordData()
+#2 E:\GitHub\Cars-Dashboard-Warning-Lights\server\index.php(45): Application->execute()
+#3 {main}
+  thrown in E:\GitHub\Cars-Dashboard-Warning-Lights\server\models\Cars_Model.php on line 143
+Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\models\Cars_Model.php(143)
+----------------------------------------
+
+-------------- Fatal Error -------------
+Trace ID: FE_1694779860386
+Date: 2023-09-15 14:11:00
+Request type: GET
+Request: {"controller":"Cars_Controller","method":"updateRecordData","params":{"id":"64fee803195efc210d79b0b4","manufacturer":"Renault"}}
+Error Message: Uncaught Error: Call to a member function updateOne() on string in E:\GitHub\Cars-Dashboard-Warning-Lights\server\models\Cars_Model.php:147
+Stack trace:
+#0 E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\Cars_Controller.php(157): Cars_Model->updateRecordData('64fee803195efc2...', Array)
+#1 E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php(49): Cars_Controller->updateRecordData()
+#2 E:\GitHub\Cars-Dashboard-Warning-Lights\server\index.php(45): Application->execute()
+#3 {main}
+  thrown in E:\GitHub\Cars-Dashboard-Warning-Lights\server\models\Cars_Model.php on line 147
+Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\models\Cars_Model.php(147)
+----------------------------------------
+
+-------------- Fatal Error -------------
+Trace ID: FE_1694779913219
+Date: 2023-09-15 14:11:53
+Request type: GET
+Request: {"controller":"Cars_Controller","method":"updateRecordData","params":{"id":"64fee803195efc210d79b0b4","manufacturer":"Renault"}}
+Error Message: Uncaught Error: Call to a member function updateOne() on string in E:\GitHub\Cars-Dashboard-Warning-Lights\server\models\Cars_Model.php:146
+Stack trace:
+#0 E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\Cars_Controller.php(157): Cars_Model->updateRecordData('64fee803195efc2...', Array)
+#1 E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php(49): Cars_Controller->updateRecordData()
+#2 E:\GitHub\Cars-Dashboard-Warning-Lights\server\index.php(45): Application->execute()
+#3 {main}
+  thrown in E:\GitHub\Cars-Dashboard-Warning-Lights\server\models\Cars_Model.php on line 146
+Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\models\Cars_Model.php(146)
+----------------------------------------
+
+-------------- Fatal Error -------------
+Trace ID: FE_1694779927829
+Date: 2023-09-15 14:12:07
+Request type: GET
+Request: {"controller":"Cars_Controller","method":"updateRecordData","params":{"id":"64fee803195efc210d79b0b4","manufacturer":"Renault"}}
+Error Message: Uncaught Error: Call to a member function updateOne() on string in E:\GitHub\Cars-Dashboard-Warning-Lights\server\models\Cars_Model.php:143
+Stack trace:
+#0 E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\Cars_Controller.php(157): Cars_Model->updateRecordData('64fee803195efc2...', Array)
+#1 E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php(49): Cars_Controller->updateRecordData()
+#2 E:\GitHub\Cars-Dashboard-Warning-Lights\server\index.php(45): Application->execute()
+#3 {main}
+  thrown in E:\GitHub\Cars-Dashboard-Warning-Lights\server\models\Cars_Model.php on line 143
+Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\models\Cars_Model.php(143)
+----------------------------------------
+
+-------------- Fatal Error -------------
+Trace ID: FE_1694779984314
+Date: 2023-09-15 14:13:04
+Request type: GET
+Request: {"controller":"Cars_Controller","method":"updateRecordData","params":{"id":"64fee803195efc210d79b0b4","manufacturer":"Renault","logo":"1"}}
+Error Message: Uncaught Error: Call to a member function updateOne() on string in E:\GitHub\Cars-Dashboard-Warning-Lights\server\models\Cars_Model.php:141
+Stack trace:
+#0 E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\Cars_Controller.php(157): Cars_Model->updateRecordData('64fee803195efc2...', Array)
+#1 E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php(49): Cars_Controller->updateRecordData()
+#2 E:\GitHub\Cars-Dashboard-Warning-Lights\server\index.php(45): Application->execute()
+#3 {main}
+  thrown in E:\GitHub\Cars-Dashboard-Warning-Lights\server\models\Cars_Model.php on line 141
+Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\models\Cars_Model.php(141)
+----------------------------------------
+
+-------------- Fatal Error -------------
+Trace ID: FE_1694780069132
+Date: 2023-09-15 14:14:29
+Request type: GET
+Request: {"controller":"Cars_Controller","method":"updateRecordData","params":{"id":"64fee803195efc210d79b0b4","manufacturer":"Renault"}}
+Error Message: Uncaught Error: Call to a member function updateOne() on string in E:\GitHub\Cars-Dashboard-Warning-Lights\server\models\Cars_Model.php:143
+Stack trace:
+#0 E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\Cars_Controller.php(157): Cars_Model->updateRecordData('64fee803195efc2...', Array)
+#1 E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php(49): Cars_Controller->updateRecordData()
+#2 E:\GitHub\Cars-Dashboard-Warning-Lights\server\index.php(45): Application->execute()
+#3 {main}
+  thrown in E:\GitHub\Cars-Dashboard-Warning-Lights\server\models\Cars_Model.php on line 143
+Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\models\Cars_Model.php(143)
+----------------------------------------
+
+-------------- Fatal Error -------------
+Trace ID: FE_1694780197549
+Date: 2023-09-15 14:16:37
+Request type: GET
+Request: {"controller":"Cars_Controller","method":"createNewRecord"}
+Error Message: Uncaught Error: Call to undefined method Errors::setErrorText() in E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\Cars_Controller.php:191
+Stack trace:
+#0 E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php(49): Cars_Controller->createNewRecord()
+#1 E:\GitHub\Cars-Dashboard-Warning-Lights\server\index.php(45): Application->execute()
+#2 {main}
+  thrown in E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\Cars_Controller.php on line 191
+Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\Cars_Controller.php(191)
+----------------------------------------
+
+-------------- Fatal Error -------------
+Trace ID: FE_1694781491608
+Date: 2023-09-15 14:38:11
+Request type: GET
+Request: {"controller":"WarningLights_Controller","method":"getAllRecords"}
+Error Message: Uncaught Error: Call to a member function getAllRecords() on null in E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\WarningLights_Controller.php:16
+Stack trace:
+#0 E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php(49): WarningLights_Controller->getAllRecords()
+#1 E:\GitHub\Cars-Dashboard-Warning-Lights\server\index.php(45): Application->execute()
+#2 {main}
+  thrown in E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\WarningLights_Controller.php on line 16
+Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\WarningLights_Controller.php(16)
+----------------------------------------
+
+-------------- Fatal Error -------------
+Trace ID: FE_1694781508866
+Date: 2023-09-15 14:38:28
+Request type: GET
+Request: {"controller":"WarningLights_Controller","method":"getAllRecords"}
+Error Message: Uncaught Error: Call to a member function getAllRecords() on null in E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\WarningLights_Controller.php:16
+Stack trace:
+#0 E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php(49): WarningLights_Controller->getAllRecords()
+#1 E:\GitHub\Cars-Dashboard-Warning-Lights\server\index.php(45): Application->execute()
+#2 {main}
+  thrown in E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\WarningLights_Controller.php on line 16
+Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\WarningLights_Controller.php(16)
+----------------------------------------
+
+-------------- Fatal Error -------------
+Trace ID: FE_1694783237640
+Date: 2023-09-15 15:07:17
+Request type: GET
+Request: {"controller":"WarningLights_Controller","method":"updateRecordData","params":{"id":"65044d71e2cbed13bfcf442b","car_id":"64fee803195efc210d79b0b4","car_model_id":"64ff19ce195efc210d79b0cc","name":"Tire Pressure Monitoring System","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/e\/e2\/TPMS_warning_icon.svg\/1024px-TPMS_warning_icon.svg.png","description":"The purpose of the TPMS (Tire Pressure Monitoring System) is to alert you when tire pressure is too low and could create unsafe driving conditions. If the light is illuminated, it means your tires could be underinflated, which can lead to undue tire wear and possible tire failure."}}
+Error Message: Undefined array key "CAR_ID"
+Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\WarningLights_Controller.php(123)
+----------------------------------------
+
+-------------- Fatal Error -------------
+Trace ID: FE_1694783371551
+Date: 2023-09-15 15:09:31
+Request type: GET
+Request: {"controller":"WarningLights_Controller","method":"updateRecordData","params":{"id":"65044d71e2cbed13bfcf442b","car_id":"64fee803195efc210d79b0b4","car_model_id":"64ff19ce195efc210d79b0cc","name":"Tire Pressure Monitoring System","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/e\/e2\/TPMS_warning_icon.svg\/1024px-TPMS_warning_icon.svg.png","description":"The purpose of the TPMS (Tire Pressure Monitoring System) is to alert you when tire pressure is too low and could create unsafe driving conditions. If the light is illuminated, it means your tires could be underinflated, which can lead to undue tire wear and possible tire failure."}}
+Error Message: Undefined array key "CAR_ID"
+Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\WarningLights_Controller.php(123)
+----------------------------------------
+
+-------------- Fatal Error -------------
+Trace ID: FE_1694783381372
+Date: 2023-09-15 15:09:41
+Request type: GET
+Request: {"controller":"WarningLights_Controller","method":"updateRecordData","params":{"id":"65044d71e2cbed13bfcf442b","car_id":"64fee803195efc210d79b0b4","car_model_id":"64ff19ce195efc210d79b0cc","name":"Tire Pressure Monitoring System","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/e\/e2\/TPMS_warning_icon.svg\/1024px-TPMS_warning_icon.svg.png","description":"The purpose of the TPMS (Tire Pressure Monitoring System) is to alert you when tire pressure is too low and could create unsafe driving conditions. If the light is illuminated, it means your tires could be underinflated, which can lead to undue tire wear and possible tire failure."}}
+Error Message: Undefined array key "CAR_ID"
+Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\WarningLights_Controller.php(123)
+----------------------------------------
+
+-------------- Fatal Error -------------
+Trace ID: FE_1694783750986
+Date: 2023-09-15 15:15:50
+Request type: GET
+Request: {"controller":"WarningLights_Controller","method":"getAllRecords"}
+Error Message: Uncaught Error: Call to undefined function setErrorVariable() in E:\GitHub\Cars-Dashboard-Warning-Lights\server\models\WarningLights_Model.php:86
+Stack trace:
+#0 E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\WarningLights_Controller.php(16): WarningLights_Model->getAllRecords()
+#1 E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php(49): WarningLights_Controller->getAllRecords()
+#2 E:\GitHub\Cars-Dashboard-Warning-Lights\server\index.php(45): Application->execute()
+#3 {main}
+  thrown in E:\GitHub\Cars-Dashboard-Warning-Lights\server\models\WarningLights_Model.php on line 86
+Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\models\WarningLights_Model.php(86)
+----------------------------------------

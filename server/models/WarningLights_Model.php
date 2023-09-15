@@ -1,19 +1,19 @@
 <?php
 
-class CarsModels_Model extends Model
+class WarningLights_Model extends Model
 {
     protected $mongoDBHandler;
-    public $collectionName = "cars_models";
+    public $collectionName = "warning_lights";
     public $collection;
 
     public array $columns = [
         'car_id' => [
             'isRequired' => true,
         ],
-        'name' => [
+        'car_model_id' => [
             'isRequired' => true,
         ],
-        'years' => [
+        'name' => [
             'isRequired' => true,
         ],
         'image' => [
@@ -83,15 +83,15 @@ class CarsModels_Model extends Model
         }
 
         if (!$documents) {
-            $this->errors[] = $Errors->setErrorData($ERROR_CODES['CARS_MODELS']['GET']['RESULTS']['NO_RESULTS'])->setErrorVariable('')->setErrorDetails('')->gen();
+            $this->errors[] = $Errors->setErrorData($ERROR_CODES['WARNING_LIGHTS']['GET']['RESULTS']['NO_RESULTS'])->setErrorVariable('')->setErrorDetails('')->gen();
             return $this;
         }
 
         return $documents;
     }
 
-    function getRecordById(string $_id) {
-
+    function getRecordById(string $_id)
+    {
         $filter = [
             '_id' => new MongoDB\BSON\ObjectId($_id), // Replace with the MongoDB document's ID you want to update
         ];
@@ -110,7 +110,6 @@ class CarsModels_Model extends Model
      * $columnsToUpdate = [
      *      'name' => 'New Name'
      * ];
-     * @return $this
      */
     function updateRecordData($_recordId, array $_columnsToUpdate)
     {
@@ -130,6 +129,25 @@ class CarsModels_Model extends Model
     }
 
     /**
+     * Delete record
+     * @param $_recordId - E.g. fee803195efc210d79b0b4
+     * @return bool
+     */
+    public function deleteRecord($_recordId) {
+        global $ERROR_CODES, $Errors;
+
+        $filter = [
+            '_id' => new MongoDB\BSON\ObjectId($_recordId), // Replace with the MongoDB document's ID you want to update
+        ];
+
+        $options = [];
+
+        $result = $this->collection->deleteOne($filter);
+
+        return $result->getDeletedCount() > 0;
+    }
+
+    /**
      * Create new record
      * @param array $_recordData - E.g. {name: '', job: '', ...etc}
      * @return bool
@@ -144,33 +162,17 @@ class CarsModels_Model extends Model
         return $result->getInsertedCount() > 0;
     }
 
-    /**
-     * Delete record
-     * @param $_recordId - E.g. fee803195efc210d79b0b4
-     * @return bool
-     */
-    public function deleteRecord($_recordId) {
-        $filter = [
-            '_id' => new MongoDB\BSON\ObjectId($_recordId), // Replace with the MongoDB document's ID you want to update
-        ];
-
-        $options = [];
-
-        $result = $this->collection->deleteOne($filter);
-
-        return $result->getDeletedCount() > 0;
-    }
-
     public function createDefaultColumns(array $_columns)
     {
         $defaultColumns = [
             'car_id' => isset($_columns['car_id']) && !empty(trim($_columns['car_id']))? $_columns['car_id']:'',
+            'car_model_id' => isset($_columns['car_model_id']) && !empty(trim($_columns['car_model_id']))? $_columns['car_model_id']:'',
             'name' => isset($_columns['name']) && !empty(trim($_columns['name']))? $_columns['name']:'',
-            'years' => isset($_columns['years']) && !empty(trim($_columns['years']))? $_columns['years']:'',
             'image' => isset($_columns['image']) && !empty(trim($_columns['image']))? $_columns['image']:'',
             'description' => isset($_columns['description']) && !empty(trim($_columns['description']))? $_columns['description']:'',
         ];
 
         return $defaultColumns;
     }
+
 }

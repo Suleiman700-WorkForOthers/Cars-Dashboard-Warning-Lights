@@ -1,15 +1,25 @@
 
-import { API_CARS_MODELS } from '../constants/API.js';
+import { API_WARNING_LIGHTS } from '../constants/API.js';
 import Request from '../utils/Request.js';
 
-class CarsModels {
+class WarningLights {
+    data = []
 
     constructor() {}
 
     async getAllDataFromServer() {
         const requestData = {
-            controller: API_CARS_MODELS.CONTROLLER,
-            method: API_CARS_MODELS.METHODS.GET_ALL_RECORDS
+            controller: API_WARNING_LIGHTS.CONTROLLER,
+            method: API_WARNING_LIGHTS.METHODS.GET_ALL_RECORDS
+        }
+        const response = await Request.send('GET', requestData)
+        return response
+    }
+
+    async getAllSubModels() {
+        const requestData = {
+            controller: API_WARNING_LIGHTS.CONTROLLER,
+            method: API_WARNING_LIGHTS.METHODS.GET_ALL_SUB_MODELS
         }
         const response = await Request.send('GET', requestData)
         return response
@@ -22,8 +32,8 @@ class CarsModels {
      */
     async getRecordById(_id) {
         const requestData = {
-            controller: API_CARS_MODELS.CONTROLLER,
-            method: API_CARS_MODELS.METHODS.GET_RECORD_BY_ID,
+            controller: API_WARNING_LIGHTS.CONTROLLER,
+            method: API_WARNING_LIGHTS.METHODS.GET_RECORD_BY_ID,
             params: {
                 id: _id
             }
@@ -40,8 +50,8 @@ class CarsModels {
      */
     async updateRecordData(_id, _data) {
         const requestData = {
-            controller: API_CARS_MODELS.CONTROLLER,
-            method: API_CARS_MODELS.METHODS.UPDATE_RECORD_DATA,
+            controller: API_WARNING_LIGHTS.CONTROLLER,
+            method: API_WARNING_LIGHTS.METHODS.UPDATE_RECORD_DATA,
             params: {
                 id: _id,
                 ..._data
@@ -58,8 +68,8 @@ class CarsModels {
      */
     async createNewRecord(_data) {
         const requestData = {
-            controller: API_CARS_MODELS.CONTROLLER,
-            method: API_CARS_MODELS.METHODS.CREATE_NEW_RECORD,
+            controller: API_WARNING_LIGHTS.CONTROLLER,
+            method: API_WARNING_LIGHTS.METHODS.CREATE_NEW_RECORD,
             params: {
                 ..._data
             }
@@ -69,14 +79,14 @@ class CarsModels {
     }
 
     /**
-     * delete record
+     * Create new record
      * @param _recordId {string} E.g. 64fee803195efc210d79b0b4
      * @return {Promise<object>}
      */
     async deleteRecord(_recordId) {
         const requestData = {
-            controller: API_CARS_MODELS.CONTROLLER,
-            method: API_CARS_MODELS.METHODS.DELETE_RECORD,
+            controller: API_WARNING_LIGHTS.CONTROLLER,
+            method: API_WARNING_LIGHTS.METHODS.DELETE_RECORD,
             params: {
                 id : _recordId
             }
@@ -84,11 +94,6 @@ class CarsModels {
         const response = await Request.send('GET', requestData)
         return response
     }
-
-    findDataById(_id, _carsModels) {
-        const carModelData = _carsModels.find(carModel => carModel._id['$oid'] == _id)
-        return carModelData
-    }
 }
 
-export default new CarsModels()
+export default new WarningLights()

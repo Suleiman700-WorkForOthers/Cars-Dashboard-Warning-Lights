@@ -43,6 +43,7 @@ if (mode === 'edit') {
         inputs.name.valueSet(response.data.name)
         inputs.image.valueSet(response.data.image)
         inputs.years.valueSet(response.data.years)
+        inputs.description.valueSet(response.data.description)
 
         // Set selected manufacturer
         selects.selectManufacturer.set_selected_option_by_value(response.data.car_id)

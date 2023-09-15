@@ -15,7 +15,7 @@ class Controller
 
     function setModel($_modelClassName): void
     {
-        global $CONSTANTS, $Errors;
+        global $CONSTANTS, $Errors, $ERROR_CODES;
 
         $modelFile = MODELS_ROUTE.'/'.$_modelClassName.".php";
 
@@ -27,7 +27,7 @@ class Controller
         }
         else
         {
-            $this->errors[] = $Errors->setErrorText('Model doesnt exists')->setErrorCode('123ABC')->setErrorVariable('')->setErrorDetails('')->gen();
+            $this->errors[] = $Errors->setErrorData($ERROR_CODES['APPLICATION']['MODEL']['NOT_FOUND'])->setErrorVariable('model')->setErrorDetails('Model does not exists')->gen();
         }
     }
 }

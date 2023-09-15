@@ -10,11 +10,13 @@ $CONSTANTS = [
         'Cars_Controller',
         'CarsModels_Controller',
         'Login_Controller',
+        'WarningLights_Controller',
     ],
     'SYS_MODELS' => [
         'Cars_Model',
         'CarsModels_Model',
         'AdminLogin_Model',
+        'WarningLights_Model',
     ],
 ];
 

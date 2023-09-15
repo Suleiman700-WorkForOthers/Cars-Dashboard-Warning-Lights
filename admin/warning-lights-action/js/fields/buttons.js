@@ -7,11 +7,12 @@ import UrlParams from '../../../../assets/js/classes/UrlParams.js';
 import inputs from './inputs.js';
 import Loader from '../../../../assets/js/utils/Loader.js';
 import selects from './selects.js';
+import WarningLights from '../../../../assets/js/classes/WarningLights.js';
 
 // Button navigate to cars list
-const btnCarsModelsListClick = async (_callback) => {window.location.href = "../cars-models/index.php";}
-const btnCarsModelsList = new ButtonManager('main', 'btn-cars-models-list', btnCarsModelsListClick)
-btnCarsModelsList.onClick() // Enable onClick
+const btnWarningLightsListClick = async (_callback) => {window.location.href = "../warning-lights/index.php";}
+const btnWarningLightsList = new ButtonManager('main', 'btn-warning-lights-list', btnWarningLightsListClick)
+btnWarningLightsList.onClick() // Enable onClick
 
 // Button save record
 const btnSaveRecordClick = async (_callback) => {
@@ -19,8 +20,8 @@ const btnSaveRecordClick = async (_callback) => {
 
     const recordData = {
         car_id: selects.selectManufacturer.get_selected_value(),
+        car_model_id: selects.selectModel.get_selected_value(),
         name: inputs.name.valueGet(),
-        years: inputs.years.valueGet(),
         image: inputs.image.valueGet(),
         description: inputs.description.valueGet(),
     }
@@ -30,7 +31,7 @@ const btnSaveRecordClick = async (_callback) => {
 
     if (mode === 'edit') {
         const recordId = UrlParams.getParamByKey('id')
-        const response = await CarsModels.updateRecordData(recordId, recordData)
+        const response = await WarningLights.updateRecordData(recordId, recordData)
         if (response.state && !response.errors.length) {
             Swal.fire({
                 icon: 'success',
@@ -45,7 +46,7 @@ const btnSaveRecordClick = async (_callback) => {
         }
     }
     else if (mode === 'add') {
-        const response = await CarsModels.createNewRecord(recordData)
+        const response = await WarningLights.createNewRecord(recordData)
         if (response.state && !response.errors.length) {
             Swal.fire({
                 icon: 'success',
@@ -85,14 +86,19 @@ const btnDeleteRecordClick = async (_callback) => {
             Loader.showLoading()
 
             const recordId = UrlParams.getParamByKey('id')
-            const response = await CarsModels.deleteRecord(recordId)
+            const response = await WarningLights.deleteRecord(recordId)
             if (response.state) {
                 Swal.fire({
                     icon: 'success',
                     html: 'Record deleted successfully'
                 }).then(result => {
-                    window.location.href = '../cars-models/index.php'
+                    window.location.href = '../warning-lights/index.php'
                 })
+            }
+            else {
+                const ErrorsPopupIns = new ErrorsPopup()
+                ErrorsPopupIns.requestErrorSettings.showConfirmBtn = true
+                ErrorsPopupIns.showRequestErrors(response.errors)
             }
         }
     })
@@ -101,7 +107,7 @@ const btnDeleteRecord = new ButtonManager('main', 'btn-delete-record', btnDelete
 btnDeleteRecord.onClick() // Enable onClick
 
 const buttons = {
-    btnCarsModelsList,
+    btnWarningLightsList,
     btnSaveRecord,
     btnDeleteRecord,
 }

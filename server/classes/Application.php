@@ -15,7 +15,7 @@ class Application
      */
     function __construct($_controllerName, $_method, $_params)
     {
-        global $CONSTANTS, $Errors;
+        global $CONSTANTS, $Errors, $ERROR_CODES;
 
         if (is_null($_params)) {
             $_params = [];
@@ -33,12 +33,12 @@ class Application
             }
             else {
                 // generate error
-                $this->errors[] = $Errors->setErrorText('method does not exists')->setErrorCode('123ABC')->setErrorVariable($_method)->setErrorDetails('')->gen();
+                $this->errors[] = $Errors->setErrorData($ERROR_CODES['APPLICATION']['METHOD']['NOT_FOUND'])->setErrorVariable($_method)->setErrorDetails('Method does not exists')->gen();
             }
         }
         else {
             // generate error
-            $this->errors[] = $Errors->setErrorText('controller does not exists')->setErrorCode('123ABC')->setErrorVariable($_controllerName)->setErrorDetails('')->gen();
+            $this->errors[] = $Errors->setErrorData($ERROR_CODES['APPLICATION']['CONTROLLER']['NOT_FOUND'])->setErrorVariable($_controllerName)->setErrorDetails('Controller does not exists')->gen();
         }
     }
 

@@ -1633,3 +1633,564 @@ Error:
 Variable: password
 details: "Check if provided password matches the hashed password."
 -----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694775970657
+Date: 15/09/2023 13:06:10
+Error text: No results found
+Error code: CGRN.1001
+Request type: GET
+{"controller":"CarsModels_Controller","method":"getRecordById","params":{"id":"64ff19ce195efc210d79b0cd"}}
+Error:
+Variable: id
+details: "no results found for this id"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694776015672
+Date: 15/09/2023 13:06:55
+Error text: No results found
+Error code: CGRN.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694776017477
+Date: 15/09/2023 13:06:57
+Error text: No results found
+Error code: CGRN.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694776066569
+Date: 15/09/2023 13:07:46
+Error text: No results found
+Error code: CGRN.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694776072769
+Date: 15/09/2023 13:07:52
+Error text: No results found
+Error code: CGRN.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694776077112
+Date: 15/09/2023 13:07:57
+Error text: No results found
+Error code: CGRN.1001
+Request type: GET
+{"controller":"Cars_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694776166150
+Date: 15/09/2023 13:09:26
+Error text: No results found
+Error code: SGRN.1001
+Request type: GET
+{"controller":"CarsModels_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694777068765
+Date: 15/09/2023 13:24:28
+Error text:Missing ID Parameter
+Request type: GET
+{"controller":"CarsModels_Controller","method":"updateRecordData","params":{"id":"64ff19ce195efc210d79b0cc","car_id":"64fee803195efc210d79b0b4","name":"Fluence","years":"2009-2017","image":"https:\/\/www.carbodydesign.com\/archive\/2009\/09\/03-renault-fluence\/_Renault-Fluence-1-lg-720x540.jpg"}}
+Error:
+Variable: id
+details: "Cannot update record without passing its id"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694777138843
+Date: 15/09/2023 13:25:38
+Error text:Missing ID Parameter
+Request type: GET
+{"controller":"CarsModels_Controller","method":"updateRecordData","params":{"id":"64ff19ce195efc210d79b0cc","car_id":"64fee803195efc210d79b0b4","name":"Fluence","years":"2009-2017","image":"https:\/\/www.carbodydesign.com\/archive\/2009\/09\/03-renault-fluence\/_Renault-Fluence-1-lg-720x540.jpg"}}
+Error:
+Variable: id
+details: "Cannot update record without passing its id"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694778140233
+Date: 15/09/2023 13:42:20
+Error text:Missing description Parameter
+Request type: GET
+{"controller":"CarsModels_Controller","method":"updateRecordData","params":{"id":"64ff19ce195efc210d79b0cc","car_id":"64fee803195efc210d79b0b4","name":"Fluence","years":"2009-2017","image":"https:\/\/www.carbodydesign.com\/archive\/2009\/09\/03-renault-fluence\/_Renault-Fluence-1-lg-720x540.jpg"}}
+Error:
+Variable: description
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694778253253
+Date: 15/09/2023 13:44:13
+Error text:Missing description Parameter
+Request type: GET
+{"controller":"CarsModels_Controller","method":"updateRecordData","params":{"id":"64ff19ce195efc210d79b0cc","car_id":"64fee803195efc210d79b0b4","name":"Fluence","years":"2009-2017","image":"https:\/\/www.carbodydesign.com\/archive\/2009\/09\/03-renault-fluence\/_Renault-Fluence-1-lg-720x540.jpg"}}
+Error:
+Variable: description
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694778269974
+Date: 15/09/2023 13:44:29
+Error text:Missing name Parameter
+Request type: GET
+{"controller":"CarsModels_Controller","method":"updateRecordData","params":{"id":"64ff19ce195efc210d79b0cc","car_id":"64fee803195efc210d79b0b4","years":"2009-2017","image":"https:\/\/www.carbodydesign.com\/archive\/2009\/09\/03-renault-fluence\/_Renault-Fluence-1-lg-720x540.jpg"}}
+Error:
+Variable: name
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694778272829
+Date: 15/09/2023 13:44:32
+Error text:Missing name Parameter
+Request type: GET
+{"controller":"CarsModels_Controller","method":"updateRecordData","params":{"id":"64ff19ce195efc210d79b0cc","car_id":"64fee803195efc210d79b0b4","years":"2009-2017","image":"https:\/\/www.carbodydesign.com\/archive\/2009\/09\/03-renault-fluence\/_Renault-Fluence-1-lg-720x540.jpg"}}
+Error:
+Variable: name
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694778385390
+Date: 15/09/2023 13:46:25
+Error text:Missing car id Parameter
+Request type: GET
+{"controller":"CarsModels_Controller","method":"createNewRecord","params":{"car_id":""}}
+Error:
+Variable: car_id
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694778388748
+Date: 15/09/2023 13:46:28
+Error text:Missing name Parameter
+Request type: GET
+{"controller":"CarsModels_Controller","method":"createNewRecord","params":{"car_id":"64fee803195efc210d79b0b4"}}
+Error:
+Variable: name
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694778394611
+Date: 15/09/2023 13:46:34
+Error text:Missing years Parameter
+Request type: GET
+{"controller":"CarsModels_Controller","method":"createNewRecord","params":{"car_id":"64fee803195efc210d79b0b4","name":"name"}}
+Error:
+Variable: years
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694778397126
+Date: 15/09/2023 13:46:37
+Error text:Missing image Parameter
+Request type: GET
+{"controller":"CarsModels_Controller","method":"createNewRecord","params":{"car_id":"64fee803195efc210d79b0b4","name":"name","years":"years"}}
+Error:
+Variable: image
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694778399387
+Date: 15/09/2023 13:46:39
+Error text:Missing description Parameter
+Request type: GET
+{"controller":"CarsModels_Controller","method":"createNewRecord","params":{"car_id":"64fee803195efc210d79b0b4","name":"name","years":"years","image":"123"}}
+Error:
+Variable: description
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694779716574
+Date: 15/09/2023 14:08:36
+Error text:Missing logo Parameter
+Request type: GET
+{"controller":"Cars_Controller","method":"updateRecordData","params":{"id":"64fee803195efc210d79b0b4","manufacturer":"Renault"}}
+Error:
+Variable: logo
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694779757486
+Date: 15/09/2023 14:09:17
+Error text:Missing logo Parameter
+Request type: GET
+{"controller":"Cars_Controller","method":"updateRecordData","params":{"id":"64fee803195efc210d79b0b4","manufacturer":"Renault"}}
+Error:
+Variable: logo
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694779779019
+Date: 15/09/2023 14:09:39
+Error text:Missing logo Parameter
+Request type: GET
+{"controller":"Cars_Controller","method":"updateRecordData","params":{"id":"64fee803195efc210d79b0b4","manufacturer":"Renault"}}
+Error:
+Variable: logo
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694780177542
+Date: 15/09/2023 14:16:17
+Error text:Missing logo Parameter
+Request type: GET
+{"controller":"Cars_Controller","method":"updateRecordData","params":{"id":"64fee803195efc210d79b0b4","manufacturer":"Renault"}}
+Error:
+Variable: logo
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694780241909
+Date: 15/09/2023 14:17:21
+Error text:Missing manufacturer Parameter
+Request type: GET
+{"controller":"Cars_Controller","method":"createNewRecord"}
+Error:
+Variable: manufacturer
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694780244745
+Date: 15/09/2023 14:17:24
+Error text:Missing logo Parameter
+Request type: GET
+{"controller":"Cars_Controller","method":"createNewRecord","params":{"manufacturer":"1"}}
+Error:
+Variable: logo
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694780297990
+Date: 15/09/2023 14:18:17
+Error text:Missing image Parameter
+Request type: GET
+{"controller":"CarsModels_Controller","method":"createNewRecord","params":{"car_id":"64fee803195efc210d79b0b4","name":"test","years":"1997"}}
+Error:
+Variable: image
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694781312985
+Date: 15/09/2023 14:35:12
+Error text:Controller does not exist
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getAllRecords"}
+Error:
+Variable: WarningLights_Controller
+details: "Controller does not exists"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694781404679
+Date: 15/09/2023 14:36:44
+Error text:Controller does not exist
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getAllRecords"}
+Error:
+Variable: WarningLights_Controller
+details: "Controller does not exists"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694781410130
+Date: 15/09/2023 14:36:50
+Error text:Controller does not exist
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getAllRecords"}
+Error:
+Variable: WarningLights_Controller
+details: "Controller does not exists"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694781452353
+Date: 15/09/2023 14:37:32
+Error text:Controller does not exist
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getAllRecords"}
+Error:
+Variable: WarningLights_Controller
+details: "Controller does not exists"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694781491608
+Date: 15/09/2023 14:38:11
+Error text:Model does not exist
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getAllRecords"}
+Error:
+Variable: model
+details: "Model does not exists"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694781508865
+Date: 15/09/2023 14:38:28
+Error text:Model does not exist
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getAllRecords"}
+Error:
+Variable: model
+details: "Model does not exists"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694782214495
+Date: 15/09/2023 14:50:14
+Error text:No results found
+Request type: GET
+{"controller":"CarsModels_Controller","method":"getRecordById","params":{"id":"65044d71e2cbed13bfcf442b"}}
+Error:
+Variable: id
+details: "no results found for this id"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694782359629
+Date: 15/09/2023 14:52:39
+Error text:No results found
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getRecordById","params":{"id":"65044d71e2cbed13bfcf4422"}}
+Error:
+Variable: id
+details: "no results found for this id"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694782378416
+Date: 15/09/2023 14:52:58
+Error text:No results found
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getRecordById","params":{"id":"65044d71e2cbed13bfcf442b"}}
+Error:
+Variable: id
+details: "no results found for this id"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694782379818
+Date: 15/09/2023 14:52:59
+Error text:No results found
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getRecordById","params":{"id":"65044d71e2cbed13bfcf4421"}}
+Error:
+Variable: id
+details: "no results found for this id"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694782383159
+Date: 15/09/2023 14:53:03
+Error text:No results found
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getRecordById","params":{"id":"65044d71e2cbed13bfcf442b"}}
+Error:
+Variable: id
+details: "no results found for this id"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694783193380
+Date: 15/09/2023 15:06:33
+Error text:Missing manufacturer Parameter
+Request type: GET
+{"controller":"WarningLights_Controller","method":"updateRecordData","params":{"id":"65044d71e2cbed13bfcf442b","car_id":"64fee803195efc210d79b0b4","car_model_id":"64ff19ce195efc210d79b0cc","name":"2Tire Pressure Monitoring System","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/e\/e2\/TPMS_warning_icon.svg\/1024px-TPMS_warning_icon.svg.png","description":"The purpose of the TPMS (Tire Pressure Monitoring System) is to alert you when tire pressure is too low and could create unsafe driving conditions. If the light is illuminated, it means your tires could be underinflated, which can lead to undue tire wear and possible tire failure."}}
+Error:
+Variable: manufacturer
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694783200396
+Date: 15/09/2023 15:06:40
+Error text:Missing manufacturer Parameter
+Request type: GET
+{"controller":"WarningLights_Controller","method":"updateRecordData","params":{"id":"65044d71e2cbed13bfcf442b","car_id":"64fee803195efc210d79b0b4","car_model_id":"64ff19ce195efc210d79b0cc","name":"Tire Pressure Monitoring System","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/e\/e2\/TPMS_warning_icon.svg\/1024px-TPMS_warning_icon.svg.png","description":"The purpose of the TPMS (Tire Pressure Monitoring System) is to alert you when tire pressure is too low and could create unsafe driving conditions. If the light is illuminated, it means your tires could be underinflated, which can lead to undue tire wear and possible tire failure."}}
+Error:
+Variable: manufacturer
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694783597494
+Date: 15/09/2023 15:13:17
+Error text:Failed to delete record
+Request type: GET
+{"controller":"CarsModels_Controller","method":"deleteRecord","params":{"id":"65044d71e2cbed13bfcf442b"}}
+Error:
+Variable: id
+details: "Failed to delete record"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694783725534
+Date: 15/09/2023 15:15:25
+Error text:Failed to delete record
+Request type: GET
+{"controller":"CarsModels_Controller","method":"deleteRecord","params":{"id":"65044d71e2cbed13bfcf442b"}}
+Error:
+Variable: id
+details: "Failed to delete record"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694783779451
+Date: 15/09/2023 15:16:19
+Error text:No results found
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694783820894
+Date: 15/09/2023 15:17:00
+Error text:No results found
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694783831985
+Date: 15/09/2023 15:17:11
+Error text:No results found
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694783839346
+Date: 15/09/2023 15:17:19
+Error text:No results found
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694783844520
+Date: 15/09/2023 15:17:24
+Error text:No results found
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694783852171
+Date: 15/09/2023 15:17:32
+Error text:No results found
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694783891328
+Date: 15/09/2023 15:18:11
+Error text:No results found
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694783918277
+Date: 15/09/2023 15:18:38
+Error text:No results found
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694783944624
+Date: 15/09/2023 15:19:04
+Error text:No results found
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694784000408
+Date: 15/09/2023 15:20:00
+Error text:No results found
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694784014106
+Date: 15/09/2023 15:20:14
+Error text:No results found
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694784034199
+Date: 15/09/2023 15:20:34
+Error text:No results found
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694784061646
+Date: 15/09/2023 15:21:01
+Error text:No results found
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694784082633
+Date: 15/09/2023 15:21:22
+Error text:No results found
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694784092566
+Date: 15/09/2023 15:21:32
+Error text:No results found
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694784134668
+Date: 15/09/2023 15:22:14
+Error text:No results found
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------

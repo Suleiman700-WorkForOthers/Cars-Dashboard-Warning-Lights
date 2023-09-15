@@ -16,17 +16,13 @@ class Login_Controller extends Controller
 
         // Check passed email
         if (!isset($this->params['email']) || empty($this->params['email'])) {
-            $errorText = $ERROR_CODES['ADMIN_LOGIN']['MISSING_REQUEST_PARAMS']['EMAIL']['NAME'];
-            $errorCode = $ERROR_CODES['ADMIN_LOGIN']['MISSING_REQUEST_PARAMS']['EMAIL']['CODE'];
-            $this->errors[] = $Errors->setErrorText($errorText)->setErrorCode($errorCode)->setErrorVariable('email')->setErrorDetails('Trying to login without passing required parameter')->gen();
+            $this->errors[] = $Errors->setErrorData($ERROR_CODES['ADMIN_LOGIN']['MISSING_REQUEST_PARAMS']['EMAIL'])->setErrorVariable('email')->setErrorDetails('Trying to login without passing required parameter')->gen();
             $this->state = false;
             return $this;
         }
         // Check passed password
         if (!isset($this->params['password']) || empty($this->params['password'])) {
-            $errorText = $ERROR_CODES['ADMIN_LOGIN']['MISSING_REQUEST_PARAMS']['PASSWORD']['NAME'];
-            $errorCode = $ERROR_CODES['ADMIN_LOGIN']['MISSING_REQUEST_PARAMS']['PASSWORD']['CODE'];
-            $this->errors[] = $Errors->setErrorText($errorText)->setErrorCode($errorCode)->setErrorVariable('email')->setErrorDetails('Trying to login without passing required parameter')->gen();
+            $this->errors[] = $Errors->setErrorData($ERROR_CODES['ADMIN_LOGIN']['MISSING_REQUEST_PARAMS']['PASSWORD'])->setErrorVariable('email')->setErrorDetails('Trying to login without passing required parameter')->gen();
             $this->state = false;
             return $this;
         }
@@ -43,9 +39,7 @@ class Login_Controller extends Controller
 
         // Return error if no user found
         if (empty($data)) {
-            $errorText = $ERROR_CODES['ADMIN_LOGIN']['RESULTS']['USER_NOT_FOUND']['NAME'];
-            $errorCode = $ERROR_CODES['ADMIN_LOGIN']['RESULTS']['USER_NOT_FOUND']['CODE'];
-            $this->errors[] = $Errors->setErrorText($errorText)->setErrorCode($errorCode)->setErrorVariable('email')->setErrorDetails('Trying to login without passing required parameter')->gen();
+            $this->errors[] = $Errors->setErrorData($ERROR_CODES['ADMIN_LOGIN']['RESULTS']['USER_NOT_FOUND'])->setErrorVariable('email')->setErrorDetails('Trying to login without passing required parameter')->gen();
             $this->state = false;
             return $this;
         }
@@ -63,9 +57,7 @@ class Login_Controller extends Controller
         }
         else {
             // Passwords do not match
-            $errorText = $ERROR_CODES['ADMIN_LOGIN']['RESULTS']['INVALID_PASSWORD']['NAME'];
-            $errorCode = $ERROR_CODES['ADMIN_LOGIN']['RESULTS']['INVALID_PASSWORD']['CODE'];
-            $this->errors[] = $Errors->setErrorText($errorText)->setErrorCode($errorCode)->setErrorVariable('password')->setErrorDetails('Check if provided password matches the hashed password.')->gen();
+            $this->errors[] = $Errors->setErrorData($ERROR_CODES['ADMIN_LOGIN']['RESULTS']['INVALID_PASSWORD'])->setErrorVariable('password')->setErrorDetails('Check if provided password matches the hashed password.')->gen();
             $this->state = false;
         }
     }

@@ -9,7 +9,7 @@ Loader.showLoading()
 
 // Get cars
 const carsResponse = await Cars.getAllDataFromServer()
-const carsSubModelsResponse = await CarsModels.getAllDataFromServer();
+const carModelsResponse = await CarsModels.getAllDataFromServer();
 
 const carModelCardOnClick = _carModelData => {
     console.log(_carModelData)
@@ -18,17 +18,31 @@ const carModelCardOnClick = _carModelData => {
 const carCardOnClick = _carData => {
     const carId = extractMongoObjectId(_carData._id)
 
-    // Get car sub models
+    /*
+        Get car models
+
+        Example of data:
+        [
+            {
+                "_id": {
+                    "$oid": "6500abee9d266ba0cb03d29d"
+                },
+                "car_id": "64fef065195efc210d79b0b5",
+                "name": "Corolla",
+                "years": "2000-2023",
+                "image": "https://s3.amazonaws.com/toyota.site.toyota-v5/tci-prod/toyota/media/build/cor/col/big/b24_bprbe_fl1_01k3_a.png?ck=09082023052311"
+            }
+        ]
+     */
     let carModels = []
-    if (carsSubModelsResponse.state && carsSubModelsResponse.data.length) {
-        carModels = carsSubModelsResponse.data.filter(subModel => subModel.car_id === carId)
+    if (carModelsResponse.state && carModelsResponse.data.length) {
+        carModels = carModelsResponse.data.filter(subModel => subModel.car_id === carId)
     }
 
-    // Generate car models cards
     const carModelsCards = document.createElement('div')
     carModelsCards.classList.add('d-flex')
 
-    // Generate models cards if found
+    // Generate car models cards if found
     if (carModels?.length) {
         carModels.forEach(carModel => {
             const carModelCard = genCarModelCard(carModel, carModelCardOnClick)

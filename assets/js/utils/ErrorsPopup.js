@@ -59,7 +59,7 @@ export default class ErrorsPopup {
                 <h6 style="font-weight: bolder;">${requestError['errorText']}</h6>
                 <h6 class="text-muted">Error code: ${requestError['errorCode']}</h6>
                 <h6 class="text-muted">Parameter: ${requestError.errorVariable}</h6>
-                <h6 class="text-muted">Trace ID: ${requestError.errorTraceID}</h6>
+                <h6 class="text-muted">Trace ID: ${requestError.errorTraceId}</h6>
             `;
             html.appendChild(errorDiv);
 
@@ -83,7 +83,9 @@ export default class ErrorsPopup {
             confirmButtonText: 'Close',
         }).then((result) => {
             if (result.isConfirmed) {
-                this.requestErrorSettings.confirmButtonClickCallback()
+                if (this.requestErrorSettings.confirmButtonClickCallback !== undefined) {
+                    this.requestErrorSettings.confirmButtonClickCallback()
+                }
             }
         })
     }

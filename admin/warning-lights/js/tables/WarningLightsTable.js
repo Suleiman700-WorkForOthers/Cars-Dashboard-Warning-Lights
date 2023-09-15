@@ -1,5 +1,5 @@
 
-export default class CarsTable {
+export default class WarningLightsTable {
 
     editBtnCallback = undefined
 
@@ -74,16 +74,24 @@ export default class CarsTable {
         cell_id.setAttribute('scope', 'row')
         tr.appendChild(cell_id)
 
-        const cell_manufacturer = document.createElement('td')
-        cell_manufacturer.innerText = _rowInfo.manufacturer
-        tr.appendChild(cell_manufacturer)
+        const cell_carName = document.createElement('td')
+        cell_carName.innerText = _rowInfo['car_manufacturer_name']
+        tr.appendChild(cell_carName)
 
-        const cell_logo = document.createElement('td')
-        const logo = document.createElement('img')
-        logo.src = _rowInfo.logo
-        logo.style = 'width: 50px; height: 50px'
-        cell_logo.append(logo)
-        tr.appendChild(cell_logo)
+        const cell_carModelName = document.createElement('td')
+        cell_carModelName.innerText = _rowInfo['car_model_name']
+        tr.appendChild(cell_carModelName)
+
+        const cell_name = document.createElement('td')
+        cell_name.innerText = _rowInfo.name
+        tr.appendChild(cell_name)
+
+        const cell_image = document.createElement('td')
+        const image = document.createElement('img')
+        image.src = _rowInfo.image
+        image.style = 'width: 50px; height: 50px'
+        cell_image.append(image)
+        tr.appendChild(cell_image)
 
         // options cell
         const cell_options = document.createElement('td')

@@ -4,6 +4,7 @@ import Cars from '../../../../assets/js/classes/Cars.js';
 import UrlParams from '../../../../assets/js/classes/UrlParams.js';
 import inputs from './inputs.js';
 import Loader from '../../../../assets/js/utils/Loader.js';
+import ErrorsPopup from '../../../../assets/js/utils/ErrorsPopup.js';
 
 // Button navigate to cars list
 const btnCarsListClick = async (_callback) => {window.location.href = "../cars/index.php";}
@@ -31,6 +32,12 @@ const btnSaveRecordClick = async (_callback) => {
                 html: 'Record updated successfully'
             })
         }
+        else {
+            // Show request errors popup
+            const ErrorsPopupIns = new ErrorsPopup()
+            ErrorsPopupIns.requestErrorSettings.showConfirmBtn = true
+            ErrorsPopupIns.showRequestErrors(response.errors)
+        }
     }
     else if (mode === 'add') {
         const response = await Cars.createNewRecord(recordData)
@@ -45,6 +52,12 @@ const btnSaveRecordClick = async (_callback) => {
             fields.forEach(field => {
                 field.valueClear()
             })
+        }
+        else {
+            // Show request errors popup
+            const ErrorsPopupIns = new ErrorsPopup()
+            ErrorsPopupIns.requestErrorSettings.showConfirmBtn = true
+            ErrorsPopupIns.showRequestErrors(response.errors)
         }
     }
 }
@@ -74,6 +87,12 @@ const btnDeleteRecordClick = async (_callback) => {
                 }).then(result => {
                     window.location.href = '../cars/index.php'
                 })
+            }
+            else {
+                // Show request errors popup
+                const ErrorsPopupIns = new ErrorsPopup()
+                ErrorsPopupIns.requestErrorSettings.showConfirmBtn = true
+                ErrorsPopupIns.showRequestErrors(response.errors)
             }
         }
     })
