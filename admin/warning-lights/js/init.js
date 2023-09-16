@@ -7,6 +7,7 @@ import { extractMongoObjectId } from '../../../assets/js/utils/mongo.js';
 import ErrorsPopup from '../../../assets/js/utils/ErrorsPopup.js';
 import Cars from '../../../assets/js/classes/Cars.js';
 import buttons from './fields/buttons.js';
+import {config} from './config.js';
 
 /**
  * callback when clicking the car edit button
@@ -25,7 +26,7 @@ const carEditClickEvent = (_carData) => {
     const carId = extractMongoObjectId(_carData._id)
 
     // Navigate to car edit page
-    window.location.href = `../warning-lights-action/index.php?mode=edit&id=${carId}`
+    window.location.href = `../${config.navigation.action}?mode=edit&id=${carId}`
 }
 
 Loader.showLoading()
@@ -89,23 +90,3 @@ else {
     }
     Loader.close()
 }
-
-
-//
-// const carsTable = new CarsTable('cars-table')
-//
-// if (carsResponse.state && carsResponse.data.length) {
-//     // Set edit button callback
-//     carsTable.editBtnCallback = carEditClickEvent
-//
-//     // Add rows to table
-//     const cars = carsResponse.data
-//     cars.forEach(car => {
-//         carsTable.rowAdd(car)
-//     })
-// }
-// else {
-//     carsTable.showNoResultsRow()
-// }
-//
-// Loader.close()

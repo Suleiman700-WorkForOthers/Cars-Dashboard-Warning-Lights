@@ -68,7 +68,6 @@ class WarningLights_Controller extends Controller
             $this->data = $record;
             return $this;
         }
-
     }
 
     function updateRecordData()
@@ -184,6 +183,44 @@ class WarningLights_Controller extends Controller
             // store error
             $this->errors[] = $Errors->setErrorData($ERROR_CODES['WARNING_LIGHTS']['DELETE']['FAILED_TO_DELETE'])->setErrorVariable('id')->setErrorDetails('')->gen();
             $this->state = false;
+            return $this;
+        }
+    }
+
+    function getRecordsByCarModelId()
+    {
+        global $Errors, $ERROR_CODES;
+
+        // Check passed id
+        if (!isset($this->params['carModelId']) || empty($this->params['carModelId'])) {
+            // store error
+            $this->errors[] = $Errors->setErrorData($ERROR_CODES['WARNING_LIGHTS']['GET']['MISSING_REQUEST_PARAMS']['CAR_MODEL_ID'])->setErrorVariable('carModelId')->setErrorDetails('carModelId parameter is required')->gen();
+            $this->state = false;
+            return $this;
+        }
+
+        // Validate correct object id
+        $validator = new ValidateMongoObjectId($this->params['carModelId']);
+        $validator->validate();
+        if (!$validator->state) {
+            // store error
+            $this->errors[] = $Errors->setErrorData($ERROR_CODES['WARNING_LIGHTS']['GET']['INVALID_DATA_TYPES']['OBJECT_ID'])->setErrorVariable('carModelId')->setErrorDetails('Invalid ObjectId')->gen();
+            $this->state = false;
+            return $this;
+        }
+
+        $this->setModel('WarningLights_Model');
+        $record = $this->model->getRecordsByCarModelId($this->params['carModelId']);
+
+        if (empty($record)) {
+            // store error
+            $this->errors[] = $Errors->setErrorData($ERROR_CODES['WARNING_LIGHTS']['GET']['RESULTS']['NO_RESULTS'])->setErrorVariable('carModelId')->setErrorDetails('no results found for this carModelId')->gen();
+            $this->state = false;
+            return $this;
+        }
+        else {
+            $this->state = true;
+            $this->data = $record;
             return $this;
         }
     }

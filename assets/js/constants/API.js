@@ -33,6 +33,7 @@ export const API_WARNING_LIGHTS = {
         UPDATE_RECORD_DATA: 'updateRecordData',
         CREATE_NEW_RECORD: 'createNewRecord',
         DELETE_RECORD: 'deleteRecord',
+        GET_RECORD_BY_CAR_MODEL_ID: 'getRecordsByCarModelId',
     },
 }
 

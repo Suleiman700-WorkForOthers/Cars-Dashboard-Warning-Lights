@@ -6,3 +6,6 @@
 <script src="../../assets/js/theme-files/main.js"></script>
 
 <script src="../../assets/libs/sweetalert/sweetalert2_11.7.1.js"></script>
+
+<!-- TinyMCE Editor -->
+<script src="../../assets/libs/tinymce/tinymce.min.js"></script>

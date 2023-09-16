@@ -21,7 +21,7 @@ export const genCarCards = (_carData, _clickEvent=undefined) => {
             </div>
             <div class="product-details">
                 <h3 class="product-title"><strong>${_carData.manufacturer}</strong></h3>
-                <h4 class="product-vendor">${_carData.manufacturer} dashboard warning lights</h4>
+                <h4 class="product-vendor">${_carData.manufacturer} models</h4>
                 <a href="javascript:void(0)" class="btn btn-primary">Open</a>
             </div>
         </div>

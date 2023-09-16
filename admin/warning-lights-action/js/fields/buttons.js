@@ -23,7 +23,7 @@ const btnSaveRecordClick = async (_callback) => {
         car_model_id: selects.selectModel.get_selected_value(),
         name: inputs.name.valueGet(),
         image: inputs.image.valueGet(),
-        description: inputs.description.valueGet(),
+        description: tinyMCE.activeEditor.getContent(),
     }
 
     // Perform action based on mode

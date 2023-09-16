@@ -162,6 +162,17 @@ class WarningLights_Model extends Model
         return $result->getInsertedCount() > 0;
     }
 
+    function getRecordsByCarModelId(string $_carModelId) {
+        $filter = [
+            'car_model_id' => $_carModelId, // Replace with the MongoDB document's ID you want to update
+        ];
+
+        $result = $this->collection->find($filter);
+
+        if ($result) return iterator_to_array($result);
+        else return [];
+    }
+
     public function createDefaultColumns(array $_columns)
     {
         $defaultColumns = [

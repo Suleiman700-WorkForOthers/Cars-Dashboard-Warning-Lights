@@ -274,6 +274,12 @@ $ERROR_CODES = [
                     "CAUSE" => "Found out that param is missing from the request.",
                     "FIX" => "Make sure that the param exists in the request data."
                 ],
+                'CAR_MODEL_ID' => [
+                    "NAME" => "Missing car model id Parameter",
+                    "CODE" => "CMUMC.1006",
+                    "CAUSE" => "Found out that param is missing from the request.",
+                    "FIX" => "Make sure that the param exists in the request data."
+                ],
             ],
             'INVALID_DATA_TYPES' => [
                 'OBJECT_ID' => [

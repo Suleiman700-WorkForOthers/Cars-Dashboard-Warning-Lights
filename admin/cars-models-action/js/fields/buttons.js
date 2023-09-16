@@ -22,7 +22,7 @@ const btnSaveRecordClick = async (_callback) => {
         name: inputs.name.valueGet(),
         years: inputs.years.valueGet(),
         image: inputs.image.valueGet(),
-        description: inputs.description.valueGet(),
+        description: tinyMCE.activeEditor.getContent(),
     }
 
     // Perform action based on mode

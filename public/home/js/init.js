@@ -13,6 +13,8 @@ const carModelsResponse = await CarsModels.getAllDataFromServer();
 
 const carModelCardOnClick = _carModelData => {
     console.log(_carModelData)
+    const carModelId = extractMongoObjectId(_carModelData._id)
+    window.location.href = `../car-model-data/index.php?id=${carModelId}`
 }
 
 const carCardOnClick = _carData => {

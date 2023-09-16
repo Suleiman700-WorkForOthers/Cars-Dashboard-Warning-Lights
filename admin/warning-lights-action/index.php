@@ -89,8 +89,8 @@ require_once '../../includes/page-head.php';
                             </div>
                             <div class="col-sm-12 mt-3">
                                 <div class="text-left">
-                                    <label for="input-description">Description</label>
-                                    <textarea class="form-control" id="input-description" cols="30" rows="10"></textarea>
+                                    <label for="editor-description">Description</label>
+                                    <textarea id="editor-description"></textarea>
                                 </div>
                             </div>
                             <div class="col-sm-12 mt-3">
@@ -122,6 +122,13 @@ require_once '../../includes/page-head.php';
 </div>
 <!--  End Main Wrapper -->
 
+<script>
+    // Setup TinyMCE editor - Always set before your scripts
+    tinymce.init({
+        selector:'textarea#editor-description',
+        menubar: 'edit view insert format tools table help',
+    })
+</script>
 <script src="./js/init.js" type="module"></script>
 
 </body>

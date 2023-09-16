@@ -48,6 +48,7 @@ Loader.close()
 // Get mode
 const mode = UrlParams.getParamByKey('mode')
 
+
 // Check if car exists when mode is "edit"
 if (mode === 'edit') {
     Loader.showLoading()
@@ -55,7 +56,7 @@ if (mode === 'edit') {
     const warningLightId = UrlParams.getParamByKey('id')
     const response = await WarningLights.getRecordById(warningLightId)
 
-    // Check if data not found
+    // Check if data found
     if (response.state) {
         // Get car model manufacturer id
         const warningLightCarId = response.data.car_id
@@ -70,13 +71,19 @@ if (mode === 'edit') {
         // Set inputs fields
         inputs.name.valueSet(response.data.name)
         inputs.image.valueSet(response.data.image)
-        inputs.description.valueSet(response.data.description)
+        setTimeout(() => {
+            // Timeout to set TinyMCE content - this is a known bug in chrome that can be fixed by using timeout only
+            if (response.data.description) {
+                tinymce.activeEditor.setContent(response.data.description)
+            }
+        }, 100)
 
         // Show delete button
         buttons.btnDeleteRecord.shown(true)
 
         Loader.close()
-    } else {
+    }
+    else {
         // Show request errors popup
         const ErrorsPopupIns = new ErrorsPopup()
         ErrorsPopupIns.requestErrorSettings.showConfirmBtn = true
