@@ -4,7 +4,7 @@ import ErrorsPopup from '../../../assets/js/utils/ErrorsPopup.js';
 import Loader from '../../../assets/js/utils/Loader.js';
 import Cars from '../../../assets/js/classes/Cars.js';
 import WarningLights from '../../../assets/js/classes/WarningLights.js';
-import { warningLightCard } from '../../../assets/js/components/cards/warning-light-card.js';
+import { genWarningLightCard } from '../../../assets/js/components/cards/warning-light-card.js';
 
 
 Loader.showLoading()
@@ -36,21 +36,26 @@ if (!carResponse.state && carResponse.errors.length) {
 // Get warning lights for car model
 const warningLightsResponse = await WarningLights.getRecordsByCarModelId(carModelId)
 
+
 // Set car model data in page
 document.querySelector('#car-model-name').innerHTML = carModelResponse.data.name
 document.querySelector('#car-model-manufacturer').innerHTML = carResponse.data.manufacturer
 document.querySelector('#car-model-image').src = carModelResponse.data.image
 document.querySelector('#car-model-years').innerHTML = carModelResponse.data.years
-document.querySelector('#car-model-description').innerHTML = carModelResponse.data.description
+document.querySelector('#car-model-description').innerHTML = carModelResponse.data.description.length? carModelResponse.data.description:'No description for this car model yet...'
 
 // Build warning lights cards
 if (warningLightsResponse.state && warningLightsResponse.data.length) {
     const warningLightsCards = document.createElement('div')
+    warningLightsCards.classList.add('row')
     const warningLights = warningLightsResponse.data
     warningLights.map(warningLight => {
-        warningLightsCards.appendChild(warningLightCard(warningLight))
+        warningLightsCards.appendChild(genWarningLightCard(warningLight))
     })
     document.querySelector('#warning-lights').append(warningLightsCards)
+}
+else {
+    document.querySelector('#warning-lights').innerHTML = 'No warning lights for this model yet...'
 }
 
 Loader.close()

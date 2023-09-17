@@ -2279,3 +2279,112 @@ Error:
 Variable: carModelId
 details: "no results found for this carModelId"
 -----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694907261306
+Date: 17/09/2023 01:34:21
+Error text:No results found
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getRecordsByCarModelId","params":{"carModelId":"6500abee9d266ba0cb03d29d"}}
+Error:
+Variable: carModelId
+details: "no results found for this carModelId"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694907276363
+Date: 17/09/2023 01:34:36
+Error text:No results found
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getRecordsByCarModelId","params":{"carModelId":"6500abee9d266ba0cb03d29d"}}
+Error:
+Variable: carModelId
+details: "no results found for this carModelId"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694907277331
+Date: 17/09/2023 01:34:37
+Error text:Missing ID Parameter
+Request type: GET
+{"controller":"CarsModels_Controller","method":"getRecordById"}
+Error:
+Variable: id
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694907285085
+Date: 17/09/2023 01:34:45
+Error text:No results found
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getRecordsByCarModelId","params":{"carModelId":"6500abee9d266ba0cb03d29d"}}
+Error:
+Variable: carModelId
+details: "no results found for this carModelId"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694907311403
+Date: 17/09/2023 01:35:11
+Error text:No results found
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getRecordsByCarModelId","params":{"carModelId":"6500abee9d266ba0cb03d29d"}}
+Error:
+Variable: carModelId
+details: "no results found for this carModelId"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694907327250
+Date: 17/09/2023 01:35:27
+Error text:No results found
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getRecordsByCarModelId","params":{"carModelId":"6500abee9d266ba0cb03d29d"}}
+Error:
+Variable: carModelId
+details: "no results found for this carModelId"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694907355190
+Date: 17/09/2023 01:35:55
+Error text:No results found
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getRecordsByCarModelId","params":{"carModelId":"6500abee9d266ba0cb03d29d"}}
+Error:
+Variable: carModelId
+details: "no results found for this carModelId"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694907381060
+Date: 17/09/2023 01:36:21
+Error text:No results found
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getRecordsByCarModelId","params":{"carModelId":"6500abee9d266ba0cb03d29d"}}
+Error:
+Variable: carModelId
+details: "no results found for this carModelId"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694907406015
+Date: 17/09/2023 01:36:46
+Error text:No results found
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getRecordsByCarModelId","params":{"carModelId":"6500abee9d266ba0cb03d29d"}}
+Error:
+Variable: carModelId
+details: "no results found for this carModelId"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1694907430018
+Date: 17/09/2023 01:37:10
+Error text:No results found
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getRecordsByCarModelId","params":{"carModelId":"6500abee9d266ba0cb03d29d"}}
+Error:
+Variable: carModelId
+details: "no results found for this carModelId"
+-----------------------------------
