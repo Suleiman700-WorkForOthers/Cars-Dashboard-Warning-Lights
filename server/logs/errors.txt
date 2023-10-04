@@ -2388,3 +2388,932 @@ Error:
 Variable: carModelId
 details: "no results found for this carModelId"
 -----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696417023029
+Date: 04/10/2023 12:57:03
+Error text:No results found
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getRecordsByCarModelId","params":{"carModelId":"6500abee9d266ba0cb03d29d"}}
+Error:
+Variable: carModelId
+details: "no results found for this carModelId"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696417031656
+Date: 04/10/2023 12:57:11
+Error text:No results found
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getRecordsByCarModelId","params":{"carModelId":"64ff19ce195efc210d79b0cc"}}
+Error:
+Variable: carModelId
+details: "no results found for this carModelId"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696417038271
+Date: 04/10/2023 12:57:18
+Error text:No results found
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getRecordsByCarModelId","params":{"carModelId":"6500ab2e9d266ba0cb03d29b"}}
+Error:
+Variable: carModelId
+details: "no results found for this carModelId"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696417042587
+Date: 04/10/2023 12:57:22
+Error text:No results found
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getRecordsByCarModelId","params":{"carModelId":"6500ab2e9d266ba0cb03d29b"}}
+Error:
+Variable: carModelId
+details: "no results found for this carModelId"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696417044568
+Date: 04/10/2023 12:57:24
+Error text:No results found
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getRecordsByCarModelId","params":{"carModelId":"6500ab2e9d266ba0cb03d29b"}}
+Error:
+Variable: carModelId
+details: "no results found for this carModelId"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696417058336
+Date: 04/10/2023 12:57:38
+Error text:No results found
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getRecordsByCarModelId","params":{"carModelId":"6500abee9d266ba0cb03d29d"}}
+Error:
+Variable: carModelId
+details: "no results found for this carModelId"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696417067534
+Date: 04/10/2023 12:57:47
+Error text:No results found
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getRecordsByCarModelId","params":{"carModelId":"6500ab2e9d266ba0cb03d29b"}}
+Error:
+Variable: carModelId
+details: "no results found for this carModelId"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696417103550
+Date: 04/10/2023 12:58:23
+Error text:No results found
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getRecordsByCarModelId","params":{"carModelId":"6500ab2e9d266ba0cb03d29b"}}
+Error:
+Variable: carModelId
+details: "no results found for this carModelId"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696420426598
+Date: 04/10/2023 13:53:46
+Error text:Model does not exist
+Request type: GET
+{"controller":"Garages_Controller","method":"getAllRecords"}
+Error:
+Variable: model
+details: "Model does not exists"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696420456311
+Date: 04/10/2023 13:54:16
+Error text:Model does not exist
+Request type: GET
+{"controller":"Garages_Controller","method":"getAllRecords"}
+Error:
+Variable: model
+details: "Model does not exists"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696420487484
+Date: 04/10/2023 13:54:47
+Error text:Model does not exist
+Request type: GET
+{"controller":"Garages_Controller","method":"getAllRecords"}
+Error:
+Variable: model
+details: "Model does not exists"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696420516103
+Date: 04/10/2023 13:55:16
+Error text:Model does not exist
+Request type: GET
+{"controller":"Garages_Controller","method":"getAllRecords"}
+Error:
+Variable: model
+details: "Model does not exists"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696420556792
+Date: 04/10/2023 13:55:56
+Error text:Model does not exist
+Request type: GET
+{"controller":"Garages_Controller","method":"getAllRecords"}
+Error:
+Variable: model
+details: "Model does not exists"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696420589427
+Date: 04/10/2023 13:56:29
+Error text:Model does not exist
+Request type: GET
+{"controller":"Garages_Controller","method":"getAllRecords"}
+Error:
+Variable: model
+details: "Model does not exists"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696420599399
+Date: 04/10/2023 13:56:39
+Error text:Model does not exist
+Request type: GET
+{"controller":"Garages_Controller","method":"getAllRecords"}
+Error:
+Variable: model
+details: "Model does not exists"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696420619534
+Date: 04/10/2023 13:56:59
+Error text:Model does not exist
+Request type: GET
+{"controller":"Garages_Controller","method":"getAllRecords"}
+Error:
+Variable: model
+details: "Model does not exists"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696420879276
+Date: 04/10/2023 14:01:19
+Error text:No results found
+Request type: GET
+{"controller":"Cars_Controller","method":"getRecordById","params":{"id":"651d5198f3163f9d7b23ccc8"}}
+Error:
+Variable: id
+details: "no results found for this id"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696420897674
+Date: 04/10/2023 14:01:37
+Error text:No results found
+Request type: GET
+{"controller":"Cars_Controller","method":"getRecordById","params":{"id":"651d5198f3163f9d7b23ccc8"}}
+Error:
+Variable: id
+details: "no results found for this id"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696421864309
+Date: 04/10/2023 14:17:44
+Error text:Missing name Parameter
+Request type: GET
+{"controller":"Garages_Controller","method":"createNewRecord"}
+Error:
+Variable: name
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696422005650
+Date: 04/10/2023 14:20:05
+Error text:Missing name Parameter
+Request type: GET
+{"controller":"Garages_Controller","method":"createNewRecord"}
+Error:
+Variable: name
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696422008271
+Date: 04/10/2023 14:20:08
+Error text:Missing name Parameter
+Request type: GET
+{"controller":"Garages_Controller","method":"createNewRecord"}
+Error:
+Variable: name
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696422010274
+Date: 04/10/2023 14:20:10
+Error text:Missing location Parameter
+Request type: GET
+{"controller":"Garages_Controller","method":"createNewRecord","params":{"name":"123"}}
+Error:
+Variable: location
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696422012334
+Date: 04/10/2023 14:20:12
+Error text:Missing phone Parameter
+Request type: GET
+{"controller":"Garages_Controller","method":"createNewRecord","params":{"name":"123","location":"123"}}
+Error:
+Variable: phone
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696422070312
+Date: 04/10/2023 14:21:10
+Error text:Missing phone Parameter
+Request type: GET
+{"controller":"Garages_Controller","method":"createNewRecord","params":{"name":"1","location":"1"}}
+Error:
+Variable: phone
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696422187078
+Date: 04/10/2023 14:23:07
+Error text:No results found
+Request type: GET
+{"controller":"Cars_Controller","method":"getRecordById","params":{"id":"651d58d8a23f319e2f012aea"}}
+Error:
+Variable: id
+details: "no results found for this id"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696422496396
+Date: 04/10/2023 14:28:16
+Error text:No results found
+Request type: GET
+{"controller":"Garages_Controller","method":"getRecordById","params":{"id":"651d5198f3163f9d7b23ccc6"}}
+Error:
+Variable: id
+details: "no results found for this id"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696422530348
+Date: 04/10/2023 14:28:50
+Error text:Invalid data type
+Request type: GET
+{"controller":"Garages_Controller","method":"getRecordById","params":{"id":"651d5198f3163f9d7b23ccc86"}}
+Error:
+Variable: id
+details: "Invalid ObjectId"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696422536644
+Date: 04/10/2023 14:28:56
+Error text:Invalid data type
+Request type: GET
+{"controller":"Garages_Controller","method":"getRecordById","params":{"id":"651d5198f3163f9d7b23ccc866"}}
+Error:
+Variable: id
+details: "Invalid ObjectId"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696422561830
+Date: 04/10/2023 14:29:21
+Error text:Missing ID Parameter
+Request type: GET
+{"controller":"Garages_Controller","method":"getRecordById"}
+Error:
+Variable: id
+details: "id parameter is required"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696422924110
+Date: 04/10/2023 14:35:24
+Error text:Model does not exist
+Request type: GET
+{"controller":"Mechanics_Controller","method":"getAllRecords"}
+Error:
+Variable: model
+details: "Model does not exists"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696422941290
+Date: 04/10/2023 14:35:41
+Error text:Model does not exist
+Request type: GET
+{"controller":"Mechanics_Controller","method":"getAllRecords"}
+Error:
+Variable: model
+details: "Model does not exists"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696423078674
+Date: 04/10/2023 14:37:58
+Error text:Missing ID Parameter
+Request type: GET
+{"controller":"Mechanics_Controller","method":"getAllRecords"}
+Error:
+Variable: id
+details: "id parameter is required"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696423343488
+Date: 04/10/2023 14:42:23
+Error text:Missing name Parameter
+Request type: GET
+{"controller":"Mechanics_Controller","method":"createNewRecord"}
+Error:
+Variable: name
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696423378138
+Date: 04/10/2023 14:42:58
+Error text:Missing name Parameter
+Request type: GET
+{"controller":"Mechanics_Controller","method":"createNewRecord","params":{"phone":"0521231231"}}
+Error:
+Variable: name
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696423380344
+Date: 04/10/2023 14:43:00
+Error text:Missing location Parameter
+Request type: GET
+{"controller":"Mechanics_Controller","method":"createNewRecord","params":{"name":"1","phone":"0521231231"}}
+Error:
+Variable: location
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696423393917
+Date: 04/10/2023 14:43:13
+Error text:Invalid data type
+Request type: GET
+{"controller":"Garages_Controller","method":"getRecordById","params":{"id":"[object Object]"}}
+Error:
+Variable: id
+details: "Invalid ObjectId"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696423400136
+Date: 04/10/2023 14:43:20
+Error text:Invalid data type
+Request type: GET
+{"controller":"Garages_Controller","method":"getRecordById","params":{"id":"[object Object]"}}
+Error:
+Variable: id
+details: "Invalid ObjectId"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696423411491
+Date: 04/10/2023 14:43:31
+Error text:Invalid data type
+Request type: GET
+{"controller":"Garages_Controller","method":"getRecordById","params":{"id":"[object Object]"}}
+Error:
+Variable: id
+details: "Invalid ObjectId"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696423427085
+Date: 04/10/2023 14:43:47
+Error text:Invalid data type
+Request type: GET
+{"controller":"Garages_Controller","method":"getRecordById","params":{"id":"[object Object]"}}
+Error:
+Variable: id
+details: "Invalid ObjectId"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696423430741
+Date: 04/10/2023 14:43:50
+Error text:No results found
+Request type: GET
+{"controller":"Garages_Controller","method":"getRecordById","params":{"id":"651d5ddca23f319e2f012aeb"}}
+Error:
+Variable: id
+details: "no results found for this id"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696423446035
+Date: 04/10/2023 14:44:06
+Error text:No results found
+Request type: GET
+{"controller":"Garages_Controller","method":"getRecordById","params":{"id":"651d5ddca23f319e2f012aeb"}}
+Error:
+Variable: id
+details: "no results found for this id"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696457360052
+Date: 05/10/2023 00:09:20
+Error text:No results found
+Request type: GET
+{"controller":"Garages_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696457378715
+Date: 05/10/2023 00:09:38
+Error text:No results found
+Request type: GET
+{"controller":"Garages_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696457384545
+Date: 05/10/2023 00:09:44
+Error text:No results found
+Request type: GET
+{"controller":"Garages_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696457441421
+Date: 05/10/2023 00:10:41
+Error text:No results found
+Request type: GET
+{"controller":"Garages_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696457444892
+Date: 05/10/2023 00:10:44
+Error text:No results found
+Request type: GET
+{"controller":"Garages_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696457446844
+Date: 05/10/2023 00:10:46
+Error text:No results found
+Request type: GET
+{"controller":"Garages_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696457450149
+Date: 05/10/2023 00:10:50
+Error text:No results found
+Request type: GET
+{"controller":"Garages_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696457468162
+Date: 05/10/2023 00:11:08
+Error text:No results found
+Request type: GET
+{"controller":"Garages_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696457470689
+Date: 05/10/2023 00:11:10
+Error text:No results found
+Request type: GET
+{"controller":"Garages_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696457561044
+Date: 05/10/2023 00:12:41
+Error text:No results found
+Request type: GET
+{"controller":"Garages_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696457562875
+Date: 05/10/2023 00:12:42
+Error text:No results found
+Request type: GET
+{"controller":"Garages_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696457564358
+Date: 05/10/2023 00:12:44
+Error text:No results found
+Request type: GET
+{"controller":"Garages_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696457565921
+Date: 05/10/2023 00:12:45
+Error text:No results found
+Request type: GET
+{"controller":"Garages_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696457568825
+Date: 05/10/2023 00:12:48
+Error text:No results found
+Request type: GET
+{"controller":"Garages_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696457617124
+Date: 05/10/2023 00:13:37
+Error text:No results found
+Request type: GET
+{"controller":"Garages_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696457734144
+Date: 05/10/2023 00:15:34
+Error text:No results found
+Request type: GET
+{"controller":"Garages_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696457742430
+Date: 05/10/2023 00:15:42
+Error text:No results found
+Request type: GET
+{"controller":"Garages_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696457745591
+Date: 05/10/2023 00:15:45
+Error text:No results found
+Request type: GET
+{"controller":"Garages_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696457756989
+Date: 05/10/2023 00:15:56
+Error text:No results found
+Request type: GET
+{"controller":"Garages_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696457769048
+Date: 05/10/2023 00:16:09
+Error text:No results found
+Request type: GET
+{"controller":"Garages_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696457777467
+Date: 05/10/2023 00:16:17
+Error text:No results found
+Request type: GET
+{"controller":"Garages_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696457847527
+Date: 05/10/2023 00:17:27
+Error text:No results found
+Request type: GET
+{"controller":"Mechanics_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696457850267
+Date: 05/10/2023 00:17:30
+Error text:No results found
+Request type: GET
+{"controller":"Mechanics_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696457857728
+Date: 05/10/2023 00:17:37
+Error text:Missing location Parameter
+Request type: GET
+{"controller":"Mechanics_Controller","method":"createNewRecord","params":{"name":"John Mechanic"}}
+Error:
+Variable: location
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696457862236
+Date: 05/10/2023 00:17:42
+Error text:Missing phone Parameter
+Request type: GET
+{"controller":"Mechanics_Controller","method":"createNewRecord","params":{"name":"John Mechanic","location":"Tel-Aviv"}}
+Error:
+Variable: phone
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696457917363
+Date: 05/10/2023 00:18:37
+Error text:No results found
+Request type: GET
+{"controller":"Garages_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696458095760
+Date: 05/10/2023 00:21:35
+Error text:Controller does not exist
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+Variable: Stats_Controller
+details: "Controller does not exists"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696458100919
+Date: 05/10/2023 00:21:40
+Error text:Controller does not exist
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+Variable: Stats_Controller
+details: "Controller does not exists"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696458162747
+Date: 05/10/2023 00:22:42
+Error text:Controller does not exist
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+Variable: Stats_Controller
+details: "Controller does not exists"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696458170098
+Date: 05/10/2023 00:22:50
+Error text:Controller does not exist
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+Variable: Stats_Controller
+details: "Controller does not exists"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696458212930
+Date: 05/10/2023 00:23:32
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696458339000
+Date: 05/10/2023 00:25:39
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696458391417
+Date: 05/10/2023 00:26:31
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696458401846
+Date: 05/10/2023 00:26:41
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696458415859
+Date: 05/10/2023 00:26:55
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696458473082
+Date: 05/10/2023 00:27:53
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696458499518
+Date: 05/10/2023 00:28:19
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696458517450
+Date: 05/10/2023 00:28:37
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696458557812
+Date: 05/10/2023 00:29:17
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696458569092
+Date: 05/10/2023 00:29:29
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696458580978
+Date: 05/10/2023 00:29:40
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696458588026
+Date: 05/10/2023 00:29:48
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696458588147
+Date: 05/10/2023 00:29:48
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696458603063
+Date: 05/10/2023 00:30:03
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696458603183
+Date: 05/10/2023 00:30:03
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696458606283
+Date: 05/10/2023 00:30:06
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696458606402
+Date: 05/10/2023 00:30:06
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696458681842
+Date: 05/10/2023 00:31:21
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696458681964
+Date: 05/10/2023 00:31:21
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696458694235
+Date: 05/10/2023 00:31:34
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696458694355
+Date: 05/10/2023 00:31:34
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696458704243
+Date: 05/10/2023 00:31:44
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1696458704362
+Date: 05/10/2023 00:31:44
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------

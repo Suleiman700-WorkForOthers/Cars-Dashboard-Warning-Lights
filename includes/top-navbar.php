@@ -7,10 +7,10 @@
                 <a class="nav-link" href="../home/index.php">Home</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link" href="./index.php">Find A Garage</a>
+                <a class="nav-link" href="../fag/index.php">Find A Garage</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link" href="./index.php">Contact Mechanic</a>
+                <a class="nav-link" href="../contact-mechanic/index.php">Contact Mechanic</a>
             </li>
         </ul>
     </div>

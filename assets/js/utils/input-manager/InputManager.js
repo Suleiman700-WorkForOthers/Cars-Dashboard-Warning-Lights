@@ -68,4 +68,12 @@ export default class InputManager {
         // Trigger change event
         $input.dispatchEvent(new Event('change'));
     }
+
+    /**
+     * Get element from document
+     * @return HTMLElement|null
+     */
+    getElement() {
+        return document.querySelector(`#${this.parentId} #${this.id}`)
+    }
 }

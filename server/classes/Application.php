@@ -28,6 +28,7 @@ class Application
             require_once $controllerFilePath;
             $this->controller = new $_controllerName($_params);
 
+
             if (method_exists($this->controller, $_method)) {
                 $this->method = $_method;
             }

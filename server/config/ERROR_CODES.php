@@ -363,4 +363,297 @@ $ERROR_CODES = [
             ],
         ],
     ],
+    "GARAGES" => [
+        "UPDATE" => [
+            'MISSING_REQUEST_PARAMS' => [
+                'ID' => [
+                    "NAME" => "Missing ID Parameter",
+                    "CODE" => "GUMI.1001",
+                    "CAUSE" => "Found out that param is missing from the request.",
+                    "FIX" => "Make sure that the param exists in the request data."
+                ],
+                'NAME' => [
+                    "NAME" => "Missing name Parameter",
+                    "CODE" => "GUMUMN.1002",
+                    "CAUSE" => "Found out that param is missing from the request.",
+                    "FIX" => "Make sure that the param exists in the request data."
+                ],
+                'LOCATION' => [
+                    "NAME" => "Missing location Parameter",
+                    "CODE" => "GUMCL.1003",
+                    "CAUSE" => "Found out that param is missing from the request.",
+                    "FIX" => "Make sure that the param exists in the request data."
+                ],
+                'PHONE' => [
+                    "NAME" => "Missing phone Parameter",
+                    "CODE" => "GUMCMP.1003",
+                    "CAUSE" => "Found out that param is missing from the request.",
+                    "FIX" => "Make sure that the param exists in the request data."
+                ],
+            ],
+            'INVALID_DATA_TYPES' => [
+                'OBJECT_ID' => [
+                    "NAME" => "Invalid data type",
+                    "CODE" => "GUIO.1001",
+                    "CAUSE" => "Found out that the data type if invalid.",
+                    "FIX" => "Check the value data type and try again."
+                ],
+            ],
+            "FAILED_TO_UPDATE" => [
+                "NAME" => "Failed to update record",
+                "CODE" => "GUF.1001",
+                "CAUSE" => "Failed to update record data.",
+                "FIX" => "Check your parameters and values."
+            ],
+        ],
+        "GET" => [
+            'MISSING_REQUEST_PARAMS' => [
+                'ID' => [
+                    "NAME" => "Missing ID Parameter",
+                    "CODE" => "GGMI.1001",
+                    "CAUSE" => "Found out that param is missing from the request.",
+                    "FIX" => "Make sure that the param exists in the request data."
+                ],
+                'NAME' => [
+                    "NAME" => "Missing name Parameter",
+                    "CODE" => "GGMUMN.1002",
+                    "CAUSE" => "Found out that param is missing from the request.",
+                    "FIX" => "Make sure that the param exists in the request data."
+                ],
+                'LOCATION' => [
+                    "NAME" => "Missing location Parameter",
+                    "CODE" => "GGMCL.1003",
+                    "CAUSE" => "Found out that param is missing from the request.",
+                    "FIX" => "Make sure that the param exists in the request data."
+                ],
+                'PHONE' => [
+                    "NAME" => "Missing phone Parameter",
+                    "CODE" => "GGMCMP.1003",
+                    "CAUSE" => "Found out that param is missing from the request.",
+                    "FIX" => "Make sure that the param exists in the request data."
+                ],
+            ],
+            'RESULTS' => [
+                "NO_RESULTS" => [
+                    "NAME" => "No results found",
+                    "CODE" => "GGRN.1001",
+                    "CAUSE" => "No data found in database.",
+                    "FIX" => "Check if data exists in the database."
+                ],
+            ],
+            'INVALID_DATA_TYPES' => [
+                'OBJECT_ID' => [
+                    "NAME" => "Invalid data type",
+                    "CODE" => "GGI.1001",
+                    "CAUSE" => "Found out that the data type if invalid.",
+                    "FIX" => "Check the value data type and try again."
+                ],
+            ],
+        ],
+        "CREATE" => [
+            'MISSING_REQUEST_PARAMS' => [
+                'ID' => [
+                    "NAME" => "Missing ID Parameter",
+                    "CODE" => "GCMI.1001",
+                    "CAUSE" => "Found out that param is missing from the request.",
+                    "FIX" => "Make sure that the param exists in the request data."
+                ],
+                'NAME' => [
+                    "NAME" => "Missing name Parameter",
+                    "CODE" => "GCMUMN.1002",
+                    "CAUSE" => "Found out that param is missing from the request.",
+                    "FIX" => "Make sure that the param exists in the request data."
+                ],
+                'LOCATION' => [
+                    "NAME" => "Missing location Parameter",
+                    "CODE" => "GCMCL.1003",
+                    "CAUSE" => "Found out that param is missing from the request.",
+                    "FIX" => "Make sure that the param exists in the request data."
+                ],
+                'PHONE' => [
+                    "NAME" => "Missing phone Parameter",
+                    "CODE" => "GCMCMP.1003",
+                    "CAUSE" => "Found out that param is missing from the request.",
+                    "FIX" => "Make sure that the param exists in the request data."
+                ],
+            ],
+            'INVALID_DATA_TYPES' => [
+                'OBJECT_ID' => [
+                    "NAME" => "Invalid data type",
+                    "CODE" => "GCIO.1001",
+                    "CAUSE" => "Found out that the data type if invalid.",
+                    "FIX" => "Check the value data type and try again."
+                ],
+            ],
+            "FAILED_TO_CREATE" => [
+                "NAME" => "Failed to create record",
+                "CODE" => "GCF.1001",
+                "CAUSE" => "Failed to create record data.",
+                "FIX" => "Check your parameters and values."
+            ],
+        ],
+        "DELETE" => [
+            'MISSING_REQUEST_PARAMS' => [
+                'ID' => [
+                    "NAME" => "Missing ID Parameter",
+                    "CODE" => "GDMI.1001",
+                    "CAUSE" => "Found out that param is missing from the request.",
+                    "FIX" => "Make sure that the param exists in the request data."
+                ],
+            ],
+            "FAILED_TO_DELETE" => [
+                "NAME" => "Failed to delete record",
+                "CODE" => "GDF.1001",
+                "CAUSE" => "Found out that the server failed to delete record.",
+                "FIX" => "Check parameters and values."
+            ],
+        ],
+    ],
+
+    "MECHANICS" => [
+        "UPDATE" => [
+            'MISSING_REQUEST_PARAMS' => [
+                'ID' => [
+                    "NAME" => "Missing ID Parameter",
+                    "CODE" => "MUMI.1001",
+                    "CAUSE" => "Found out that param is missing from the request.",
+                    "FIX" => "Make sure that the param exists in the request data."
+                ],
+                'NAME' => [
+                    "NAME" => "Missing name Parameter",
+                    "CODE" => "MUMUMN.1002",
+                    "CAUSE" => "Found out that param is missing from the request.",
+                    "FIX" => "Make sure that the param exists in the request data."
+                ],
+                'LOCATION' => [
+                    "NAME" => "Missing location Parameter",
+                    "CODE" => "MUMCL.1003",
+                    "CAUSE" => "Found out that param is missing from the request.",
+                    "FIX" => "Make sure that the param exists in the request data."
+                ],
+                'PHONE' => [
+                    "NAME" => "Missing phone Parameter",
+                    "CODE" => "MUMCMP.1003",
+                    "CAUSE" => "Found out that param is missing from the request.",
+                    "FIX" => "Make sure that the param exists in the request data."
+                ],
+            ],
+            'INVALID_DATA_TYPES' => [
+                'OBJECT_ID' => [
+                    "NAME" => "Invalid data type",
+                    "CODE" => "MUIO.1001",
+                    "CAUSE" => "Found out that the data type if invalid.",
+                    "FIX" => "Check the value data type and try again."
+                ],
+            ],
+            "FAILED_TO_UPDATE" => [
+                "NAME" => "Failed to update record",
+                "CODE" => "MUF.1001",
+                "CAUSE" => "Failed to update record data.",
+                "FIX" => "Check your parameters and values."
+            ],
+        ],
+        "GET" => [
+            'MISSING_REQUEST_PARAMS' => [
+                'ID' => [
+                    "NAME" => "Missing ID Parameter",
+                    "CODE" => "MGMI.1001",
+                    "CAUSE" => "Found out that param is missing from the request.",
+                    "FIX" => "Make sure that the param exists in the request data."
+                ],
+                'NAME' => [
+                    "NAME" => "Missing name Parameter",
+                    "CODE" => "MGMUMN.1002",
+                    "CAUSE" => "Found out that param is missing from the request.",
+                    "FIX" => "Make sure that the param exists in the request data."
+                ],
+                'LOCATION' => [
+                    "NAME" => "Missing location Parameter",
+                    "CODE" => "MGMCL.1003",
+                    "CAUSE" => "Found out that param is missing from the request.",
+                    "FIX" => "Make sure that the param exists in the request data."
+                ],
+                'PHONE' => [
+                    "NAME" => "Missing phone Parameter",
+                    "CODE" => "MGMCMP.1003",
+                    "CAUSE" => "Found out that param is missing from the request.",
+                    "FIX" => "Make sure that the param exists in the request data."
+                ],
+            ],
+            'RESULTS' => [
+                "NO_RESULTS" => [
+                    "NAME" => "No results found",
+                    "CODE" => "MGRN.1001",
+                    "CAUSE" => "No data found in database.",
+                    "FIX" => "Check if data exists in the database."
+                ],
+            ],
+            'INVALID_DATA_TYPES' => [
+                'OBJECT_ID' => [
+                    "NAME" => "Invalid data type",
+                    "CODE" => "MGI.1001",
+                    "CAUSE" => "Found out that the data type if invalid.",
+                    "FIX" => "Check the value data type and try again."
+                ],
+            ],
+        ],
+        "CREATE" => [
+            'MISSING_REQUEST_PARAMS' => [
+                'ID' => [
+                    "NAME" => "Missing ID Parameter",
+                    "CODE" => "MCMI.1001",
+                    "CAUSE" => "Found out that param is missing from the request.",
+                    "FIX" => "Make sure that the param exists in the request data."
+                ],
+                'NAME' => [
+                    "NAME" => "Missing name Parameter",
+                    "CODE" => "MCMUMN.1002",
+                    "CAUSE" => "Found out that param is missing from the request.",
+                    "FIX" => "Make sure that the param exists in the request data."
+                ],
+                'LOCATION' => [
+                    "NAME" => "Missing location Parameter",
+                    "CODE" => "MCMCL.1003",
+                    "CAUSE" => "Found out that param is missing from the request.",
+                    "FIX" => "Make sure that the param exists in the request data."
+                ],
+                'PHONE' => [
+                    "NAME" => "Missing phone Parameter",
+                    "CODE" => "MCMCMP.1003",
+                    "CAUSE" => "Found out that param is missing from the request.",
+                    "FIX" => "Make sure that the param exists in the request data."
+                ],
+            ],
+            'INVALID_DATA_TYPES' => [
+                'OBJECT_ID' => [
+                    "NAME" => "Invalid data type",
+                    "CODE" => "MCIO.1001",
+                    "CAUSE" => "Found out that the data type if invalid.",
+                    "FIX" => "Check the value data type and try again."
+                ],
+            ],
+            "FAILED_TO_CREATE" => [
+                "NAME" => "Failed to create record",
+                "CODE" => "MCF.1001",
+                "CAUSE" => "Failed to create record data.",
+                "FIX" => "Check your parameters and values."
+            ],
+        ],
+        "DELETE" => [
+            'MISSING_REQUEST_PARAMS' => [
+                'ID' => [
+                    "NAME" => "Missing ID Parameter",
+                    "CODE" => "MDMI.1001",
+                    "CAUSE" => "Found out that param is missing from the request.",
+                    "FIX" => "Make sure that the param exists in the request data."
+                ],
+            ],
+            "FAILED_TO_DELETE" => [
+                "NAME" => "Failed to delete record",
+                "CODE" => "MDF.1001",
+                "CAUSE" => "Found out that the server failed to delete record.",
+                "FIX" => "Check parameters and values."
+            ],
+        ],
+    ],
 ];
