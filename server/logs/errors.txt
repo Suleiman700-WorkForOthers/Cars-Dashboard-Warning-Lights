@@ -3317,3 +3317,21 @@ Request type: GET
 {"controller":"Stats_Controller","method":"getAllRecords"}
 Error:
 -----------------------------------
+
+--------------- Error -------------
+Trace ID: 1697387148586
+Date: 15/10/2023 16:25:48
+Error text:No results found
+Request type: GET
+{"controller":"Mechanics_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1697387151142
+Date: 15/10/2023 16:25:51
+Error text:No results found
+Request type: GET
+{"controller":"Garages_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------

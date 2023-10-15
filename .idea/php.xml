@@ -12,15 +12,15 @@
   </component>
   <component name="PhpIncludePathManager">
     <include_path>
-      <path value="$PROJECT_DIR$/server/vendor/mongodb/mongodb" />
-      <path value="$PROJECT_DIR$/server/vendor/symfony/polyfill-php73" />
-      <path value="$PROJECT_DIR$/server/vendor/symfony/polyfill-php80" />
-      <path value="$PROJECT_DIR$/server/vendor/symfony/polyfill-php81" />
-      <path value="$PROJECT_DIR$/server/vendor/jean85/pretty-package-versions" />
       <path value="$PROJECT_DIR$/server/vendor/composer" />
+      <path value="$PROJECT_DIR$/server/vendor/jean85/pretty-package-versions" />
+      <path value="$PROJECT_DIR$/server/vendor/mongodb/mongodb" />
+      <path value="$PROJECT_DIR$/server/vendor/symfony/polyfill-php81" />
+      <path value="$PROJECT_DIR$/server/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/server/vendor/symfony/polyfill-php73" />
     </include_path>
   </component>
-  <component name="PhpProjectSharedConfiguration" php_language_level="8.0">
+  <component name="PhpProjectSharedConfiguration" php_language_level="8.2">
     <option name="suggestChangeDefaultLanguageLevel" value="false" />
   </component>
   <component name="PhpStanOptionsConfiguration">

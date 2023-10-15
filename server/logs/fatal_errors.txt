@@ -134,3 +134,21 @@ Request: {"controller":"Stats_Controller","method":"getAllRecords"}
 Error Message: Attempt to read property "errors" on array
 Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\Stats_Controller.php(33)
 ----------------------------------------
+
+-------------- Fatal Error -------------
+Trace ID: FE_1697293331357
+Date: 2023-10-14 14:22:11
+Request type: GET
+Request: {"controller":"Cars_Controller","method":"getAllRecords"}
+Error Message: Uncaught Error: Class "MongoDB\Driver\Manager" not found in E:\GitHub\Cars-Dashboard-Warning-Lights\server\vendor\mongodb\mongodb\src\Client.php:124
+Stack trace:
+#0 E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\MongoDBHandler.php(10): MongoDB\Client->__construct('mongodb+srv://m...')
+#1 E:\GitHub\Cars-Dashboard-Warning-Lights\server\models\Cars_Model.php(20): MongoDBHandler->__construct()
+#2 E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\Controller.php(26): Cars_Model->__construct()
+#3 E:\GitHub\Cars-Dashboard-Warning-Lights\server\controllers\Cars_Controller.php(15): Controller->setModel('Cars_Model')
+#4 E:\GitHub\Cars-Dashboard-Warning-Lights\server\classes\Application.php(50): Cars_Controller->getAllRecords()
+#5 E:\GitHub\Cars-Dashboard-Warning-Lights\server\index.php(47): Application->execute()
+#6 {main}
+  thrown in E:\GitHub\Cars-Dashboard-Warning-Lights\server\vendor\mongodb\mongodb\src\Client.php on line 124
+Error File: E:\GitHub\Cars-Dashboard-Warning-Lights\server\vendor\mongodb\mongodb\src\Client.php(124)
+----------------------------------------
