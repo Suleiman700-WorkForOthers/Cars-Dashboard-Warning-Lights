@@ -1,16 +1,15 @@
 <?php
 
-class Cars_Model extends Model
+class Suggestions_Model extends Model
 {
     protected $mongoDBHandler;
-    public $collectionName = "cars";
+    public $collectionName = "suggestions";
     public $collection;
-
     public array $columns = [
-        'manufacturer' => [
+        'category' => [
             'isRequired' => true,
         ],
-        'logo' => [
+        'description' => [
             'isRequired' => true,
         ],
     ];
@@ -55,7 +54,22 @@ class Cars_Model extends Model
         }
 
         // Use MongoDBHandler to fetch results
-        return $this->mongoDBHandler->find($this->collectionName, $queryFilter);
+        return iterator_to_array($this->mongoDBHandler->find($this->collectionName, $queryFilter));
+    }
+
+    /**
+     * Create new record
+     * @param array $_recordData - E.g. {name: '', job: '', ...etc}
+     * @return bool
+     */
+    function createNewRecord(array $_recordData): bool
+    {
+        // Prepare the data to insert
+        $recordToInsert = $this->createDefaultColumns($_recordData);
+
+        $result = $this->collection->insertOne($recordToInsert);
+
+        return $result->getInsertedCount() > 0;
     }
 
     /**
@@ -74,49 +88,11 @@ class Cars_Model extends Model
         }
 
         if (!$documents) {
-            $this->errors[] = $Errors->setErrorData($ERROR_CODES['CARS']['GET']['RESULTS']['NO_RESULTS'])->setErrorVariable('')->setErrorDetails('')->gen();
+            $this->errors[] = $Errors->setErrorData($ERROR_CODES['SUGGESTIONS']['GET']['RESULTS']['NO_RESULTS'])->setErrorVariable('')->setErrorDetails('')->gen();
             return $this;
         }
 
         return $documents;
-    }
-
-    function getRecordById(string $_id)
-    {
-        $filter = [
-            '_id' => new MongoDB\BSON\ObjectId($_id), // Replace with the MongoDB document's ID you want to update
-        ];
-
-        $result = $this->collection->findOne($filter);
-
-        if ($result) return iterator_to_array($result);
-        else return [];
-    }
-
-    /**
-     * update record data
-     * @param $_recordId - E.g. 64fee803195efc210d79b0b4
-     * @param array $_columnsToUpdate
-     * Pass the columns you want to update
-     * $columnsToUpdate = [
-     *      'name' => 'New Name'
-     * ];
-     */
-    function updateRecordData($_recordId, array $_columnsToUpdate)
-    {
-        $updateData = [
-            '$set' => $this->createDefaultColumns($_columnsToUpdate)
-        ];
-
-        $filter = [
-            '_id' => new MongoDB\BSON\ObjectId($_recordId), // Replace with the MongoDB document's ID you want to update
-        ];
-
-        $options = [];
-
-        $result = $this->collection->updateOne($filter, $updateData, $options);
-
-        return $result->getMatchedCount() > 0;
     }
 
     /**
@@ -139,36 +115,16 @@ class Cars_Model extends Model
         return $result->getDeletedCount() > 0;
     }
 
-
-
-
-
-
-
-
-    /**
-     * Create new record
-     * @param array $_recordData - E.g. {name: '', job: '', ...etc}
-     * @return bool
-     */
-    function createNewRecord(array $_recordData): bool
-    {
-        // Prepare the data to insert
-        $recordToInsert = $this->createDefaultColumns($_recordData);
-
-        $result = $this->collection->insertOne($recordToInsert);
-
-        return $result->getInsertedCount() > 0;
-    }
-
     public function createDefaultColumns(array $_columns)
     {
+        date_default_timezone_set('Asia/Jerusalem');
+
         $defaultColumns = [
-            'manufacturer' => isset($_columns['manufacturer']) && !empty(trim($_columns['manufacturer']))? $_columns['manufacturer']:'',
-            'logo' => isset($_columns['logo']) && !empty(trim($_columns['logo']))? $_columns['logo']:'',
+            'category' => isset($_columns['category']) && !empty(trim($_columns['category']))? $_columns['category']:'',
+            'description' => isset($_columns['description']) && !empty(trim($_columns['description']))? $_columns['description']:'',
+            'date' => date('Y-m-d H:i:s'),
         ];
 
         return $defaultColumns;
     }
-
 }

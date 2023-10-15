@@ -509,7 +509,6 @@ $ERROR_CODES = [
             ],
         ],
     ],
-
     "MECHANICS" => [
         "UPDATE" => [
             'MISSING_REQUEST_PARAMS' => [
@@ -653,6 +652,62 @@ $ERROR_CODES = [
                 "CODE" => "MDF.1001",
                 "CAUSE" => "Found out that the server failed to delete record.",
                 "FIX" => "Check parameters and values."
+            ],
+        ],
+    ],
+    'SUGGESTIONS_OPTIONS' => [
+        'GET' => [
+            'RESULTS' => [
+                "NO_RESULTS" => [
+                    "NAME" => "No results found",
+                    "CODE" => "SOGRN.1001",
+                    "CAUSE" => "No data found in database.",
+                    "FIX" => "Check if data exists in the database."
+                ],
+            ],
+        ],
+    ],
+    'SUGGESTIONS' => [
+        'DELETE' => [
+            'MISSING_REQUEST_PARAMS' => [
+                'ID' => [
+                    "NAME" => "Missing ID Parameter",
+                    "CODE" => "SDDMI.1001",
+                    "CAUSE" => "Found out that param is missing from the request.",
+                    "FIX" => "Make sure that the param exists in the request data."
+                ],
+            ],
+            'FAILED_TO_DELETE' => [
+                "NAME" => "Failed to delete record",
+                "CODE" => "SDF.1001",
+                "CAUSE" => "Found out that the server failed to delete record.",
+                "FIX" => "Check parameters and values."
+            ],
+        ],
+        'GET' => [
+            'RESULTS' => [
+                "NO_RESULTS" => [
+                    "NAME" => "No results found",
+                    "CODE" => "SGRN.1001",
+                    "CAUSE" => "No data found in database.",
+                    "FIX" => "Check if data exists in the database."
+                ]
+            ],
+        ],
+        'CREATE' => [
+            'MISSING_REQUEST_PARAMS' => [
+                'CATEGORY' => [
+                    "NAME" => "Missing category Parameter",
+                    "CODE" => "SCMC.1001",
+                    "CAUSE" => "Found out that param is missing from the request.",
+                    "FIX" => "Make sure that the param exists in the request data."
+                ],
+                'DESCRIPTION' => [
+                    "NAME" => "Missing description Parameter",
+                    "CODE" => "SCMD.1002",
+                    "CAUSE" => "Found out that param is missing from the request.",
+                    "FIX" => "Make sure that the param exists in the request data."
+                ],
             ],
         ],
     ],

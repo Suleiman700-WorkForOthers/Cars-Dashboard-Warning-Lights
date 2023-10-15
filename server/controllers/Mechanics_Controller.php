@@ -94,17 +94,27 @@ class Mechanics_Controller extends Controller
 
         // Check model required params
         $this->setModel('Mechanics_Model');
-        $requiredColumns = $this->model->columns;
+        $requiredColumns = [
+            'name' => [
+                'isRequired' => true,
+            ],
+            'location' => [
+                'isRequired' => true,
+            ],
+            'phone' => [
+                'isRequired' => true,
+            ],
+        ];
 
         // Validate columns to update
         foreach ($requiredColumns as $columnName => $requiredColumn) {
             if ($requiredColumn['isRequired']) {
-                $errorData = $ERROR_CODES['MECHANICS']['UPDATE']['MISSING_REQUEST_PARAMS'][strtoupper($columnName)];
 
                 // Check if param found in request
-                if (!isset($this->params[$columnName]) || empty($this->params[$columnName])) {
+                if (!isset($this->params['location']) || empty($this->params['location'])) {
                     // store error
-                    $this->errors[] = $Errors->setErrorData($errorData)->setErrorVariable($columnName)->setErrorDetails('')->gen();
+                    $errorData = $ERROR_CODES['MECHANICS']['UPDATE']['MISSING_REQUEST_PARAMS'][strtoupper($columnName)];
+                    $this->errors[] = $Errors->setErrorData($errorData)->setErrorVariable(strtoupper($columnName))->setErrorDetails('')->gen();
                     $this->state = false;
                     return $this;
                 }

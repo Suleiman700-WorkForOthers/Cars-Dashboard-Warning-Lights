@@ -9,8 +9,6 @@ require_once "./config/BASE_URL.php";
 
 $isProduction = false;
 
-//phpinfo();
-
 $baseUrl = $BASE_URLS['DEVELOPMENT'];
 if ($isProduction) $baseUrl = $BASE_URLS['PRODUCTION'];
 

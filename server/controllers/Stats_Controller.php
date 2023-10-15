@@ -34,11 +34,12 @@ class Stats_Controller extends Controller
             $this->data['cars'] = $cars;
             $this->state = true;
         }
-        if (!empty($garages) && !$garages->errors) {
+        if (!empty($garages) && empty($garages->errors)) {
             $this->data['garages'] = $garages;
             $this->state = true;
         }
-        if (!empty($mechanics) && !$mechanics->errors) {
+
+        if (!empty($mechanics) && empty($mechanics->errors)) {
             $this->data['mechanics'] = $mechanics;
             $this->state = true;
         }

@@ -26,10 +26,13 @@ class Application
         // check if system controller and its file exists
         if (in_array($_controllerName, $CONSTANTS['SYS_CONTROLLERS']) && file_exists($controllerFilePath)) {
             require_once $controllerFilePath;
+            // Store controller in Application
             $this->controller = new $_controllerName($_params);
 
 
+            // Check if method exists in controller
             if (method_exists($this->controller, $_method)) {
+                // Store method in Application
                 $this->method = $_method;
             }
             else {

@@ -14,6 +14,7 @@ $CONSTANTS = [
         'Garages_Controller',
         'Mechanics_Controller',
         'Stats_Controller',
+        'Suggestions_Controller',
     ],
     'SYS_MODELS' => [
         'Cars_Model',
@@ -22,6 +23,8 @@ $CONSTANTS = [
         'WarningLights_Model',
         'Garages_Model',
         'Mechanics_Model',
+        'Suggestions_Model',
+        'SuggestionsOptions_Model',
     ],
 ];
 

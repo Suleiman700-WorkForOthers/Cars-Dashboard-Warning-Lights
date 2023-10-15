@@ -23,6 +23,9 @@
             <li class="nav-item dropdown">
                 <a class="nav-link" href="../mechanics/index.php"><i class="fa fa-wrench"></i> Mechanics</a>
             </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="../suggestions/index.php"><i class="fa fa-lightbulb-o"></i> suggestions</a>
+            </li>
         </ul>
     </div>
 </nav>

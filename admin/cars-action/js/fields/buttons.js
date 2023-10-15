@@ -11,6 +11,7 @@ const btnCarsListClick = async (_callback) => {window.location.href = "../cars/i
 const btnCarsList = new ButtonManager('main', 'btn-cars-list', btnCarsListClick)
 btnCarsList.onClick() // Enable onClick
 
+
 // Button save record
 const btnSaveRecordClick = async (_callback) => {
     Loader.showLoading()
@@ -63,6 +64,7 @@ const btnSaveRecordClick = async (_callback) => {
 }
 const btnSaveRecord = new ButtonManager('main', 'btn-save-record', btnSaveRecordClick)
 btnSaveRecord.onClick() // Enable onClick
+
 
 // Button delete record
 const btnDeleteRecordClick = async (_callback) => {

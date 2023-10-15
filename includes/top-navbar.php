@@ -12,6 +12,9 @@
             <li class="nav-item dropdown">
                 <a class="nav-link" href="../contact-mechanic/index.php">Contact Mechanic</a>
             </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="../suggest/index.php">Suggest</a>
+            </li>
         </ul>
     </div>
 </nav>

@@ -74,3 +74,13 @@ export const API_LOGIN = {
         PERFORM_ADMIN_LOGIN: 'performAdminLogin',
     },
 }
+
+export const API_SUGGESTIONS = {
+    CONTROLLER: 'Suggestions_Controller',
+    METHODS: {
+        GET_ALL_RECORDS: 'getAllRecords',
+        GET_ALL_OPTIONS: 'getAllOptions',
+        CREATE_NEW_RECORD: 'createNewRecord',
+        DELETE_RECORD: 'deleteRecord',
+    },
+}

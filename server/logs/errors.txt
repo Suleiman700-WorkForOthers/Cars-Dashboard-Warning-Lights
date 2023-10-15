@@ -3335,3 +3335,362 @@ Request type: GET
 {"controller":"Garages_Controller","method":"getAllRecords"}
 Error:
 -----------------------------------
+
+--------------- Error -------------
+Trace ID: 1697389698676
+Date: 15/10/2023 17:08:18
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1697389698794
+Date: 15/10/2023 17:08:18
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1697389703601
+Date: 15/10/2023 17:08:23
+Error text:No results found
+Request type: GET
+{"controller":"Mechanics_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1697390520766
+Date: 15/10/2023 17:22:00
+Error text:Missing name Parameter
+Request type: GET
+{"controller":"Mechanics_Controller","method":"updateRecordData","params":{"id":"652c1e7dd53b26e6270cf43c","name":"Haitam","phone":"0533611522"}}
+Error:
+Variable: name
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1697390524264
+Date: 15/10/2023 17:22:04
+Error text:Missing name Parameter
+Request type: GET
+{"controller":"Mechanics_Controller","method":"updateRecordData","params":{"id":"652c1e7dd53b26e6270cf43c","name":"Haitam","phone":"0533611522"}}
+Error:
+Variable: name
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1697390622081
+Date: 15/10/2023 17:23:42
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1697390634848
+Date: 15/10/2023 17:23:54
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1697390639459
+Date: 15/10/2023 17:23:59
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1697390659218
+Date: 15/10/2023 17:24:19
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1697390662252
+Date: 15/10/2023 17:24:22
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1697390894719
+Date: 15/10/2023 17:28:14
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1697390901871
+Date: 15/10/2023 17:28:21
+Error text:Invalid password
+Request type: GET
+{"controller":"Login_Controller","method":"performAdminLogin","params":{"email":"soleman630@gmail.com","password":"admin123123123"}}
+Error:
+Variable: password
+details: "Check if provided password matches the hashed password."
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1697390947028
+Date: 15/10/2023 17:29:07
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1697391013773
+Date: 15/10/2023 17:30:13
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1697391053661
+Date: 15/10/2023 17:30:53
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1697391075263
+Date: 15/10/2023 17:31:15
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1697391087976
+Date: 15/10/2023 17:31:27
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1697392238523
+Date: 15/10/2023 17:50:38
+Error text:Invalid data type
+Request type: GET
+{"controller":"Cars_Controller","method":"getRecordById","params":{"id":"64fee803195efc210d79b0b41"}}
+Error:
+Variable: id
+details: "Invalid ObjectId"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1697392714347
+Date: 15/10/2023 17:58:34
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1697392718363
+Date: 15/10/2023 17:58:38
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1697392745755
+Date: 15/10/2023 17:59:05
+Error text:No results found
+Request type: GET
+{"controller":"Garages_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1697393037427
+Date: 15/10/2023 18:03:57
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1697393174098
+Date: 15/10/2023 18:06:14
+Error text:No results found
+Request type: GET
+{"controller":"Garages_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1697393281068
+Date: 15/10/2023 18:08:01
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1697393286903
+Date: 15/10/2023 18:08:06
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1697393370765
+Date: 15/10/2023 18:09:30
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1697393450886
+Date: 15/10/2023 18:10:50
+Error text:No results found
+Request type: GET
+{"controller":"WarningLights_Controller","method":"getRecordsByCarModelId","params":{"carModelId":"6500abee9d266ba0cb03d29d"}}
+Error:
+Variable: carModelId
+details: "no results found for this carModelId"
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1697393518848
+Date: 15/10/2023 18:11:58
+Error text:No results found
+Request type: GET
+{"controller":"Garages_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1697393550589
+Date: 15/10/2023 18:12:30
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1697397518255
+Date: 15/10/2023 19:18:38
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1697397581311
+Date: 15/10/2023 19:19:41
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1697397586312
+Date: 15/10/2023 19:19:46
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1697397957790
+Date: 15/10/2023 19:25:57
+Error text:No results found
+Request type: GET
+{"controller":"Suggestions_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1697397974294
+Date: 15/10/2023 19:26:14
+Error text:No results found
+Request type: GET
+{"controller":"Suggestions_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1697398002906
+Date: 15/10/2023 19:26:42
+Error text:No results found
+Request type: GET
+{"controller":"Suggestions_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1697398013867
+Date: 15/10/2023 19:26:53
+Error text:No results found
+Request type: GET
+{"controller":"Suggestions_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1697398809390
+Date: 15/10/2023 19:40:09
+Error text:No results found
+Request type: GET
+{"controller":"Suggestions_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1697399134232
+Date: 15/10/2023 19:45:34
+Error text:No results found
+Request type: GET
+{"controller":"Suggestions_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
+
+--------------- Error -------------
+Trace ID: 1697399559740
+Date: 15/10/2023 19:52:39
+Error text:No results found
+Request type: GET
+{"controller":"Stats_Controller","method":"getAllRecords"}
+Error:
+-----------------------------------
